@@ -1,9 +1,9 @@
 {
- "decks": 120,
- "slides_total": 2160,
+ "decks": 126,
+ "slides_total": 2268,
  "categories": 24,
- "themes": 24,
- "potx": 24,
+ "themes": 25,
+ "potx": 25,
  "style_distribution": {
   "build": 7,
   "terminal": 3,
@@ -22,6 +22,7 @@
   "organic": 6,
   "pastel": 5,
   "bauhaus": 3,
+  "bubble": 6,
   "brockmann": 6,
   "nordic": 7,
   "monochrome": 9,
@@ -30,5 +31,5 @@
   "newspaper": 4,
   "blueprint": 3
  },
- "max_type_pct": 7.5
+ "max_type_pct": 7.14
 }

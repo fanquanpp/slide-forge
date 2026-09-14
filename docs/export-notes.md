@@ -2,7 +2,7 @@
 
 ## 一、源文件与播放
 
-- 主交付：`templates/` 下的 **120 套 .pptx**（保留可编辑图层与动画时间轴）+ `_potx/` 下 **24 套母版**。
+- 主交付：`templates/` 下的 **126 套 .pptx**（保留可编辑图层与动画时间轴）+ `_potx/` 下 **25 套母版**。
 - 目标播放环境：**Microsoft PowerPoint**（Windows / macOS）。切换与入场动画均为标准 OOXML，PowerPoint 原生播放。
 - Google Slides / Keynote 对部分切换（如 newsflash/comb）支持有限，会降级为淡入，属预期差异。
 

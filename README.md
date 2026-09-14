@@ -9,11 +9,11 @@
 
 | 指标 | 数值 |
 |---|---|
-| 演示模板 (.pptx) | **120** 套 |
-| 版面页总数 | **2160** 页 |
-| 设计风格 | **24** 种 |
+| 演示模板 (.pptx) | **126** 套 |
+| 版面页总数 | **2268** 页 |
+| 设计风格 | **25** 种 |
 | 用途分类 | **24** 个 |
-| 母版模板 (.potx) | **24** 套 |
+| 母版模板 (.potx) | **25** 套 |
 | 每套版面原型 | 15 个（封面/目录/章节/要点/对比/指标/时间线/流程/图表/表格/图集/引用/团队/结尾 等） |
 
 浏览站（GitHub Pages）：<https://fanquanpp.github.io/slide-forge/>
@@ -43,25 +43,25 @@ slide-forge/
 | 编程教学课件 | Programming Courseware | 5 | 5 |
 | 游戏设计提案 | Game Design Proposal | 5 | 5 |
 | 像素与美术作品集 | Pixel & Art Portfolio | 5 | 5 |
-| 社团活动策划 | Club Event Planning | 5 | 5 |
+| 社团活动策划 | Club Event Planning | 6 | 6 |
 | 项目汇报与复盘 | Project Report & Retrospective | 5 | 5 |
 | 学习笔记分享 | Study Notes Sharing | 5 | 5 |
 | 求职简历与自我介绍 | Resume & Self-Intro | 5 | 5 |
-| 活动宣传与推广 | Event Promo | 5 | 5 |
+| 活动宣传与推广 | Event Promo | 6 | 6 |
 | 数据看板与指标 | Data Dashboard | 5 | 5 |
 | 内容创作提案 | Creative Pitch | 5 | 5 |
-| 产品发布与介绍 | Product Launch | 5 | 5 |
-| 读书会与共读分享 | Reading Club | 5 | 5 |
+| 产品发布与介绍 | Product Launch | 6 | 6 |
+| 读书会与共读分享 | Reading Club | 6 | 6 |
 | 竞聘述职与答辩 | Job Competition | 5 | 5 |
 | 比赛答辩与路演 | Contest Defense | 5 | 5 |
 | 课程大纲与教学计划 | Course Syllabus | 5 | 5 |
-| 招新宣讲与纳新 | Recruitment | 5 | 5 |
+| 招新宣讲与纳新 | Recruitment | 6 | 6 |
 | 年度总结与规划 | Annual Review | 5 | 5 |
 | 培训手册与 SOP | Training Manual | 5 | 5 |
 | 用户调研与访谈 | User Research | 5 | 5 |
 | 市场与竞品分析 | Market Analysis | 5 | 5 |
 | 预算与财务计划 | Budget & Finance | 5 | 5 |
-| 旅行与行程计划 | Travel Plan | 5 | 5 |
+| 旅行与行程计划 | Travel Plan | 6 | 6 |
 | 开源项目发布 | Open Source Release | 5 | 5 |
 | 技术架构评审 | Tech Architecture Review | 5 | 5 |
 
@@ -91,6 +91,7 @@ slide-forge/
   - 呼吸留白极简（11 Build）· 18 页 —— `04-club-event-club-event-planning/04__build.pptx` · 母版 `_potx/slideforge-build.potx`
   - 马卡龙柔彩（17 Takram）· 18 页 —— `04-club-event-club-event-planning/04__pastel.pptx` · 母版 `_potx/slideforge-pastel.potx`
   - 包豪斯三原色（09 Experimental Jetset）· 18 页 —— `04-club-event-club-event-planning/04__bauhaus.pptx` · 母版 `_potx/slideforge-bauhaus.potx`
+  - 泡泡堂风（12 Sagmeister & Walsh）· 18 页 —— `04-club-event-club-event-planning/04__bubble.pptx` · 母版 `_potx/slideforge-bubble.potx`
 - **项目汇报与复盘**（Project Report & Retrospective）
   - 数学网格功能主义（10 Müller-Brockmann）· 18 页 —— `05-project-report-project-report-retrospective/05__brockmann.pptx` · 母版 `_potx/slideforge-brockmann.potx`
   - 商务蓝调（09 Experimental Jetset）· 18 页 —— `05-project-report-project-report-retrospective/05__corporate.pptx` · 母版 `_potx/slideforge-corporate.potx`
@@ -115,6 +116,7 @@ slide-forge/
   - 暗黑霓虹（06 Active Theory）· 18 页 —— `08-promo-event-promo/08__darkneon.pptx` · 母版 `_potx/slideforge-darkneon.potx`
   - 包豪斯三原色（09 Experimental Jetset）· 18 页 —— `08-promo-event-promo/08__bauhaus.pptx` · 母版 `_potx/slideforge-bauhaus.potx`
   - 马卡龙柔彩（17 Takram）· 18 页 —— `08-promo-event-promo/08__pastel.pptx` · 母版 `_potx/slideforge-pastel.potx`
+  - 泡泡堂风（12 Sagmeister & Walsh）· 18 页 —— `08-promo-event-promo/08__bubble.pptx` · 母版 `_potx/slideforge-bubble.potx`
 - **数据看板与指标**（Data Dashboard）
   - 商务蓝调（09 Experimental Jetset）· 18 页 —— `09-dashboard-data-dashboard/09__corporate.pptx` · 母版 `_potx/slideforge-corporate.potx`
   - 玻璃拟态（05 Locomotive）· 18 页 —— `09-dashboard-data-dashboard/09__glass.pptx` · 母版 `_potx/slideforge-glass.potx`
@@ -133,12 +135,14 @@ slide-forge/
   - 轻奢金黑（11 Build）· 18 页 —— `11-product-launch-product-launch/11__luxury.pptx` · 母版 `_potx/slideforge-luxury.potx`
   - 呼吸留白极简（11 Build）· 18 页 —— `11-product-launch-product-launch/11__build.pptx` · 母版 `_potx/slideforge-build.potx`
   - 暗黑霓虹（06 Active Theory）· 18 页 —— `11-product-launch-product-launch/11__darkneon.pptx` · 母版 `_potx/slideforge-darkneon.potx`
+  - 泡泡堂风（12 Sagmeister & Walsh）· 18 页 —— `11-product-launch-product-launch/11__bubble.pptx` · 母版 `_potx/slideforge-bubble.potx`
 - **读书会与共读分享**（Reading Club）
   - 杂志编辑（19 Irma Boom）· 18 页 —— `12-reading-club-reading-club/12__editorial.pptx` · 母版 `_potx/slideforge-editorial.potx`
   - 自然有机（18 Kenya Hara）· 18 页 —— `12-reading-club-reading-club/12__organic.pptx` · 母版 `_potx/slideforge-organic.potx`
   - 报纸排版（01 Pentagram）· 18 页 —— `12-reading-club-reading-club/12__newspaper.pptx` · 母版 `_potx/slideforge-newspaper.potx`
   - 马卡龙柔彩（17 Takram）· 18 页 —— `12-reading-club-reading-club/12__pastel.pptx` · 母版 `_potx/slideforge-pastel.potx`
   - 单色印刷极简（03 Information Architects）· 18 页 —— `12-reading-club-reading-club/12__monochrome.pptx` · 母版 `_potx/slideforge-monochrome.potx`
+  - 泡泡堂风（12 Sagmeister & Walsh）· 18 页 —— `12-reading-club-reading-club/12__bubble.pptx` · 母版 `_potx/slideforge-bubble.potx`
 - **竞聘述职与答辩**（Job Competition）
   - 商务蓝调（09 Experimental Jetset）· 18 页 —— `13-job-competition-job-competition/13__corporate.pptx` · 母版 `_potx/slideforge-corporate.potx`
   - 呼吸留白极简（11 Build）· 18 页 —— `13-job-competition-job-competition/13__build.pptx` · 母版 `_potx/slideforge-build.potx`
@@ -163,6 +167,7 @@ slide-forge/
   - 包豪斯三原色（09 Experimental Jetset）· 18 页 —— `16-recruitment-recruitment/16__bauhaus.pptx` · 母版 `_potx/slideforge-bauhaus.potx`
   - 玻璃拟态（05 Locomotive）· 18 页 —— `16-recruitment-recruitment/16__glass.pptx` · 母版 `_potx/slideforge-glass.potx`
   - 蒸汽波（06 Active Theory）· 18 页 —— `16-recruitment-recruitment/16__vaporwave.pptx` · 母版 `_potx/slideforge-vaporwave.potx`
+  - 泡泡堂风（12 Sagmeister & Walsh）· 18 页 —— `16-recruitment-recruitment/16__bubble.pptx` · 母版 `_potx/slideforge-bubble.potx`
 - **年度总结与规划**（Annual Review）
   - 报纸排版（01 Pentagram）· 18 页 —— `17-annual-review-annual-review/17__newspaper.pptx` · 母版 `_potx/slideforge-newspaper.potx`
   - 杂志编辑（19 Irma Boom）· 18 页 —— `17-annual-review-annual-review/17__editorial.pptx` · 母版 `_potx/slideforge-editorial.potx`
@@ -199,6 +204,7 @@ slide-forge/
   - 杂志编辑（19 Irma Boom）· 18 页 —— `22-travel-plan-travel-plan/22__editorial.pptx` · 母版 `_potx/slideforge-editorial.potx`
   - 孔版双色（19 Irma Boom）· 18 页 —— `22-travel-plan-travel-plan/22__risograph.pptx` · 母版 `_potx/slideforge-risograph.potx`
   - 蒸汽波（06 Active Theory）· 18 页 —— `22-travel-plan-travel-plan/22__vaporwave.pptx` · 母版 `_potx/slideforge-vaporwave.potx`
+  - 泡泡堂风（12 Sagmeister & Walsh）· 18 页 —— `22-travel-plan-travel-plan/22__bubble.pptx` · 母版 `_potx/slideforge-bubble.potx`
 - **开源项目发布**（Open Source Release）
   - 赛博终端（08 Resn）· 18 页 —— `23-open-source-release-open-source-release/23__terminal.pptx` · 母版 `_potx/slideforge-terminal.potx`
   - 工程蓝图（14 Raven Kwok）· 18 页 —— `23-open-source-release-open-source-release/23__blueprint.pptx` · 母版 `_potx/slideforge-blueprint.potx`
@@ -240,6 +246,7 @@ slide-forge/
 | 渐变流体 | Gradient Flow | 07 Field.io | 柔和渐变与流形色块，现代产品感，适合发布与介绍。 |
 | 报纸排版 | Newspaper | 01 Pentagram | 多栏密排 + 衬线标题 + 细规线，信息密度高，适合综述与年鉴。 |
 | 黑板粉笔 | Chalkboard | 15 Ash Thorp | 深墨绿黑板 + 粉笔白黄，课堂气质，适合教学与讲解。 |
+| 泡泡堂风 | Bubble Pop | 12 Sagmeister & Walsh | 极简底色 + 糖果色气泡与弹性动效，明快圆润、强互动趣味。 |
 
 ## 使用指南
 
@@ -265,6 +272,7 @@ python scripts/build_readme.py          # 重建本 README
 - [主清单台账](docs/CATALOG.md) · [覆盖矩阵](docs/coverage-matrix.md) · [逐条使用说明](docs/USAGE.md)
 - [抽样质检报告](docs/qa-report.md) · [异常与回滚](docs/rollback.md) · [交接文档](docs/handoff.md) · [验收汇总](docs/acceptance-summary.md)
 - [交接与运维手册](docs/handoff-ops.md)
+- [动效规范](docs/animation-spec.md) · [导出与回滚说明](docs/export-notes.md) · [设计/演示/动画 Skills 调研](docs/research-skills.md)
 
 ## 许可
 

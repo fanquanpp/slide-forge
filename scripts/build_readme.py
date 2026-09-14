@@ -102,6 +102,7 @@ def main():
     A("- [主清单台账](docs/CATALOG.md) · [覆盖矩阵](docs/coverage-matrix.md) · [逐条使用说明](docs/USAGE.md)")
     A("- [抽样质检报告](docs/qa-report.md) · [异常与回滚](docs/rollback.md) · [交接文档](docs/handoff.md) · [验收汇总](docs/acceptance-summary.md)")
     A("- [交接与运维手册](docs/handoff-ops.md)")
+    A("- [动效规范](docs/animation-spec.md) · [导出与回滚说明](docs/export-notes.md) · [设计/演示/动画 Skills 调研](docs/research-skills.md)")
     A("")
     A("## 许可")
     A("")
