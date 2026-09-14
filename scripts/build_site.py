@@ -229,7 +229,7 @@ JS = """
     img.onerror=function(){fallback.style.display='block';};
     img.src=it.src;
     stage.appendChild(img);
-    dl.setAttribute('href','templates/'+it.file);
+    if(it.file){dl.setAttribute('href','templates/'+it.file);}
     title.textContent=it.name;
     meta.innerHTML='<span>用途：'+it.catName+'</span><span>版面：'+it.slides+' 页</span>'
       +'<span>风格：'+it.styleLabel+'</span><span>当前：'+labelOf(cur)+'</span>';
@@ -247,7 +247,7 @@ JS = """
     var slides=card.getAttribute('data-slides')||'';
     var pre=(f.split('__')[0]||'');
     var cat=card.getAttribute('data-cat');
-    items=VARIANTS.map(function(v,i){return {src:'assets/previews/'+pre+'-'+v+'.svg',name:name};});
+    items=VARIANTS.map(function(v,i){return {src:'assets/previews/'+pre+'-'+v+'.svg',name:name,file:f};});
     thumbs.innerHTML='';
     items.forEach(function(it,i){
       var b=document.createElement('button');
@@ -257,11 +257,13 @@ JS = """
       thumbs.appendChild(b);
     });
     render(0);
-    if(typeof dlg.showModal==='function'){dlg.showModal();}
-    else{dlg.setAttribute('open','');} /* 降级：老浏览器以普通弹层呈现 */
+    try{
+      if(typeof dlg.showModal==='function'){dlg.showModal();}
+      else{dlg.setAttribute('open','');}
+    }catch(err){dlg.setAttribute('open','');} /* 任何环境下都保证打开 */
   }
   document.addEventListener('click',function(e){
-    var btn=e.target.closest?e.target.closest('.preview'):null;
+    var btn=e.target&&e.target.closest?e.target.closest('.pv-btn,.preview'):null;
     if(!btn)return;
     var card=btn.closest('.card');
     if(!card)return;
@@ -270,7 +272,7 @@ JS = """
     card.setAttribute('data-slides', mm.split('· ').pop().trim());
     open(card);
   });
-  document.getElementById('pv-close').addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open');});
+  document.getElementById('pv-close').addEventListener('click',function(){try{dlg.close?dlg.close():dlg.removeAttribute('open');}catch(err){dlg.removeAttribute('open');}});
   document.getElementById('pv-prev').addEventListener('click',function(){render(cur-1);});
   document.getElementById('pv-next').addEventListener('click',function(){render(cur+1);});
   document.getElementById('pv-fs').addEventListener('click',function(){
