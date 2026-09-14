@@ -140,11 +140,52 @@ def usage(m):
         f.write("\n".join(L) + "\n")
 
 
+def mapping(m):
+    L = ["# 需求 → 模板映射表（24 用途）", "",
+         "> 依据目录画像归纳的使用场景，映射到 `templates/` 中的用途分类。权威数据来自 `templates/index.manifest.json`。",
+         "> 规模：**%d 个用途分类 × %d 种设计风格 = %d 套模板 / %d 个版面**。每类至少 2 种不同设计。"
+         % (len(m["categories"]), len(m["themes"]), len(m["decks"]), m["stats"]["slides_total"]), "",
+         "| 用途分类 | 由画像中的哪类场景推导 | 设计风格 | 套数 |", "|---|---|---|---:|"]
+    trs = []
+    for c in m["categories"]:
+        styles = " · ".join(THEMES[d["style"]]["label"] for d in c["decks"])
+        L.append("| **%s** | %s | %s | %d |" % (c["name"], c["needs"], styles, len(c["decks"])))
+        trs.append('<tr><td><b>%s</b></td><td>%s</td><td>%s</td><td>%d</td></tr>' % (
+            html.escape(c["name"]), html.escape(c["needs"]), html.escape(styles), len(c["decks"])))
+    with open(os.path.join(ROOT, "docs", "need-template-mapping.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(L) + "\n")
+    doc = """<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>需求 → 模板映射表 · SlideForge</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{background:#fbfbfa;color:#14161a;font:15px/1.7 "Segoe UI","Microsoft YaHei",system-ui,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:60px 28px 90px}.kicker{color:#2f6bff;font-weight:700;font-size:12px;letter-spacing:.8px;text-transform:uppercase}
+h1{font-size:32px;font-weight:800;margin:10px 0 12px}.lead{color:#6b7280;max-width:820px}
+h2{font-size:20px;font-weight:750;margin:40px 0 12px}
+table{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1px solid #e7e9ee;border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid #eef0f4;vertical-align:top}th{background:#f4f6f8;font-weight:700}tr:last-child td{border-bottom:none}
+.m{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}.metric{background:#fff;border:1px solid #e7e9ee;border-radius:12px;padding:16px}.metric b{display:block;font-size:24px;font-weight:800}.metric span{color:#6b7280;font-size:12.5px}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid #e7e9ee;color:#6b7280;font-size:13px}
+@media(max-width:760px){.m{grid-template-columns:repeat(2,1fr)}h1{font-size:26px}}
+</style></head><body><div class="wrap">
+<div class="kicker">Need → Template Mapping</div><h1>需求 → 模板映射表</h1>
+<p class="lead">把目录画像归纳出的使用场景，映射到具体模板分类。每类至少 2 种不同设计风格。</p>
+<div class="m"><div class="metric"><b>__CATS__</b><span>用途分类</span></div><div class="metric"><b>__THEMES__</b><span>设计风格</span></div>
+<div class="metric"><b>__DECKS__</b><span>套 .pptx 模板</span></div><div class="metric"><b>__SLIDES__</b><span>版面页</span></div></div>
+<table><tr><th>用途分类</th><th>由画像中的哪类场景推导</th><th>设计风格</th><th>套数</th></tr>__TRS__</table>
+<footer>SlideForge · 需求映射 · 与 index.manifest.json 一致 · MIT License</footer></div></body></html>"""
+    doc = (doc.replace("__CATS__", str(len(m["categories"]))).replace("__THEMES__", str(len(m["themes"])))
+              .replace("__DECKS__", str(len(m["decks"]))).replace("__SLIDES__", str(m["stats"]["slides_total"]))
+              .replace("__TRS__", "".join(trs)))
+    with open(os.path.join(ROOT, "docs", "need-template-mapping.html"), "w", encoding="utf-8") as f:
+        f.write(doc)
+
+
 def main():
     m = load()
     rows = catalog(m)
     maxpct = coverage(m)
     usage(m)
+    mapping(m)
     stats = m["stats"]; stats["max_type_pct"] = round(maxpct, 2)
     with open(os.path.join(ROOT, "docs", "stats.json"), "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=1)
