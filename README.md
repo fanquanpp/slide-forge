@@ -273,6 +273,7 @@ python scripts/build_readme.py          # 重建本 README
 - [抽样质检报告](docs/qa-report.md) · [异常与回滚](docs/rollback.md) · [交接文档](docs/handoff.md) · [验收汇总](docs/acceptance-summary.md)
 - [交接与运维手册](docs/handoff-ops.md)
 - [动效规范](docs/animation-spec.md) · [导出与回滚说明](docs/export-notes.md) · [设计/演示/动画 Skills 调研](docs/research-skills.md)
+- [前端迭代台账](docs/iteration-log.md) · [交付前复核清单](docs/review-checklist.md)
 
 ## 许可
 
