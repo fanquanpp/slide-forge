@@ -124,19 +124,50 @@ footer a{color:var(--accent)}
 .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:11.5px;color:var(--ink2);margin:0 6px 6px 0}
 @media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr}.themegrid{grid-template-columns:1fr 1fr}.usegrid{grid-template-columns:1fr}.hero h1{font-size:30px}}
 @media(max-width:600px){.grid,.themegrid{grid-template-columns:1fr}}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:8px 14px;border-radius:0 0 8px 0;z-index:99}
+.skip-link:focus{left:0}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.searchbar{display:flex;gap:10px;align-items:center;margin:16px 0 2px;flex-wrap:wrap}
+.searchbar input[type=search]{flex:1 1 260px;max-width:440px;border:1px solid var(--line);border-radius:10px;padding:9px 14px;font:14px/1.4 inherit;background:#fff;color:inherit}
+.searchbar input[type=search]:focus{border-color:var(--accent);outline:none}
+.count{color:var(--ink2);font-size:13px}
+.empty-state{display:none;background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:26px;text-align:center;color:var(--ink2);margin-top:14px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 """
 
 JS = """
-document.querySelectorAll('.chip').forEach(function(c){
-  c.addEventListener('click',function(){
-    document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});
-    c.classList.add('on');
-    var k=c.dataset.cat;
-    document.querySelectorAll('.card').forEach(function(card){
-      card.style.display=(k==='all'||card.dataset.cat===k)?'':'none';
+(function(){
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  var input=document.getElementById('q');
+  var empty=document.getElementById('empty');
+  var count=document.getElementById('count');
+  var active='all';
+  function apply(){
+    var q=(input&&input.value||'').trim().toLowerCase();
+    var shown=0;
+    cards.forEach(function(card){
+      var okCat=(active==='all'||card.dataset.cat===active);
+      var okQ=!q||((card.textContent||'').toLowerCase().indexOf(q)>-1);
+      var show=okCat&&okQ;
+      card.style.display=show?'':'none';
+      if(show)shown++;
+    });
+    if(empty)empty.style.display=shown?'none':'block';
+    if(count)count.textContent=shown+' 套';
+    chips.forEach(function(c){c.setAttribute('aria-pressed', c.dataset.cat===active?'true':'false');});
+  }
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      active=c.dataset.cat;
+      chips.forEach(function(x){x.classList.remove('on');});
+      c.classList.add('on');
+      apply();
     });
   });
-});
+  if(input)input.addEventListener('input',apply);
+  apply();
+})();
 """
 
 
@@ -168,7 +199,7 @@ def build_html(m):
 
     chips = ['<button class="chip on" data-cat="all">全部 %d 套</button>' % st["decks"]]
     for cat in m["categories"]:
-        chips.append('<button class="chip" data-cat="%s">%s</button>' % (html.escape(cat["id"]), html.escape(cat["name"])))
+        chips.append('<button class="chip" data-cat="%s" aria-pressed="false">%s</button>' % (html.escape(cat["id"]), html.escape(cat["name"])))
 
     tcards = []
     for k, v in themes.items():
@@ -275,7 +306,7 @@ def main():
                    dk["slides"], "".join(links)))
     chips = ['<button class="chip on" data-cat="all">全部 %d 套</button>' % st["decks"]]
     for cat in m["categories"]:
-        chips.append('<button class="chip" data-cat="%s">%s</button>' % (html.escape(cat["id"]), html.escape(cat["name"])))
+        chips.append('<button class="chip" data-cat="%s" aria-pressed="false">%s</button>' % (html.escape(cat["id"]), html.escape(cat["name"])))
     tcards = []
     for k, v in themes.items():
         s = THEMES[k]
@@ -294,10 +325,12 @@ def main():
 <style>__CSS__</style>
 </head>
 <body>
+<a class="skip-link" href="#library">跳到模板列表</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="#top"><span class="mark">SF</span> SlideForge</a>
-  <nav><a href="#library">模板库</a><a href="#styles">设计风格</a><a href="#usage">使用指南</a><a href="__REPO__" target="_blank" rel="noopener">GitHub</a></nav>
+  <nav aria-label="站点导航"><a href="#library">模板库</a><a href="#styles">设计风格</a><a href="#usage">使用指南</a><a href="__REPO__" target="_blank" rel="noopener">GitHub</a></nav>
 </div></header>
+<main id="main">
 <div id="top"></div>
 <div class="hero"><div class="wrap">
   <h1>多用途 · 多风格 · 可编辑的 PPT 模板库</h1>
@@ -310,11 +343,16 @@ def main():
     <div class="metric"><b>__POTX__</b><span>套 .potx 母版</span></div>
   </div>
 </div></div>
-<section id="library"><div class="wrap">
-  <h2 class="sec">模板库</h2>
+<section id="library" aria-labelledby="lib-h"><div class="wrap">
+  <h2 class="sec" id="lib-h">模板库</h2>
   <p class="sub">按用途分类浏览，每个分类包含多种不同设计风格；点击即可下载可编辑的 .pptx，或跳转仓库查看源码。</p>
-  <div class="filters">__CHIPS__</div>
+  <div class="searchbar">
+    <input type="search" id="q" placeholder="搜索模板名称 / 风格 / 用途…" aria-label="搜索模板" autocomplete="off">
+    <span class="count" id="count" role="status" aria-live="polite">__DECKS__ 套</span>
+  </div>
+  <div class="filters" role="group" aria-label="按用途筛选模板">__CHIPS__</div>
   <div class="grid">__CARDS__</div>
+  <p class="empty-state" id="empty">没有匹配的模板 —— 换个关键词，或选择「全部」再试。</p>
 </div></section>
 <section id="styles"><div class="wrap">
   <h2 class="sec">设计风格</h2>
@@ -337,6 +375,7 @@ python scripts/build_site.py            # 重建本站点与风格预览图</pre
   <p class="sub">本项目以 <b>MIT License</b> 发布，可自由用于个人与商业用途。模板内不含任何真实业务数据、客户信息或受版权保护的第三方素材；字体依赖系统字体，替换商用字体时请自行确认授权。</p>
   <p class="sub" style="margin-top:14px">分类：__CATTAGS__</p>
 </div></section>
+</main>
 <footer><div class="wrap">SlideForge · 由 python-pptx 脚本生成 · MIT License · <a href="__REPO__" target="_blank" rel="noopener">GitHub 仓库</a></div></footer>
 <script>__JS__</script>
 </body></html>"""
