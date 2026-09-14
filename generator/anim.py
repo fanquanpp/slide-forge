@@ -54,7 +54,7 @@ def set_transition(slide, spec):
     sld = slide._element
     for t in sld.findall(qn("p:transition")):
         sld.remove(t)
-    trans = sld.makeelement(qn("p:transition"), {"spd": spd})
+    trans = sld.makeelement(qn("p:transition"), {"spd": spd, "advClick": "1", "advTm": "8000"})
     child = sld.makeelement(qn("p:%s" % name), {})
     if key:
         child.set(key, val)

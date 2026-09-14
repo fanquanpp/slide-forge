@@ -8,6 +8,8 @@ from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from pptx.enum.shapes import MSO_SHAPE, MSO_CONNECTOR
+from pptx.chart.data import CategoryChartData
+from pptx.enum.chart import XL_CHART_TYPE, XL_LEGEND_POSITION
 from pptx.oxml.ns import qn
 
 SW, SH = 13.333, 7.5
@@ -342,9 +344,19 @@ class Deck:
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         self.rrect(s, 0.9, 2.3, 8.4, 4.25, self.t["surface"], self.t["line"], radius=max(self.t["radius"], 0.05))
         if variant == "bar":
-            for i, v in enumerate([0.55, 0.8, 0.45, 0.95, 0.7, 0.6]):
-                bh = 3.2 * v
-                self.rect(s, 1.5 + i * 1.25, 6.0 - bh, 0.75, bh, self.t["accent"] if i % 2 == 0 else self.t["accent2"], alpha=0.9)
+            cd = CategoryChartData()
+            cd.categories = ["指标一", "指标二", "指标三", "指标四", "指标五", "指标六"]
+            cd.add_series("示例系列（右键→编辑数据）", (55, 80, 45, 95, 70, 60))
+            gf = s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED,
+                                    Inches(1.3), Inches(2.55), Inches(6.4), Inches(3.75), cd)
+            ch = gf.chart
+            ch.has_legend = False
+            try:
+                ser = ch.plots[0].series[0]
+                ser.format.fill.solid()
+                ser.format.fill.fore_color.rgb = C(self.t["accent"])
+            except Exception:
+                pass
         elif variant == "line":
             pts = [(1.6, 5.2), (3.0, 4.2), (4.4, 4.7), (5.8, 3.4), (7.2, 3.9), (8.6, 3.0)]
             for i in range(len(pts) - 1):
@@ -355,7 +367,7 @@ class Deck:
             self.oval(s, 3.6, 3.0, 2.8, 2.8, self.t["accent"], alpha=0.25)
             self.oval(s, 4.5, 3.9, 1.0, 1.0, self.t["surface"])
             self.text(s, "图", 4.5, 3.9, 1.0, 1.0, size=16, bold=True, color=self.t["accent"], align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE, font=self.t["body_font"][0], ea=self.t["body_font"][1])
-        self.text(s, "图表占位 · 在 PowerPoint 中插入图表替换", 1.4, 6.15, 6.4, 0.3, size=10.5, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
+        self.text(s, "原生可编辑图表 · 右键图表 → 编辑数据 即可替换数值", 1.4, 6.15, 6.4, 0.3, size=10.5, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
         self.text(s, "关键结论 / 解读", 9.7, 2.45, 2.9, 0.4, size=15, bold=True, color=self.t["ink"])
         self.bullets(s, ["在此输入要点一", "在此输入要点二", "在此输入要点三"], 9.7, 3.0, 2.9, 3.2, size=12.5, gap=10)
         self.footer(s)
@@ -537,8 +549,38 @@ class Deck:
 
     def save(self, path):
         base = getattr(self, "_seed", 0)
-        for i, s in enumerate(self.prs.slides):
+        slides = list(self.prs.slides)
+        for i, sl in enumerate(slides):
             spec = _anim.TRANSITIONS[(base + i) % len(_anim.TRANSITIONS)]
-            _anim.apply_to_slide(s, base + i, spec, SW, SH)
+            _anim.apply_to_slide(sl, base + i, spec, SW, SH)
+            self._add_notes(sl, i)
         self.prs.save(path)
         return path
+
+    def _add_notes(self, sl, idx):
+        """演讲者备注：页面定位 + 放映提示 + 编辑指引。"""
+        title = ""
+        for shp in sl.shapes:
+            if shp.has_text_frame and shp.text_frame.text.strip():
+                t = shp.text_frame.text.strip().split("\n")[0]
+                if len(t) >= 2:
+                    title = t[:40]
+                    break
+        n = idx % 5
+        script = [
+            "开场页：自我介绍或破题，停留时间可稍长。",
+            "概览页：快速带过结构，告诉听众接下来讲什么。",
+            "内容页：逐条展开，配合动画节奏点击推进。",
+            "数据页：先说结论，再用图表佐证。",
+            "收尾页：总结要点并给出行动号召或联系方式。",
+        ][n]
+        txt = ("【页面定位】%s —— %s\n"
+               "【放映】本页元素按“背景→主体→标注”顺序错峰入场（约 2 秒完成）；"
+               "开启“使用计时器”后本页停留 8 秒自动翻页。\n"
+               "【编辑】直接点击文本框替换占位文字；在“设计→变体”中一键换配色；"
+               "图片占位框右键“更改图片”即可替换。\n"
+               "【联动】图表为原生可编辑图表：右键“编辑数据”即可替换数值。") % (title or ("第 %d 页" % (idx + 1)), script)
+        try:
+            sl.notes_slide.notes_text_frame.text = txt
+        except Exception:
+            pass

@@ -104,6 +104,7 @@ def main():
     A("- [交接与运维手册](docs/handoff-ops.md)")
     A("- [动效规范](docs/animation-spec.md) · [导出与回滚说明](docs/export-notes.md) · [设计/演示/动画 Skills 调研](docs/research-skills.md)")
     A("- [前端迭代台账](docs/iteration-log.md) · [交付前复核清单](docs/review-checklist.md)")
+    A("- [高级功能说明](docs/export-notes.md)——原生可编辑图表 / 8s 自动放映 / 演讲者备注 / 全屏预览灯箱")
     A("")
     A("## 许可")
     A("")
