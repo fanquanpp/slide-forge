@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fanquanpp.github.io/slide-forge/sitemap.xml

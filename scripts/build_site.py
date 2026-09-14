@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.join(ROOT, "generator"))
 from themes import THEMES  # noqa
 
 REPO_URL = "https://github.com/fanquanpp/slide-forge"
+SITE_URL = "https://fanquanpp.github.io/slide-forge/"
 REPO_BLOB = REPO_URL + "/blob/main/"
 
 
@@ -332,6 +333,20 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SlideForge · 多用途可编辑 PPT 模板库</title>
 <meta name="description" content="SlideForge —— __DECKS__ 套多用途、多风格、可编辑且不含正式内容的 PPT 模板库，MIT 协议。">
+<link rel="canonical" href="__SITE__">
+<meta name="theme-color" content="#2f6bff">
+<meta name="color-scheme" content="light dark">
+<meta property="og:site_name" content="SlideForge">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SlideForge · 多用途可编辑 PPT 模板库">
+<meta property="og:description" content="__DECKS__ 套多用途、多风格、可编辑且不含正式内容的 PPT 模板库（MIT）。">
+<meta property="og:url" content="__SITE__">
+<meta property="og:image" content="__SITE__assets/previews/slideforge-styles.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f6bff'/%3E%3Ctext x='16' y='21' font-family='Segoe UI,sans-serif' font-size='13' font-weight='700' fill='white' text-anchor='middle'%3ESF%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"SlideForge","description":"多用途、多风格、可编辑且不含正式内容的 PPT 模板库","url":"__SITE__","codeRepository":"https://github.com/fanquanpp/slide-forge","license":"https://opensource.org/licenses/MIT","programmingLanguage":"Python","keywords":"pptx, powerpoint, templates, python-pptx, design","author":{"@type":"Organization","name":"SlideForge Contributors"}}
+</script>
 <style>__CSS__</style>
 </head>
 <body>
@@ -389,7 +404,7 @@ python scripts/build_site.py            # 重建本站点与风格预览图</pre
 <footer><div class="wrap">SlideForge · 由 python-pptx 脚本生成 · MIT License · <a href="__REPO__" target="_blank" rel="noopener">GitHub 仓库</a></div></footer>
 <script>__JS__</script>
 </body></html>"""
-    doc = (doc.replace("__CSS__", CSS).replace("__JS__", JS).replace("__REPO__", REPO_URL)
+    doc = (doc.replace("__CSS__", CSS).replace("__JS__", JS).replace("__REPO__", REPO_URL).replace("__SITE__", SITE_URL)
               .replace("__DECKS__", str(st["decks"])).replace("__SLIDES__", str(st["slides_total"]))
               .replace("__THEMES__", str(st["themes"])).replace("__CATS__", str(st["categories"]))
               .replace("__POTX__", str(st["potx"])).replace("__CHIPS__", "".join(chips))
