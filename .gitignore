@@ -1,0 +1,11 @@
+# 本地/中间产物
+__pycache__/
+*.pyc
+.openclaw/
+.cluster/
+*.tmp
+~$*
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini

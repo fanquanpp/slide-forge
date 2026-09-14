@@ -1,0 +1,577 @@
+{
+ "themes": {
+  "build": {
+   "label": "呼吸留白极简",
+   "en": "Breathing Whitespace",
+   "preset": "11 Build",
+   "philosophy": "大量留白 + 单一强调色，克制中性，便于替换成任意品牌色。"
+  },
+  "brockmann": {
+   "label": "数学网格功能主义",
+   "en": "Swiss Grid",
+   "preset": "10 Müller-Brockmann",
+   "philosophy": "严格网格与对齐，双色体系，适合数据、计划与结构化汇报。"
+  },
+  "takram": {
+   "label": "柔和科技图表",
+   "en": "Soft Tech",
+   "preset": "17 Takram",
+   "philosophy": "圆角、柔影与图表即艺术，适合作品集、产品提案与数据看板。"
+  },
+  "corporate": {
+   "label": "商务蓝调",
+   "en": "Corporate Blue",
+   "preset": "09 Experimental Jetset",
+   "philosophy": "沉稳海军蓝 + 金色点缀，适合汇报、方案与数据看板。"
+  },
+  "darkneon": {
+   "label": "暗黑霓虹",
+   "en": "Dark Neon",
+   "preset": "06 Active Theory",
+   "philosophy": "深空底色 + 霓虹青/品红，适合游戏提案、发布与科技主题。"
+  },
+  "retropixel": {
+   "label": "复古像素",
+   "en": "Retro Pixel",
+   "preset": "16 Territory Studio",
+   "philosophy": "暗紫底 + 糖果色块，呼应像素美术与独立游戏审美。"
+  },
+  "editorial": {
+   "label": "杂志编辑",
+   "en": "Editorial",
+   "preset": "19 Irma Boom",
+   "philosophy": "暖纸底 + 砖红点缀，衬线标题，适合作品集与深度叙事。"
+  },
+  "memphis": {
+   "label": "孟菲斯活力",
+   "en": "Memphis Pop",
+   "preset": "12 Sagmeister & Walsh",
+   "philosophy": "高饱和撞色 + 几何形状，适合活动宣传与轻松场景。"
+  },
+  "glass": {
+   "label": "玻璃拟态",
+   "en": "Glassmorphism",
+   "preset": "05 Locomotive",
+   "philosophy": "深色渐变 + 半透明卡片，适合产品发布与科技展示。"
+  },
+  "terminal": {
+   "label": "赛博终端",
+   "en": "Cyber Terminal",
+   "preset": "08 Resn",
+   "philosophy": "黑底绿字等宽，命令行气质，适合技术教学与极客分享。"
+  },
+  "organic": {
+   "label": "自然有机",
+   "en": "Organic",
+   "preset": "18 Kenya Hara",
+   "philosophy": "暖砂底 + 植物绿/陶土色，柔和圆角，适合笔记与生活方式主题。"
+  },
+  "academic": {
+   "label": "学术严谨",
+   "en": "Academic",
+   "preset": "04 Fathom",
+   "philosophy": "冷静灰蓝 + 严谨结构，适合研究、课件与数据报告。"
+  }
+ },
+ "categories": [
+  {
+   "id": "01-teaching",
+   "name": "编程教学课件",
+   "en": "Programming Courseware",
+   "needs": "来自 04-代码实践 / 05-编程学习资料 / 08-其他笔记，适用于讲课、培训、知识点串讲。",
+   "decks": [
+    {
+     "style": "build",
+     "file": "01-teaching-programming-courseware/01__build.pptx",
+     "slides": 15,
+     "theme_label": "呼吸留白极简"
+    },
+    {
+     "style": "terminal",
+     "file": "01-teaching-programming-courseware/01__terminal.pptx",
+     "slides": 15,
+     "theme_label": "赛博终端"
+    },
+    {
+     "style": "takram",
+     "file": "01-teaching-programming-courseware/01__takram.pptx",
+     "slides": 15,
+     "theme_label": "柔和科技图表"
+    }
+   ]
+  },
+  {
+   "id": "02-game-gdd",
+   "name": "游戏设计提案",
+   "en": "Game Design Proposal",
+   "needs": "来自 04-代码实践/Godot、godot-engine、深空之眼，适用于 GDD、玩法提案、立项。",
+   "decks": [
+    {
+     "style": "darkneon",
+     "file": "02-game-gdd-game-design-proposal/02__darkneon.pptx",
+     "slides": 15,
+     "theme_label": "暗黑霓虹"
+    },
+    {
+     "style": "retropixel",
+     "file": "02-game-gdd-game-design-proposal/02__retropixel.pptx",
+     "slides": 15,
+     "theme_label": "复古像素"
+    },
+    {
+     "style": "corporate",
+     "file": "02-game-gdd-game-design-proposal/02__corporate.pptx",
+     "slides": 15,
+     "theme_label": "商务蓝调"
+    }
+   ]
+  },
+  {
+   "id": "03-portfolio",
+   "name": "像素与美术作品集",
+   "en": "Pixel & Art Portfolio",
+   "needs": "来自 06-创作素材、Aseprite、MMD、Blender，适用于作品展示、约稿、投稿。",
+   "decks": [
+    {
+     "style": "editorial",
+     "file": "03-portfolio-pixel-art-portfolio/03__editorial.pptx",
+     "slides": 15,
+     "theme_label": "杂志编辑"
+    },
+    {
+     "style": "retropixel",
+     "file": "03-portfolio-pixel-art-portfolio/03__retropixel.pptx",
+     "slides": 15,
+     "theme_label": "复古像素"
+    },
+    {
+     "style": "build",
+     "file": "03-portfolio-pixel-art-portfolio/03__build.pptx",
+     "slides": 15,
+     "theme_label": "呼吸留白极简"
+    }
+   ]
+  },
+  {
+   "id": "04-club-event",
+   "name": "社团活动策划",
+   "en": "Club Event Planning",
+   "needs": "来自 07-个人文档/社团活动、软工协会总章程、活动策划，适用于策划、申报、竞聘。",
+   "decks": [
+    {
+     "style": "memphis",
+     "file": "04-club-event-club-event-planning/04__memphis.pptx",
+     "slides": 15,
+     "theme_label": "孟菲斯活力"
+    },
+    {
+     "style": "organic",
+     "file": "04-club-event-club-event-planning/04__organic.pptx",
+     "slides": 15,
+     "theme_label": "自然有机"
+    },
+    {
+     "style": "build",
+     "file": "04-club-event-club-event-planning/04__build.pptx",
+     "slides": 15,
+     "theme_label": "呼吸留白极简"
+    }
+   ]
+  },
+  {
+   "id": "05-project-report",
+   "name": "项目汇报与复盘",
+   "en": "Project Report & Retrospective",
+   "needs": "来自代码实践与课程项目，适用于阶段汇报、结项、复盘总结。",
+   "decks": [
+    {
+     "style": "brockmann",
+     "file": "05-project-report-project-report-retrospective/05__brockmann.pptx",
+     "slides": 15,
+     "theme_label": "数学网格功能主义"
+    },
+    {
+     "style": "corporate",
+     "file": "05-project-report-project-report-retrospective/05__corporate.pptx",
+     "slides": 15,
+     "theme_label": "商务蓝调"
+    },
+    {
+     "style": "build",
+     "file": "05-project-report-project-report-retrospective/05__build.pptx",
+     "slides": 15,
+     "theme_label": "呼吸留白极简"
+    }
+   ]
+  },
+  {
+   "id": "06-study-notes",
+   "name": "学习笔记分享",
+   "en": "Study Notes Sharing",
+   "needs": "来自 08-其他笔记、网络技术资料、编程大礼包，适用于知识分享、读书会。",
+   "decks": [
+    {
+     "style": "takram",
+     "file": "06-study-notes-study-notes-sharing/06__takram.pptx",
+     "slides": 15,
+     "theme_label": "柔和科技图表"
+    },
+    {
+     "style": "organic",
+     "file": "06-study-notes-study-notes-sharing/06__organic.pptx",
+     "slides": 15,
+     "theme_label": "自然有机"
+    },
+    {
+     "style": "editorial",
+     "file": "06-study-notes-study-notes-sharing/06__editorial.pptx",
+     "slides": 15,
+     "theme_label": "杂志编辑"
+    },
+    {
+     "style": "academic",
+     "file": "06-study-notes-study-notes-sharing/06__academic.pptx",
+     "slides": 15,
+     "theme_label": "学术严谨"
+    }
+   ]
+  },
+  {
+   "id": "07-resume",
+   "name": "求职简历与自我介绍",
+   "en": "Resume & Self-Intro",
+   "needs": "学生身份与作品积累，适用于简历、自我介绍、面试展示。",
+   "decks": [
+    {
+     "style": "build",
+     "file": "07-resume-resume-self-intro/07__build.pptx",
+     "slides": 15,
+     "theme_label": "呼吸留白极简"
+    },
+    {
+     "style": "editorial",
+     "file": "07-resume-resume-self-intro/07__editorial.pptx",
+     "slides": 15,
+     "theme_label": "杂志编辑"
+    }
+   ]
+  },
+  {
+   "id": "08-promo",
+   "name": "活动宣传与推广",
+   "en": "Event Promo",
+   "needs": "社团招新、活动预热、作品发布，适用于海报式宣讲与报名引导。",
+   "decks": [
+    {
+     "style": "memphis",
+     "file": "08-promo-event-promo/08__memphis.pptx",
+     "slides": 15,
+     "theme_label": "孟菲斯活力"
+    },
+    {
+     "style": "glass",
+     "file": "08-promo-event-promo/08__glass.pptx",
+     "slides": 15,
+     "theme_label": "玻璃拟态"
+    },
+    {
+     "style": "darkneon",
+     "file": "08-promo-event-promo/08__darkneon.pptx",
+     "slides": 15,
+     "theme_label": "暗黑霓虹"
+    }
+   ]
+  },
+  {
+   "id": "09-dashboard",
+   "name": "数据看板与指标",
+   "en": "Data Dashboard",
+   "needs": "比赛/项目数据、社团统计，适用于指标展示、季度数据、看板大屏。",
+   "decks": [
+    {
+     "style": "corporate",
+     "file": "09-dashboard-data-dashboard/09__corporate.pptx",
+     "slides": 15,
+     "theme_label": "商务蓝调"
+    },
+    {
+     "style": "glass",
+     "file": "09-dashboard-data-dashboard/09__glass.pptx",
+     "slides": 15,
+     "theme_label": "玻璃拟态"
+    },
+    {
+     "style": "takram",
+     "file": "09-dashboard-data-dashboard/09__takram.pptx",
+     "slides": 15,
+     "theme_label": "柔和科技图表"
+    }
+   ]
+  },
+  {
+   "id": "10-creative-pitch",
+   "name": "内容创作提案",
+   "en": "Creative Pitch",
+   "needs": "来自 06-创作素材/剧本大纲、Stage、MMD-Motion，适用于动画/剧本/视频提案。",
+   "decks": [
+    {
+     "style": "editorial",
+     "file": "10-creative-pitch-creative-pitch/10__editorial.pptx",
+     "slides": 15,
+     "theme_label": "杂志编辑"
+    },
+    {
+     "style": "darkneon",
+     "file": "10-creative-pitch-creative-pitch/10__darkneon.pptx",
+     "slides": 15,
+     "theme_label": "暗黑霓虹"
+    },
+    {
+     "style": "organic",
+     "file": "10-creative-pitch-creative-pitch/10__organic.pptx",
+     "slides": 15,
+     "theme_label": "自然有机"
+    }
+   ]
+  }
+ ],
+ "decks": [
+  {
+   "category": "01-teaching",
+   "style": "build",
+   "file": "01-teaching-programming-courseware/01__build.pptx",
+   "slides": 15
+  },
+  {
+   "category": "01-teaching",
+   "style": "terminal",
+   "file": "01-teaching-programming-courseware/01__terminal.pptx",
+   "slides": 15
+  },
+  {
+   "category": "01-teaching",
+   "style": "takram",
+   "file": "01-teaching-programming-courseware/01__takram.pptx",
+   "slides": 15
+  },
+  {
+   "category": "02-game-gdd",
+   "style": "darkneon",
+   "file": "02-game-gdd-game-design-proposal/02__darkneon.pptx",
+   "slides": 15
+  },
+  {
+   "category": "02-game-gdd",
+   "style": "retropixel",
+   "file": "02-game-gdd-game-design-proposal/02__retropixel.pptx",
+   "slides": 15
+  },
+  {
+   "category": "02-game-gdd",
+   "style": "corporate",
+   "file": "02-game-gdd-game-design-proposal/02__corporate.pptx",
+   "slides": 15
+  },
+  {
+   "category": "03-portfolio",
+   "style": "editorial",
+   "file": "03-portfolio-pixel-art-portfolio/03__editorial.pptx",
+   "slides": 15
+  },
+  {
+   "category": "03-portfolio",
+   "style": "retropixel",
+   "file": "03-portfolio-pixel-art-portfolio/03__retropixel.pptx",
+   "slides": 15
+  },
+  {
+   "category": "03-portfolio",
+   "style": "build",
+   "file": "03-portfolio-pixel-art-portfolio/03__build.pptx",
+   "slides": 15
+  },
+  {
+   "category": "04-club-event",
+   "style": "memphis",
+   "file": "04-club-event-club-event-planning/04__memphis.pptx",
+   "slides": 15
+  },
+  {
+   "category": "04-club-event",
+   "style": "organic",
+   "file": "04-club-event-club-event-planning/04__organic.pptx",
+   "slides": 15
+  },
+  {
+   "category": "04-club-event",
+   "style": "build",
+   "file": "04-club-event-club-event-planning/04__build.pptx",
+   "slides": 15
+  },
+  {
+   "category": "05-project-report",
+   "style": "brockmann",
+   "file": "05-project-report-project-report-retrospective/05__brockmann.pptx",
+   "slides": 15
+  },
+  {
+   "category": "05-project-report",
+   "style": "corporate",
+   "file": "05-project-report-project-report-retrospective/05__corporate.pptx",
+   "slides": 15
+  },
+  {
+   "category": "05-project-report",
+   "style": "build",
+   "file": "05-project-report-project-report-retrospective/05__build.pptx",
+   "slides": 15
+  },
+  {
+   "category": "06-study-notes",
+   "style": "takram",
+   "file": "06-study-notes-study-notes-sharing/06__takram.pptx",
+   "slides": 15
+  },
+  {
+   "category": "06-study-notes",
+   "style": "organic",
+   "file": "06-study-notes-study-notes-sharing/06__organic.pptx",
+   "slides": 15
+  },
+  {
+   "category": "06-study-notes",
+   "style": "editorial",
+   "file": "06-study-notes-study-notes-sharing/06__editorial.pptx",
+   "slides": 15
+  },
+  {
+   "category": "06-study-notes",
+   "style": "academic",
+   "file": "06-study-notes-study-notes-sharing/06__academic.pptx",
+   "slides": 15
+  },
+  {
+   "category": "07-resume",
+   "style": "build",
+   "file": "07-resume-resume-self-intro/07__build.pptx",
+   "slides": 15
+  },
+  {
+   "category": "07-resume",
+   "style": "editorial",
+   "file": "07-resume-resume-self-intro/07__editorial.pptx",
+   "slides": 15
+  },
+  {
+   "category": "08-promo",
+   "style": "memphis",
+   "file": "08-promo-event-promo/08__memphis.pptx",
+   "slides": 15
+  },
+  {
+   "category": "08-promo",
+   "style": "glass",
+   "file": "08-promo-event-promo/08__glass.pptx",
+   "slides": 15
+  },
+  {
+   "category": "08-promo",
+   "style": "darkneon",
+   "file": "08-promo-event-promo/08__darkneon.pptx",
+   "slides": 15
+  },
+  {
+   "category": "09-dashboard",
+   "style": "corporate",
+   "file": "09-dashboard-data-dashboard/09__corporate.pptx",
+   "slides": 15
+  },
+  {
+   "category": "09-dashboard",
+   "style": "glass",
+   "file": "09-dashboard-data-dashboard/09__glass.pptx",
+   "slides": 15
+  },
+  {
+   "category": "09-dashboard",
+   "style": "takram",
+   "file": "09-dashboard-data-dashboard/09__takram.pptx",
+   "slides": 15
+  },
+  {
+   "category": "10-creative-pitch",
+   "style": "editorial",
+   "file": "10-creative-pitch-creative-pitch/10__editorial.pptx",
+   "slides": 15
+  },
+  {
+   "category": "10-creative-pitch",
+   "style": "darkneon",
+   "file": "10-creative-pitch-creative-pitch/10__darkneon.pptx",
+   "slides": 15
+  },
+  {
+   "category": "10-creative-pitch",
+   "style": "organic",
+   "file": "10-creative-pitch-creative-pitch/10__organic.pptx",
+   "slides": 15
+  }
+ ],
+ "potx": [
+  {
+   "style": "build",
+   "file": "_potx/slideforge-build.potx"
+  },
+  {
+   "style": "brockmann",
+   "file": "_potx/slideforge-brockmann.potx"
+  },
+  {
+   "style": "takram",
+   "file": "_potx/slideforge-takram.potx"
+  },
+  {
+   "style": "corporate",
+   "file": "_potx/slideforge-corporate.potx"
+  },
+  {
+   "style": "darkneon",
+   "file": "_potx/slideforge-darkneon.potx"
+  },
+  {
+   "style": "retropixel",
+   "file": "_potx/slideforge-retropixel.potx"
+  },
+  {
+   "style": "editorial",
+   "file": "_potx/slideforge-editorial.potx"
+  },
+  {
+   "style": "memphis",
+   "file": "_potx/slideforge-memphis.potx"
+  },
+  {
+   "style": "glass",
+   "file": "_potx/slideforge-glass.potx"
+  },
+  {
+   "style": "terminal",
+   "file": "_potx/slideforge-terminal.potx"
+  },
+  {
+   "style": "organic",
+   "file": "_potx/slideforge-organic.potx"
+  },
+  {
+   "style": "academic",
+   "file": "_potx/slideforge-academic.potx"
+  }
+ ],
+ "stats": {
+  "decks": 30,
+  "slides_total": 450,
+  "categories": 10,
+  "themes": 12,
+  "potx": 12
+ }
+}
