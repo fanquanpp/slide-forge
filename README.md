@@ -259,9 +259,11 @@ python scripts/build_readme.py          # 重建本 README
 
 ## 文档
 
-- [本机与 U 盘目录画像报告](docs/inventory-profile.md)（仅聚合统计，不含隐私）
+> 隐私说明：本仓库**不包含**任何本机 / U 盘目录清单、扫描结果或个人报告；模板与文档均为通用产物。
 - [需求 → 模板映射表](docs/need-template-mapping.md)
 - [工具链安装记录](docs/install-record.md)
+- [主清单台账](docs/CATALOG.md) · [覆盖矩阵](docs/coverage-matrix.md) · [逐条使用说明](docs/USAGE.md)
+- [抽样质检报告](docs/qa-report.md) · [异常与回滚](docs/rollback.md) · [交接文档](docs/handoff.md) · [验收汇总](docs/acceptance-summary.md)
 - [交接与运维手册](docs/handoff-ops.md)
 
 ## 许可

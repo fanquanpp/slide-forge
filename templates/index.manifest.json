@@ -152,7 +152,7 @@
    "id": "01-teaching",
    "name": "编程教学课件",
    "en": "Programming Courseware",
-   "needs": "代码实践 / 编程学习资料 / 技术笔记",
+   "needs": "课程讲授、培训讲义、知识点串讲、课堂演示",
    "decks": [
     {
      "id": "SF-001",
@@ -195,7 +195,7 @@
    "id": "02-game-gdd",
    "name": "游戏设计提案",
    "en": "Game Design Proposal",
-   "needs": "Godot 工程 / godot-engine / 游戏资源",
+   "needs": "游戏设计文档、玩法提案、立项与评审",
    "decks": [
     {
      "id": "SF-006",
@@ -238,7 +238,7 @@
    "id": "03-portfolio",
    "name": "像素与美术作品集",
    "en": "Pixel & Art Portfolio",
-   "needs": "创作素材 / Aseprite / MMD / Blender",
+   "needs": "作品集展示、约稿投稿、个人介绍",
    "decks": [
     {
      "id": "SF-011",
@@ -281,7 +281,7 @@
    "id": "04-club-event",
    "name": "社团活动策划",
    "en": "Club Event Planning",
-   "needs": "社团活动 / 章程 / 活动策划",
+   "needs": "活动策划、社团申报、竞聘述职、招新宣讲",
    "decks": [
     {
      "id": "SF-016",
@@ -324,7 +324,7 @@
    "id": "05-project-report",
    "name": "项目汇报与复盘",
    "en": "Project Report & Retrospective",
-   "needs": "课程/项目工程 / IDE / 历史 ppt",
+   "needs": "项目汇报、结项答辩、复盘总结",
    "decks": [
     {
      "id": "SF-021",
@@ -367,7 +367,7 @@
    "id": "06-study-notes",
    "name": "学习笔记分享",
    "en": "Study Notes Sharing",
-   "needs": "技术笔记 / 网络技术 / 编程大礼包",
+   "needs": "学习笔记分享、读书会、知识科普",
    "decks": [
     {
      "id": "SF-026",
@@ -410,7 +410,7 @@
    "id": "07-resume",
    "name": "求职简历与自我介绍",
    "en": "Resume & Self-Intro",
-   "needs": "学生身份 / 作品积累",
+   "needs": "求职简历、自我介绍、面试展示",
    "decks": [
     {
      "id": "SF-031",
@@ -453,7 +453,7 @@
    "id": "08-promo",
    "name": "活动宣传与推广",
    "en": "Event Promo",
-   "needs": "招新 / 活动预热 / 作品发布",
+   "needs": "活动宣传、招新推广、作品发布",
    "decks": [
     {
      "id": "SF-036",
@@ -496,7 +496,7 @@
    "id": "09-dashboard",
    "name": "数据看板与指标",
    "en": "Data Dashboard",
-   "needs": "比赛/项目数据 / 社团统计",
+   "needs": "数据看板、指标汇报、季度数据展示",
    "decks": [
     {
      "id": "SF-041",
@@ -539,7 +539,7 @@
    "id": "10-creative-pitch",
    "name": "内容创作提案",
    "en": "Creative Pitch",
-   "needs": "剧本大纲 / Stage / MMD 动作",
+   "needs": "动画 / 剧本 / 视频等创作提案",
    "decks": [
     {
      "id": "SF-046",
