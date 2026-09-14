@@ -1,4 +1,6 @@
 {
+ "generated_at": "2026-09-14",
+ "version": "2.0",
  "themes": {
   "build": {
    "label": "呼吸留白极简",
@@ -71,6 +73,78 @@
    "en": "Academic",
    "preset": "04 Fathom",
    "philosophy": "冷静灰蓝 + 严谨结构，适合研究、课件与数据报告。"
+  },
+  "monochrome": {
+   "label": "单色印刷极简",
+   "en": "Monochrome",
+   "preset": "03 Information Architects",
+   "philosophy": "黑白灰三阶，靠字号与留白分级，极致克制。"
+  },
+  "blueprint": {
+   "label": "工程蓝图",
+   "en": "Blueprint",
+   "preset": "14 Raven Kwok",
+   "philosophy": "深蓝底 + 白色线稿与网格，工程/架构语境。"
+  },
+  "pastel": {
+   "label": "马卡龙柔彩",
+   "en": "Pastel",
+   "preset": "17 Takram",
+   "philosophy": "低饱和柔彩 + 圆角，轻盈亲和，适合教学与生活主题。"
+  },
+  "luxury": {
+   "label": "轻奢金黑",
+   "en": "Luxury Noir",
+   "preset": "11 Build",
+   "philosophy": "近黑底 + 香槟金细线，高端质感，适合品牌与高端方案。"
+  },
+  "vaporwave": {
+   "label": "蒸汽波",
+   "en": "Vaporwave",
+   "preset": "06 Active Theory",
+   "philosophy": "紫粉青渐变 + 霓虹，复古未来感，适合潮流与娱乐主题。"
+  },
+  "risograph": {
+   "label": "孔版双色",
+   "en": "Risograph",
+   "preset": "19 Irma Boom",
+   "philosophy": "双色错版叠加，纸张质感，适合作品集与独立出版。"
+  },
+  "bauhaus": {
+   "label": "包豪斯三原色",
+   "en": "Bauhaus",
+   "preset": "09 Experimental Jetset",
+   "philosophy": "红黄蓝 + 黑白，几何构成，强形式感。"
+  },
+  "nordic": {
+   "label": "北欧灰蓝",
+   "en": "Nordic",
+   "preset": "03 Information Architects",
+   "philosophy": "冷灰蓝 + 米白，安静克制，适合调研与说明类内容。"
+  },
+  "isometric": {
+   "label": "等距信息图",
+   "en": "Isometric",
+   "preset": "02 Stamen Design",
+   "philosophy": "等距网格与块状图形，信息图像化，适合流程与结构说明。"
+  },
+  "gradient": {
+   "label": "渐变流体",
+   "en": "Gradient Flow",
+   "preset": "07 Field.io",
+   "philosophy": "柔和渐变与流形色块，现代产品感，适合发布与介绍。"
+  },
+  "newspaper": {
+   "label": "报纸排版",
+   "en": "Newspaper",
+   "preset": "01 Pentagram",
+   "philosophy": "多栏密排 + 衬线标题 + 细规线，信息密度高，适合综述与年鉴。"
+  },
+  "chalk": {
+   "label": "黑板粉笔",
+   "en": "Chalkboard",
+   "preset": "15 Ash Thorp",
+   "philosophy": "深墨绿黑板 + 粉笔白黄，课堂气质，适合教学与讲解。"
   }
  },
  "categories": [
@@ -78,25 +152,42 @@
    "id": "01-teaching",
    "name": "编程教学课件",
    "en": "Programming Courseware",
-   "needs": "来自 04-代码实践 / 05-编程学习资料 / 08-其他笔记，适用于讲课、培训、知识点串讲。",
+   "needs": "代码实践 / 编程学习资料 / 技术笔记",
    "decks": [
     {
+     "id": "SF-001",
      "style": "build",
+     "label": "呼吸留白极简",
      "file": "01-teaching-programming-courseware/01__build.pptx",
-     "slides": 15,
-     "theme_label": "呼吸留白极简"
+     "slides": 18
     },
     {
+     "id": "SF-002",
      "style": "terminal",
+     "label": "赛博终端",
      "file": "01-teaching-programming-courseware/01__terminal.pptx",
-     "slides": 15,
-     "theme_label": "赛博终端"
+     "slides": 18
     },
     {
+     "id": "SF-003",
      "style": "takram",
+     "label": "柔和科技图表",
      "file": "01-teaching-programming-courseware/01__takram.pptx",
-     "slides": 15,
-     "theme_label": "柔和科技图表"
+     "slides": 18
+    },
+    {
+     "id": "SF-004",
+     "style": "chalk",
+     "label": "黑板粉笔",
+     "file": "01-teaching-programming-courseware/01__chalk.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-005",
+     "style": "academic",
+     "label": "学术严谨",
+     "file": "01-teaching-programming-courseware/01__academic.pptx",
+     "slides": 18
     }
    ]
   },
@@ -104,25 +195,42 @@
    "id": "02-game-gdd",
    "name": "游戏设计提案",
    "en": "Game Design Proposal",
-   "needs": "来自 04-代码实践/Godot、godot-engine、深空之眼，适用于 GDD、玩法提案、立项。",
+   "needs": "Godot 工程 / godot-engine / 游戏资源",
    "decks": [
     {
+     "id": "SF-006",
      "style": "darkneon",
+     "label": "暗黑霓虹",
      "file": "02-game-gdd-game-design-proposal/02__darkneon.pptx",
-     "slides": 15,
-     "theme_label": "暗黑霓虹"
+     "slides": 18
     },
     {
+     "id": "SF-007",
      "style": "retropixel",
+     "label": "复古像素",
      "file": "02-game-gdd-game-design-proposal/02__retropixel.pptx",
-     "slides": 15,
-     "theme_label": "复古像素"
+     "slides": 18
     },
     {
+     "id": "SF-008",
      "style": "corporate",
+     "label": "商务蓝调",
      "file": "02-game-gdd-game-design-proposal/02__corporate.pptx",
-     "slides": 15,
-     "theme_label": "商务蓝调"
+     "slides": 18
+    },
+    {
+     "id": "SF-009",
+     "style": "isometric",
+     "label": "等距信息图",
+     "file": "02-game-gdd-game-design-proposal/02__isometric.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-010",
+     "style": "vaporwave",
+     "label": "蒸汽波",
+     "file": "02-game-gdd-game-design-proposal/02__vaporwave.pptx",
+     "slides": 18
     }
    ]
   },
@@ -130,25 +238,42 @@
    "id": "03-portfolio",
    "name": "像素与美术作品集",
    "en": "Pixel & Art Portfolio",
-   "needs": "来自 06-创作素材、Aseprite、MMD、Blender，适用于作品展示、约稿、投稿。",
+   "needs": "创作素材 / Aseprite / MMD / Blender",
    "decks": [
     {
+     "id": "SF-011",
      "style": "editorial",
+     "label": "杂志编辑",
      "file": "03-portfolio-pixel-art-portfolio/03__editorial.pptx",
-     "slides": 15,
-     "theme_label": "杂志编辑"
+     "slides": 18
     },
     {
+     "id": "SF-012",
      "style": "retropixel",
+     "label": "复古像素",
      "file": "03-portfolio-pixel-art-portfolio/03__retropixel.pptx",
-     "slides": 15,
-     "theme_label": "复古像素"
+     "slides": 18
     },
     {
+     "id": "SF-013",
      "style": "build",
+     "label": "呼吸留白极简",
      "file": "03-portfolio-pixel-art-portfolio/03__build.pptx",
-     "slides": 15,
-     "theme_label": "呼吸留白极简"
+     "slides": 18
+    },
+    {
+     "id": "SF-014",
+     "style": "risograph",
+     "label": "孔版双色",
+     "file": "03-portfolio-pixel-art-portfolio/03__risograph.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-015",
+     "style": "luxury",
+     "label": "轻奢金黑",
+     "file": "03-portfolio-pixel-art-portfolio/03__luxury.pptx",
+     "slides": 18
     }
    ]
   },
@@ -156,25 +281,42 @@
    "id": "04-club-event",
    "name": "社团活动策划",
    "en": "Club Event Planning",
-   "needs": "来自 07-个人文档/社团活动、软工协会总章程、活动策划，适用于策划、申报、竞聘。",
+   "needs": "社团活动 / 章程 / 活动策划",
    "decks": [
     {
+     "id": "SF-016",
      "style": "memphis",
+     "label": "孟菲斯活力",
      "file": "04-club-event-club-event-planning/04__memphis.pptx",
-     "slides": 15,
-     "theme_label": "孟菲斯活力"
+     "slides": 18
     },
     {
+     "id": "SF-017",
      "style": "organic",
+     "label": "自然有机",
      "file": "04-club-event-club-event-planning/04__organic.pptx",
-     "slides": 15,
-     "theme_label": "自然有机"
+     "slides": 18
     },
     {
+     "id": "SF-018",
      "style": "build",
+     "label": "呼吸留白极简",
      "file": "04-club-event-club-event-planning/04__build.pptx",
-     "slides": 15,
-     "theme_label": "呼吸留白极简"
+     "slides": 18
+    },
+    {
+     "id": "SF-019",
+     "style": "pastel",
+     "label": "马卡龙柔彩",
+     "file": "04-club-event-club-event-planning/04__pastel.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-020",
+     "style": "bauhaus",
+     "label": "包豪斯三原色",
+     "file": "04-club-event-club-event-planning/04__bauhaus.pptx",
+     "slides": 18
     }
    ]
   },
@@ -182,25 +324,42 @@
    "id": "05-project-report",
    "name": "项目汇报与复盘",
    "en": "Project Report & Retrospective",
-   "needs": "来自代码实践与课程项目，适用于阶段汇报、结项、复盘总结。",
+   "needs": "课程/项目工程 / IDE / 历史 ppt",
    "decks": [
     {
+     "id": "SF-021",
      "style": "brockmann",
+     "label": "数学网格功能主义",
      "file": "05-project-report-project-report-retrospective/05__brockmann.pptx",
-     "slides": 15,
-     "theme_label": "数学网格功能主义"
+     "slides": 18
     },
     {
+     "id": "SF-022",
      "style": "corporate",
+     "label": "商务蓝调",
      "file": "05-project-report-project-report-retrospective/05__corporate.pptx",
-     "slides": 15,
-     "theme_label": "商务蓝调"
+     "slides": 18
     },
     {
+     "id": "SF-023",
      "style": "build",
+     "label": "呼吸留白极简",
      "file": "05-project-report-project-report-retrospective/05__build.pptx",
-     "slides": 15,
-     "theme_label": "呼吸留白极简"
+     "slides": 18
+    },
+    {
+     "id": "SF-024",
+     "style": "nordic",
+     "label": "北欧灰蓝",
+     "file": "05-project-report-project-report-retrospective/05__nordic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-025",
+     "style": "academic",
+     "label": "学术严谨",
+     "file": "05-project-report-project-report-retrospective/05__academic.pptx",
+     "slides": 18
     }
    ]
   },
@@ -208,31 +367,42 @@
    "id": "06-study-notes",
    "name": "学习笔记分享",
    "en": "Study Notes Sharing",
-   "needs": "来自 08-其他笔记、网络技术资料、编程大礼包，适用于知识分享、读书会。",
+   "needs": "技术笔记 / 网络技术 / 编程大礼包",
    "decks": [
     {
+     "id": "SF-026",
      "style": "takram",
+     "label": "柔和科技图表",
      "file": "06-study-notes-study-notes-sharing/06__takram.pptx",
-     "slides": 15,
-     "theme_label": "柔和科技图表"
+     "slides": 18
     },
     {
+     "id": "SF-027",
      "style": "organic",
+     "label": "自然有机",
      "file": "06-study-notes-study-notes-sharing/06__organic.pptx",
-     "slides": 15,
-     "theme_label": "自然有机"
+     "slides": 18
     },
     {
+     "id": "SF-028",
      "style": "editorial",
+     "label": "杂志编辑",
      "file": "06-study-notes-study-notes-sharing/06__editorial.pptx",
-     "slides": 15,
-     "theme_label": "杂志编辑"
+     "slides": 18
     },
     {
+     "id": "SF-029",
      "style": "academic",
+     "label": "学术严谨",
      "file": "06-study-notes-study-notes-sharing/06__academic.pptx",
-     "slides": 15,
-     "theme_label": "学术严谨"
+     "slides": 18
+    },
+    {
+     "id": "SF-030",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "06-study-notes-study-notes-sharing/06__monochrome.pptx",
+     "slides": 18
     }
    ]
   },
@@ -240,19 +410,42 @@
    "id": "07-resume",
    "name": "求职简历与自我介绍",
    "en": "Resume & Self-Intro",
-   "needs": "学生身份与作品积累，适用于简历、自我介绍、面试展示。",
+   "needs": "学生身份 / 作品积累",
    "decks": [
     {
+     "id": "SF-031",
      "style": "build",
+     "label": "呼吸留白极简",
      "file": "07-resume-resume-self-intro/07__build.pptx",
-     "slides": 15,
-     "theme_label": "呼吸留白极简"
+     "slides": 18
     },
     {
+     "id": "SF-032",
      "style": "editorial",
+     "label": "杂志编辑",
      "file": "07-resume-resume-self-intro/07__editorial.pptx",
-     "slides": 15,
-     "theme_label": "杂志编辑"
+     "slides": 18
+    },
+    {
+     "id": "SF-033",
+     "style": "nordic",
+     "label": "北欧灰蓝",
+     "file": "07-resume-resume-self-intro/07__nordic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-034",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "07-resume-resume-self-intro/07__monochrome.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-035",
+     "style": "luxury",
+     "label": "轻奢金黑",
+     "file": "07-resume-resume-self-intro/07__luxury.pptx",
+     "slides": 18
     }
    ]
   },
@@ -260,25 +453,42 @@
    "id": "08-promo",
    "name": "活动宣传与推广",
    "en": "Event Promo",
-   "needs": "社团招新、活动预热、作品发布，适用于海报式宣讲与报名引导。",
+   "needs": "招新 / 活动预热 / 作品发布",
    "decks": [
     {
+     "id": "SF-036",
      "style": "memphis",
+     "label": "孟菲斯活力",
      "file": "08-promo-event-promo/08__memphis.pptx",
-     "slides": 15,
-     "theme_label": "孟菲斯活力"
+     "slides": 18
     },
     {
+     "id": "SF-037",
      "style": "glass",
+     "label": "玻璃拟态",
      "file": "08-promo-event-promo/08__glass.pptx",
-     "slides": 15,
-     "theme_label": "玻璃拟态"
+     "slides": 18
     },
     {
+     "id": "SF-038",
      "style": "darkneon",
+     "label": "暗黑霓虹",
      "file": "08-promo-event-promo/08__darkneon.pptx",
-     "slides": 15,
-     "theme_label": "暗黑霓虹"
+     "slides": 18
+    },
+    {
+     "id": "SF-039",
+     "style": "bauhaus",
+     "label": "包豪斯三原色",
+     "file": "08-promo-event-promo/08__bauhaus.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-040",
+     "style": "pastel",
+     "label": "马卡龙柔彩",
+     "file": "08-promo-event-promo/08__pastel.pptx",
+     "slides": 18
     }
    ]
   },
@@ -286,25 +496,42 @@
    "id": "09-dashboard",
    "name": "数据看板与指标",
    "en": "Data Dashboard",
-   "needs": "比赛/项目数据、社团统计，适用于指标展示、季度数据、看板大屏。",
+   "needs": "比赛/项目数据 / 社团统计",
    "decks": [
     {
+     "id": "SF-041",
      "style": "corporate",
+     "label": "商务蓝调",
      "file": "09-dashboard-data-dashboard/09__corporate.pptx",
-     "slides": 15,
-     "theme_label": "商务蓝调"
+     "slides": 18
     },
     {
+     "id": "SF-042",
      "style": "glass",
+     "label": "玻璃拟态",
      "file": "09-dashboard-data-dashboard/09__glass.pptx",
-     "slides": 15,
-     "theme_label": "玻璃拟态"
+     "slides": 18
     },
     {
+     "id": "SF-043",
      "style": "takram",
+     "label": "柔和科技图表",
      "file": "09-dashboard-data-dashboard/09__takram.pptx",
-     "slides": 15,
-     "theme_label": "柔和科技图表"
+     "slides": 18
+    },
+    {
+     "id": "SF-044",
+     "style": "gradient",
+     "label": "渐变流体",
+     "file": "09-dashboard-data-dashboard/09__gradient.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-045",
+     "style": "isometric",
+     "label": "等距信息图",
+     "file": "09-dashboard-data-dashboard/09__isometric.pptx",
+     "slides": 18
     }
    ]
   },
@@ -312,266 +539,2603 @@
    "id": "10-creative-pitch",
    "name": "内容创作提案",
    "en": "Creative Pitch",
-   "needs": "来自 06-创作素材/剧本大纲、Stage、MMD-Motion，适用于动画/剧本/视频提案。",
+   "needs": "剧本大纲 / Stage / MMD 动作",
    "decks": [
     {
+     "id": "SF-046",
      "style": "editorial",
+     "label": "杂志编辑",
      "file": "10-creative-pitch-creative-pitch/10__editorial.pptx",
-     "slides": 15,
-     "theme_label": "杂志编辑"
+     "slides": 18
     },
     {
+     "id": "SF-047",
      "style": "darkneon",
+     "label": "暗黑霓虹",
      "file": "10-creative-pitch-creative-pitch/10__darkneon.pptx",
-     "slides": 15,
-     "theme_label": "暗黑霓虹"
+     "slides": 18
     },
     {
+     "id": "SF-048",
      "style": "organic",
+     "label": "自然有机",
      "file": "10-creative-pitch-creative-pitch/10__organic.pptx",
-     "slides": 15,
-     "theme_label": "自然有机"
+     "slides": 18
+    },
+    {
+     "id": "SF-049",
+     "style": "newspaper",
+     "label": "报纸排版",
+     "file": "10-creative-pitch-creative-pitch/10__newspaper.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-050",
+     "style": "vaporwave",
+     "label": "蒸汽波",
+     "file": "10-creative-pitch-creative-pitch/10__vaporwave.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "11-product-launch",
+   "name": "产品发布与介绍",
+   "en": "Product Launch",
+   "needs": "作品/工具发布、版本更新说明",
+   "decks": [
+    {
+     "id": "SF-051",
+     "style": "gradient",
+     "label": "渐变流体",
+     "file": "11-product-launch-product-launch/11__gradient.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-052",
+     "style": "glass",
+     "label": "玻璃拟态",
+     "file": "11-product-launch-product-launch/11__glass.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-053",
+     "style": "luxury",
+     "label": "轻奢金黑",
+     "file": "11-product-launch-product-launch/11__luxury.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-054",
+     "style": "build",
+     "label": "呼吸留白极简",
+     "file": "11-product-launch-product-launch/11__build.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-055",
+     "style": "darkneon",
+     "label": "暗黑霓虹",
+     "file": "11-product-launch-product-launch/11__darkneon.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "12-reading-club",
+   "name": "读书会与共读分享",
+   "en": "Reading Club",
+   "needs": "读书笔记、共读导读",
+   "decks": [
+    {
+     "id": "SF-056",
+     "style": "editorial",
+     "label": "杂志编辑",
+     "file": "12-reading-club-reading-club/12__editorial.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-057",
+     "style": "organic",
+     "label": "自然有机",
+     "file": "12-reading-club-reading-club/12__organic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-058",
+     "style": "newspaper",
+     "label": "报纸排版",
+     "file": "12-reading-club-reading-club/12__newspaper.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-059",
+     "style": "pastel",
+     "label": "马卡龙柔彩",
+     "file": "12-reading-club-reading-club/12__pastel.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-060",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "12-reading-club-reading-club/12__monochrome.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "13-job-competition",
+   "name": "竞聘述职与答辩",
+   "en": "Job Competition",
+   "needs": "社团竞聘、岗位述职",
+   "decks": [
+    {
+     "id": "SF-061",
+     "style": "corporate",
+     "label": "商务蓝调",
+     "file": "13-job-competition-job-competition/13__corporate.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-062",
+     "style": "build",
+     "label": "呼吸留白极简",
+     "file": "13-job-competition-job-competition/13__build.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-063",
+     "style": "brockmann",
+     "label": "数学网格功能主义",
+     "file": "13-job-competition-job-competition/13__brockmann.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-064",
+     "style": "academic",
+     "label": "学术严谨",
+     "file": "13-job-competition-job-competition/13__academic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-065",
+     "style": "nordic",
+     "label": "北欧灰蓝",
+     "file": "13-job-competition-job-competition/13__nordic.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "14-contest-defense",
+   "name": "比赛答辩与路演",
+   "en": "Contest Defense",
+   "needs": "学科/创业比赛答辩",
+   "decks": [
+    {
+     "id": "SF-066",
+     "style": "brockmann",
+     "label": "数学网格功能主义",
+     "file": "14-contest-defense-contest-defense/14__brockmann.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-067",
+     "style": "gradient",
+     "label": "渐变流体",
+     "file": "14-contest-defense-contest-defense/14__gradient.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-068",
+     "style": "corporate",
+     "label": "商务蓝调",
+     "file": "14-contest-defense-contest-defense/14__corporate.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-069",
+     "style": "darkneon",
+     "label": "暗黑霓虹",
+     "file": "14-contest-defense-contest-defense/14__darkneon.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-070",
+     "style": "blueprint",
+     "label": "工程蓝图",
+     "file": "14-contest-defense-contest-defense/14__blueprint.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "15-course-syllabus",
+   "name": "课程大纲与教学计划",
+   "en": "Course Syllabus",
+   "needs": "课程设计、教学安排",
+   "decks": [
+    {
+     "id": "SF-071",
+     "style": "academic",
+     "label": "学术严谨",
+     "file": "15-course-syllabus-course-syllabus/15__academic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-072",
+     "style": "takram",
+     "label": "柔和科技图表",
+     "file": "15-course-syllabus-course-syllabus/15__takram.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-073",
+     "style": "nordic",
+     "label": "北欧灰蓝",
+     "file": "15-course-syllabus-course-syllabus/15__nordic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-074",
+     "style": "chalk",
+     "label": "黑板粉笔",
+     "file": "15-course-syllabus-course-syllabus/15__chalk.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-075",
+     "style": "isometric",
+     "label": "等距信息图",
+     "file": "15-course-syllabus-course-syllabus/15__isometric.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "16-recruitment",
+   "name": "招新宣讲与纳新",
+   "en": "Recruitment",
+   "needs": "社团招新、部门纳新",
+   "decks": [
+    {
+     "id": "SF-076",
+     "style": "memphis",
+     "label": "孟菲斯活力",
+     "file": "16-recruitment-recruitment/16__memphis.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-077",
+     "style": "pastel",
+     "label": "马卡龙柔彩",
+     "file": "16-recruitment-recruitment/16__pastel.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-078",
+     "style": "bauhaus",
+     "label": "包豪斯三原色",
+     "file": "16-recruitment-recruitment/16__bauhaus.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-079",
+     "style": "glass",
+     "label": "玻璃拟态",
+     "file": "16-recruitment-recruitment/16__glass.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-080",
+     "style": "vaporwave",
+     "label": "蒸汽波",
+     "file": "16-recruitment-recruitment/16__vaporwave.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "17-annual-review",
+   "name": "年度总结与规划",
+   "en": "Annual Review",
+   "needs": "个人/组织年度总结",
+   "decks": [
+    {
+     "id": "SF-081",
+     "style": "newspaper",
+     "label": "报纸排版",
+     "file": "17-annual-review-annual-review/17__newspaper.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-082",
+     "style": "editorial",
+     "label": "杂志编辑",
+     "file": "17-annual-review-annual-review/17__editorial.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-083",
+     "style": "corporate",
+     "label": "商务蓝调",
+     "file": "17-annual-review-annual-review/17__corporate.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-084",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "17-annual-review-annual-review/17__monochrome.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-085",
+     "style": "gradient",
+     "label": "渐变流体",
+     "file": "17-annual-review-annual-review/17__gradient.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "18-training-manual",
+   "name": "培训手册与 SOP",
+   "en": "Training Manual",
+   "needs": "流程规范、新人培训",
+   "decks": [
+    {
+     "id": "SF-086",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "18-training-manual-training-manual/18__monochrome.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-087",
+     "style": "nordic",
+     "label": "北欧灰蓝",
+     "file": "18-training-manual-training-manual/18__nordic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-088",
+     "style": "academic",
+     "label": "学术严谨",
+     "file": "18-training-manual-training-manual/18__academic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-089",
+     "style": "isometric",
+     "label": "等距信息图",
+     "file": "18-training-manual-training-manual/18__isometric.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-090",
+     "style": "chalk",
+     "label": "黑板粉笔",
+     "file": "18-training-manual-training-manual/18__chalk.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "19-user-research",
+   "name": "用户调研与访谈",
+   "en": "User Research",
+   "needs": "问卷结果、访谈纪要",
+   "decks": [
+    {
+     "id": "SF-091",
+     "style": "takram",
+     "label": "柔和科技图表",
+     "file": "19-user-research-user-research/19__takram.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-092",
+     "style": "nordic",
+     "label": "北欧灰蓝",
+     "file": "19-user-research-user-research/19__nordic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-093",
+     "style": "academic",
+     "label": "学术严谨",
+     "file": "19-user-research-user-research/19__academic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-094",
+     "style": "organic",
+     "label": "自然有机",
+     "file": "19-user-research-user-research/19__organic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-095",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "19-user-research-user-research/19__monochrome.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "20-market-analysis",
+   "name": "市场与竞品分析",
+   "en": "Market Analysis",
+   "needs": "竞品对比、市场机会",
+   "decks": [
+    {
+     "id": "SF-096",
+     "style": "corporate",
+     "label": "商务蓝调",
+     "file": "20-market-analysis-market-analysis/20__corporate.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-097",
+     "style": "brockmann",
+     "label": "数学网格功能主义",
+     "file": "20-market-analysis-market-analysis/20__brockmann.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-098",
+     "style": "gradient",
+     "label": "渐变流体",
+     "file": "20-market-analysis-market-analysis/20__gradient.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-099",
+     "style": "newspaper",
+     "label": "报纸排版",
+     "file": "20-market-analysis-market-analysis/20__newspaper.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-100",
+     "style": "glass",
+     "label": "玻璃拟态",
+     "file": "20-market-analysis-market-analysis/20__glass.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "21-budget-plan",
+   "name": "预算与财务计划",
+   "en": "Budget & Finance",
+   "needs": "经费预算、成本计划",
+   "decks": [
+    {
+     "id": "SF-101",
+     "style": "brockmann",
+     "label": "数学网格功能主义",
+     "file": "21-budget-plan-budget-finance/21__brockmann.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-102",
+     "style": "corporate",
+     "label": "商务蓝调",
+     "file": "21-budget-plan-budget-finance/21__corporate.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-103",
+     "style": "isometric",
+     "label": "等距信息图",
+     "file": "21-budget-plan-budget-finance/21__isometric.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-104",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "21-budget-plan-budget-finance/21__monochrome.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-105",
+     "style": "nordic",
+     "label": "北欧灰蓝",
+     "file": "21-budget-plan-budget-finance/21__nordic.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "22-travel-plan",
+   "name": "旅行与行程计划",
+   "en": "Travel Plan",
+   "needs": "行程规划、攻略分享",
+   "decks": [
+    {
+     "id": "SF-106",
+     "style": "organic",
+     "label": "自然有机",
+     "file": "22-travel-plan-travel-plan/22__organic.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-107",
+     "style": "pastel",
+     "label": "马卡龙柔彩",
+     "file": "22-travel-plan-travel-plan/22__pastel.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-108",
+     "style": "editorial",
+     "label": "杂志编辑",
+     "file": "22-travel-plan-travel-plan/22__editorial.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-109",
+     "style": "risograph",
+     "label": "孔版双色",
+     "file": "22-travel-plan-travel-plan/22__risograph.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-110",
+     "style": "vaporwave",
+     "label": "蒸汽波",
+     "file": "22-travel-plan-travel-plan/22__vaporwave.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "23-open-source-release",
+   "name": "开源项目发布",
+   "en": "Open Source Release",
+   "needs": "版本发布、贡献指南",
+   "decks": [
+    {
+     "id": "SF-111",
+     "style": "terminal",
+     "label": "赛博终端",
+     "file": "23-open-source-release-open-source-release/23__terminal.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-112",
+     "style": "blueprint",
+     "label": "工程蓝图",
+     "file": "23-open-source-release-open-source-release/23__blueprint.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-113",
+     "style": "darkneon",
+     "label": "暗黑霓虹",
+     "file": "23-open-source-release-open-source-release/23__darkneon.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-114",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "23-open-source-release-open-source-release/23__monochrome.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-115",
+     "style": "gradient",
+     "label": "渐变流体",
+     "file": "23-open-source-release-open-source-release/23__gradient.pptx",
+     "slides": 18
+    }
+   ]
+  },
+  {
+   "id": "24-tech-review",
+   "name": "技术架构评审",
+   "en": "Tech Architecture Review",
+   "needs": "架构设计、技术选型评审",
+   "decks": [
+    {
+     "id": "SF-116",
+     "style": "blueprint",
+     "label": "工程蓝图",
+     "file": "24-tech-review-tech-architecture-review/24__blueprint.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-117",
+     "style": "isometric",
+     "label": "等距信息图",
+     "file": "24-tech-review-tech-architecture-review/24__isometric.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-118",
+     "style": "brockmann",
+     "label": "数学网格功能主义",
+     "file": "24-tech-review-tech-architecture-review/24__brockmann.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-119",
+     "style": "terminal",
+     "label": "赛博终端",
+     "file": "24-tech-review-tech-architecture-review/24__terminal.pptx",
+     "slides": 18
+    },
+    {
+     "id": "SF-120",
+     "style": "monochrome",
+     "label": "单色印刷极简",
+     "file": "24-tech-review-tech-architecture-review/24__monochrome.pptx",
+     "slides": 18
     }
    ]
   }
  ],
  "decks": [
   {
+   "id": "SF-001",
    "category": "01-teaching",
+   "category_name": "编程教学课件",
    "style": "build",
+   "style_label": "呼吸留白极简",
+   "type": "Breathing Whitespace",
+   "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__build.pptx",
-   "slides": 15
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
+   "id": "SF-002",
    "category": "01-teaching",
+   "category_name": "编程教学课件",
    "style": "terminal",
+   "style_label": "赛博终端",
+   "type": "Cyber Terminal",
+   "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__terminal.pptx",
-   "slides": 15
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
+   "id": "SF-003",
    "category": "01-teaching",
+   "category_name": "编程教学课件",
    "style": "takram",
+   "style_label": "柔和科技图表",
+   "type": "Soft Tech",
+   "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__takram.pptx",
-   "slides": 15
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "02-game-gdd",
-   "style": "darkneon",
-   "file": "02-game-gdd-game-design-proposal/02__darkneon.pptx",
-   "slides": 15
+   "id": "SF-004",
+   "category": "01-teaching",
+   "category_name": "编程教学课件",
+   "style": "chalk",
+   "style_label": "黑板粉笔",
+   "type": "Chalkboard",
+   "purpose": "编程教学课件",
+   "file": "01-teaching-programming-courseware/01__chalk.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "02-game-gdd",
-   "style": "retropixel",
-   "file": "02-game-gdd-game-design-proposal/02__retropixel.pptx",
-   "slides": 15
-  },
-  {
-   "category": "02-game-gdd",
-   "style": "corporate",
-   "file": "02-game-gdd-game-design-proposal/02__corporate.pptx",
-   "slides": 15
-  },
-  {
-   "category": "03-portfolio",
-   "style": "editorial",
-   "file": "03-portfolio-pixel-art-portfolio/03__editorial.pptx",
-   "slides": 15
-  },
-  {
-   "category": "03-portfolio",
-   "style": "retropixel",
-   "file": "03-portfolio-pixel-art-portfolio/03__retropixel.pptx",
-   "slides": 15
-  },
-  {
-   "category": "03-portfolio",
-   "style": "build",
-   "file": "03-portfolio-pixel-art-portfolio/03__build.pptx",
-   "slides": 15
-  },
-  {
-   "category": "04-club-event",
-   "style": "memphis",
-   "file": "04-club-event-club-event-planning/04__memphis.pptx",
-   "slides": 15
-  },
-  {
-   "category": "04-club-event",
-   "style": "organic",
-   "file": "04-club-event-club-event-planning/04__organic.pptx",
-   "slides": 15
-  },
-  {
-   "category": "04-club-event",
-   "style": "build",
-   "file": "04-club-event-club-event-planning/04__build.pptx",
-   "slides": 15
-  },
-  {
-   "category": "05-project-report",
-   "style": "brockmann",
-   "file": "05-project-report-project-report-retrospective/05__brockmann.pptx",
-   "slides": 15
-  },
-  {
-   "category": "05-project-report",
-   "style": "corporate",
-   "file": "05-project-report-project-report-retrospective/05__corporate.pptx",
-   "slides": 15
-  },
-  {
-   "category": "05-project-report",
-   "style": "build",
-   "file": "05-project-report-project-report-retrospective/05__build.pptx",
-   "slides": 15
-  },
-  {
-   "category": "06-study-notes",
-   "style": "takram",
-   "file": "06-study-notes-study-notes-sharing/06__takram.pptx",
-   "slides": 15
-  },
-  {
-   "category": "06-study-notes",
-   "style": "organic",
-   "file": "06-study-notes-study-notes-sharing/06__organic.pptx",
-   "slides": 15
-  },
-  {
-   "category": "06-study-notes",
-   "style": "editorial",
-   "file": "06-study-notes-study-notes-sharing/06__editorial.pptx",
-   "slides": 15
-  },
-  {
-   "category": "06-study-notes",
+   "id": "SF-005",
+   "category": "01-teaching",
+   "category_name": "编程教学课件",
    "style": "academic",
-   "file": "06-study-notes-study-notes-sharing/06__academic.pptx",
-   "slides": 15
+   "style_label": "学术严谨",
+   "type": "Academic",
+   "purpose": "编程教学课件",
+   "file": "01-teaching-programming-courseware/01__academic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "07-resume",
-   "style": "build",
-   "file": "07-resume-resume-self-intro/07__build.pptx",
-   "slides": 15
-  },
-  {
-   "category": "07-resume",
-   "style": "editorial",
-   "file": "07-resume-resume-self-intro/07__editorial.pptx",
-   "slides": 15
-  },
-  {
-   "category": "08-promo",
-   "style": "memphis",
-   "file": "08-promo-event-promo/08__memphis.pptx",
-   "slides": 15
-  },
-  {
-   "category": "08-promo",
-   "style": "glass",
-   "file": "08-promo-event-promo/08__glass.pptx",
-   "slides": 15
-  },
-  {
-   "category": "08-promo",
+   "id": "SF-006",
+   "category": "02-game-gdd",
+   "category_name": "游戏设计提案",
    "style": "darkneon",
-   "file": "08-promo-event-promo/08__darkneon.pptx",
-   "slides": 15
+   "style_label": "暗黑霓虹",
+   "type": "Dark Neon",
+   "purpose": "游戏设计提案",
+   "file": "02-game-gdd-game-design-proposal/02__darkneon.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "09-dashboard",
+   "id": "SF-007",
+   "category": "02-game-gdd",
+   "category_name": "游戏设计提案",
+   "style": "retropixel",
+   "style_label": "复古像素",
+   "type": "Retro Pixel",
+   "purpose": "游戏设计提案",
+   "file": "02-game-gdd-game-design-proposal/02__retropixel.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-008",
+   "category": "02-game-gdd",
+   "category_name": "游戏设计提案",
    "style": "corporate",
-   "file": "09-dashboard-data-dashboard/09__corporate.pptx",
-   "slides": 15
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "游戏设计提案",
+   "file": "02-game-gdd-game-design-proposal/02__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "09-dashboard",
-   "style": "glass",
-   "file": "09-dashboard-data-dashboard/09__glass.pptx",
-   "slides": 15
+   "id": "SF-009",
+   "category": "02-game-gdd",
+   "category_name": "游戏设计提案",
+   "style": "isometric",
+   "style_label": "等距信息图",
+   "type": "Isometric",
+   "purpose": "游戏设计提案",
+   "file": "02-game-gdd-game-design-proposal/02__isometric.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "09-dashboard",
-   "style": "takram",
-   "file": "09-dashboard-data-dashboard/09__takram.pptx",
-   "slides": 15
+   "id": "SF-010",
+   "category": "02-game-gdd",
+   "category_name": "游戏设计提案",
+   "style": "vaporwave",
+   "style_label": "蒸汽波",
+   "type": "Vaporwave",
+   "purpose": "游戏设计提案",
+   "file": "02-game-gdd-game-design-proposal/02__vaporwave.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "10-creative-pitch",
+   "id": "SF-011",
+   "category": "03-portfolio",
+   "category_name": "像素与美术作品集",
    "style": "editorial",
-   "file": "10-creative-pitch-creative-pitch/10__editorial.pptx",
-   "slides": 15
+   "style_label": "杂志编辑",
+   "type": "Editorial",
+   "purpose": "像素与美术作品集",
+   "file": "03-portfolio-pixel-art-portfolio/03__editorial.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "10-creative-pitch",
-   "style": "darkneon",
-   "file": "10-creative-pitch-creative-pitch/10__darkneon.pptx",
-   "slides": 15
+   "id": "SF-012",
+   "category": "03-portfolio",
+   "category_name": "像素与美术作品集",
+   "style": "retropixel",
+   "style_label": "复古像素",
+   "type": "Retro Pixel",
+   "purpose": "像素与美术作品集",
+   "file": "03-portfolio-pixel-art-portfolio/03__retropixel.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   },
   {
-   "category": "10-creative-pitch",
+   "id": "SF-013",
+   "category": "03-portfolio",
+   "category_name": "像素与美术作品集",
+   "style": "build",
+   "style_label": "呼吸留白极简",
+   "type": "Breathing Whitespace",
+   "purpose": "像素与美术作品集",
+   "file": "03-portfolio-pixel-art-portfolio/03__build.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-014",
+   "category": "03-portfolio",
+   "category_name": "像素与美术作品集",
+   "style": "risograph",
+   "style_label": "孔版双色",
+   "type": "Risograph",
+   "purpose": "像素与美术作品集",
+   "file": "03-portfolio-pixel-art-portfolio/03__risograph.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-015",
+   "category": "03-portfolio",
+   "category_name": "像素与美术作品集",
+   "style": "luxury",
+   "style_label": "轻奢金黑",
+   "type": "Luxury Noir",
+   "purpose": "像素与美术作品集",
+   "file": "03-portfolio-pixel-art-portfolio/03__luxury.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-016",
+   "category": "04-club-event",
+   "category_name": "社团活动策划",
+   "style": "memphis",
+   "style_label": "孟菲斯活力",
+   "type": "Memphis Pop",
+   "purpose": "社团活动策划",
+   "file": "04-club-event-club-event-planning/04__memphis.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-017",
+   "category": "04-club-event",
+   "category_name": "社团活动策划",
    "style": "organic",
+   "style_label": "自然有机",
+   "type": "Organic",
+   "purpose": "社团活动策划",
+   "file": "04-club-event-club-event-planning/04__organic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-018",
+   "category": "04-club-event",
+   "category_name": "社团活动策划",
+   "style": "build",
+   "style_label": "呼吸留白极简",
+   "type": "Breathing Whitespace",
+   "purpose": "社团活动策划",
+   "file": "04-club-event-club-event-planning/04__build.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-019",
+   "category": "04-club-event",
+   "category_name": "社团活动策划",
+   "style": "pastel",
+   "style_label": "马卡龙柔彩",
+   "type": "Pastel",
+   "purpose": "社团活动策划",
+   "file": "04-club-event-club-event-planning/04__pastel.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-020",
+   "category": "04-club-event",
+   "category_name": "社团活动策划",
+   "style": "bauhaus",
+   "style_label": "包豪斯三原色",
+   "type": "Bauhaus",
+   "purpose": "社团活动策划",
+   "file": "04-club-event-club-event-planning/04__bauhaus.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-021",
+   "category": "05-project-report",
+   "category_name": "项目汇报与复盘",
+   "style": "brockmann",
+   "style_label": "数学网格功能主义",
+   "type": "Swiss Grid",
+   "purpose": "项目汇报与复盘",
+   "file": "05-project-report-project-report-retrospective/05__brockmann.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-022",
+   "category": "05-project-report",
+   "category_name": "项目汇报与复盘",
+   "style": "corporate",
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "项目汇报与复盘",
+   "file": "05-project-report-project-report-retrospective/05__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-023",
+   "category": "05-project-report",
+   "category_name": "项目汇报与复盘",
+   "style": "build",
+   "style_label": "呼吸留白极简",
+   "type": "Breathing Whitespace",
+   "purpose": "项目汇报与复盘",
+   "file": "05-project-report-project-report-retrospective/05__build.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-024",
+   "category": "05-project-report",
+   "category_name": "项目汇报与复盘",
+   "style": "nordic",
+   "style_label": "北欧灰蓝",
+   "type": "Nordic",
+   "purpose": "项目汇报与复盘",
+   "file": "05-project-report-project-report-retrospective/05__nordic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-025",
+   "category": "05-project-report",
+   "category_name": "项目汇报与复盘",
+   "style": "academic",
+   "style_label": "学术严谨",
+   "type": "Academic",
+   "purpose": "项目汇报与复盘",
+   "file": "05-project-report-project-report-retrospective/05__academic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-026",
+   "category": "06-study-notes",
+   "category_name": "学习笔记分享",
+   "style": "takram",
+   "style_label": "柔和科技图表",
+   "type": "Soft Tech",
+   "purpose": "学习笔记分享",
+   "file": "06-study-notes-study-notes-sharing/06__takram.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-027",
+   "category": "06-study-notes",
+   "category_name": "学习笔记分享",
+   "style": "organic",
+   "style_label": "自然有机",
+   "type": "Organic",
+   "purpose": "学习笔记分享",
+   "file": "06-study-notes-study-notes-sharing/06__organic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-028",
+   "category": "06-study-notes",
+   "category_name": "学习笔记分享",
+   "style": "editorial",
+   "style_label": "杂志编辑",
+   "type": "Editorial",
+   "purpose": "学习笔记分享",
+   "file": "06-study-notes-study-notes-sharing/06__editorial.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-029",
+   "category": "06-study-notes",
+   "category_name": "学习笔记分享",
+   "style": "academic",
+   "style_label": "学术严谨",
+   "type": "Academic",
+   "purpose": "学习笔记分享",
+   "file": "06-study-notes-study-notes-sharing/06__academic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-030",
+   "category": "06-study-notes",
+   "category_name": "学习笔记分享",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "学习笔记分享",
+   "file": "06-study-notes-study-notes-sharing/06__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-031",
+   "category": "07-resume",
+   "category_name": "求职简历与自我介绍",
+   "style": "build",
+   "style_label": "呼吸留白极简",
+   "type": "Breathing Whitespace",
+   "purpose": "求职简历与自我介绍",
+   "file": "07-resume-resume-self-intro/07__build.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-032",
+   "category": "07-resume",
+   "category_name": "求职简历与自我介绍",
+   "style": "editorial",
+   "style_label": "杂志编辑",
+   "type": "Editorial",
+   "purpose": "求职简历与自我介绍",
+   "file": "07-resume-resume-self-intro/07__editorial.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-033",
+   "category": "07-resume",
+   "category_name": "求职简历与自我介绍",
+   "style": "nordic",
+   "style_label": "北欧灰蓝",
+   "type": "Nordic",
+   "purpose": "求职简历与自我介绍",
+   "file": "07-resume-resume-self-intro/07__nordic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-034",
+   "category": "07-resume",
+   "category_name": "求职简历与自我介绍",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "求职简历与自我介绍",
+   "file": "07-resume-resume-self-intro/07__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-035",
+   "category": "07-resume",
+   "category_name": "求职简历与自我介绍",
+   "style": "luxury",
+   "style_label": "轻奢金黑",
+   "type": "Luxury Noir",
+   "purpose": "求职简历与自我介绍",
+   "file": "07-resume-resume-self-intro/07__luxury.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-036",
+   "category": "08-promo",
+   "category_name": "活动宣传与推广",
+   "style": "memphis",
+   "style_label": "孟菲斯活力",
+   "type": "Memphis Pop",
+   "purpose": "活动宣传与推广",
+   "file": "08-promo-event-promo/08__memphis.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-037",
+   "category": "08-promo",
+   "category_name": "活动宣传与推广",
+   "style": "glass",
+   "style_label": "玻璃拟态",
+   "type": "Glassmorphism",
+   "purpose": "活动宣传与推广",
+   "file": "08-promo-event-promo/08__glass.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-038",
+   "category": "08-promo",
+   "category_name": "活动宣传与推广",
+   "style": "darkneon",
+   "style_label": "暗黑霓虹",
+   "type": "Dark Neon",
+   "purpose": "活动宣传与推广",
+   "file": "08-promo-event-promo/08__darkneon.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-039",
+   "category": "08-promo",
+   "category_name": "活动宣传与推广",
+   "style": "bauhaus",
+   "style_label": "包豪斯三原色",
+   "type": "Bauhaus",
+   "purpose": "活动宣传与推广",
+   "file": "08-promo-event-promo/08__bauhaus.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-040",
+   "category": "08-promo",
+   "category_name": "活动宣传与推广",
+   "style": "pastel",
+   "style_label": "马卡龙柔彩",
+   "type": "Pastel",
+   "purpose": "活动宣传与推广",
+   "file": "08-promo-event-promo/08__pastel.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-041",
+   "category": "09-dashboard",
+   "category_name": "数据看板与指标",
+   "style": "corporate",
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "数据看板与指标",
+   "file": "09-dashboard-data-dashboard/09__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-042",
+   "category": "09-dashboard",
+   "category_name": "数据看板与指标",
+   "style": "glass",
+   "style_label": "玻璃拟态",
+   "type": "Glassmorphism",
+   "purpose": "数据看板与指标",
+   "file": "09-dashboard-data-dashboard/09__glass.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-043",
+   "category": "09-dashboard",
+   "category_name": "数据看板与指标",
+   "style": "takram",
+   "style_label": "柔和科技图表",
+   "type": "Soft Tech",
+   "purpose": "数据看板与指标",
+   "file": "09-dashboard-data-dashboard/09__takram.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-044",
+   "category": "09-dashboard",
+   "category_name": "数据看板与指标",
+   "style": "gradient",
+   "style_label": "渐变流体",
+   "type": "Gradient Flow",
+   "purpose": "数据看板与指标",
+   "file": "09-dashboard-data-dashboard/09__gradient.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-045",
+   "category": "09-dashboard",
+   "category_name": "数据看板与指标",
+   "style": "isometric",
+   "style_label": "等距信息图",
+   "type": "Isometric",
+   "purpose": "数据看板与指标",
+   "file": "09-dashboard-data-dashboard/09__isometric.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-046",
+   "category": "10-creative-pitch",
+   "category_name": "内容创作提案",
+   "style": "editorial",
+   "style_label": "杂志编辑",
+   "type": "Editorial",
+   "purpose": "内容创作提案",
+   "file": "10-creative-pitch-creative-pitch/10__editorial.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-047",
+   "category": "10-creative-pitch",
+   "category_name": "内容创作提案",
+   "style": "darkneon",
+   "style_label": "暗黑霓虹",
+   "type": "Dark Neon",
+   "purpose": "内容创作提案",
+   "file": "10-creative-pitch-creative-pitch/10__darkneon.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-048",
+   "category": "10-creative-pitch",
+   "category_name": "内容创作提案",
+   "style": "organic",
+   "style_label": "自然有机",
+   "type": "Organic",
+   "purpose": "内容创作提案",
    "file": "10-creative-pitch-creative-pitch/10__organic.pptx",
-   "slides": 15
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-049",
+   "category": "10-creative-pitch",
+   "category_name": "内容创作提案",
+   "style": "newspaper",
+   "style_label": "报纸排版",
+   "type": "Newspaper",
+   "purpose": "内容创作提案",
+   "file": "10-creative-pitch-creative-pitch/10__newspaper.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-050",
+   "category": "10-creative-pitch",
+   "category_name": "内容创作提案",
+   "style": "vaporwave",
+   "style_label": "蒸汽波",
+   "type": "Vaporwave",
+   "purpose": "内容创作提案",
+   "file": "10-creative-pitch-creative-pitch/10__vaporwave.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-051",
+   "category": "11-product-launch",
+   "category_name": "产品发布与介绍",
+   "style": "gradient",
+   "style_label": "渐变流体",
+   "type": "Gradient Flow",
+   "purpose": "产品发布与介绍",
+   "file": "11-product-launch-product-launch/11__gradient.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-052",
+   "category": "11-product-launch",
+   "category_name": "产品发布与介绍",
+   "style": "glass",
+   "style_label": "玻璃拟态",
+   "type": "Glassmorphism",
+   "purpose": "产品发布与介绍",
+   "file": "11-product-launch-product-launch/11__glass.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-053",
+   "category": "11-product-launch",
+   "category_name": "产品发布与介绍",
+   "style": "luxury",
+   "style_label": "轻奢金黑",
+   "type": "Luxury Noir",
+   "purpose": "产品发布与介绍",
+   "file": "11-product-launch-product-launch/11__luxury.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-054",
+   "category": "11-product-launch",
+   "category_name": "产品发布与介绍",
+   "style": "build",
+   "style_label": "呼吸留白极简",
+   "type": "Breathing Whitespace",
+   "purpose": "产品发布与介绍",
+   "file": "11-product-launch-product-launch/11__build.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-055",
+   "category": "11-product-launch",
+   "category_name": "产品发布与介绍",
+   "style": "darkneon",
+   "style_label": "暗黑霓虹",
+   "type": "Dark Neon",
+   "purpose": "产品发布与介绍",
+   "file": "11-product-launch-product-launch/11__darkneon.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-056",
+   "category": "12-reading-club",
+   "category_name": "读书会与共读分享",
+   "style": "editorial",
+   "style_label": "杂志编辑",
+   "type": "Editorial",
+   "purpose": "读书会与共读分享",
+   "file": "12-reading-club-reading-club/12__editorial.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-057",
+   "category": "12-reading-club",
+   "category_name": "读书会与共读分享",
+   "style": "organic",
+   "style_label": "自然有机",
+   "type": "Organic",
+   "purpose": "读书会与共读分享",
+   "file": "12-reading-club-reading-club/12__organic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-058",
+   "category": "12-reading-club",
+   "category_name": "读书会与共读分享",
+   "style": "newspaper",
+   "style_label": "报纸排版",
+   "type": "Newspaper",
+   "purpose": "读书会与共读分享",
+   "file": "12-reading-club-reading-club/12__newspaper.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-059",
+   "category": "12-reading-club",
+   "category_name": "读书会与共读分享",
+   "style": "pastel",
+   "style_label": "马卡龙柔彩",
+   "type": "Pastel",
+   "purpose": "读书会与共读分享",
+   "file": "12-reading-club-reading-club/12__pastel.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-060",
+   "category": "12-reading-club",
+   "category_name": "读书会与共读分享",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "读书会与共读分享",
+   "file": "12-reading-club-reading-club/12__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-061",
+   "category": "13-job-competition",
+   "category_name": "竞聘述职与答辩",
+   "style": "corporate",
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "竞聘述职与答辩",
+   "file": "13-job-competition-job-competition/13__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-062",
+   "category": "13-job-competition",
+   "category_name": "竞聘述职与答辩",
+   "style": "build",
+   "style_label": "呼吸留白极简",
+   "type": "Breathing Whitespace",
+   "purpose": "竞聘述职与答辩",
+   "file": "13-job-competition-job-competition/13__build.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-063",
+   "category": "13-job-competition",
+   "category_name": "竞聘述职与答辩",
+   "style": "brockmann",
+   "style_label": "数学网格功能主义",
+   "type": "Swiss Grid",
+   "purpose": "竞聘述职与答辩",
+   "file": "13-job-competition-job-competition/13__brockmann.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-064",
+   "category": "13-job-competition",
+   "category_name": "竞聘述职与答辩",
+   "style": "academic",
+   "style_label": "学术严谨",
+   "type": "Academic",
+   "purpose": "竞聘述职与答辩",
+   "file": "13-job-competition-job-competition/13__academic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-065",
+   "category": "13-job-competition",
+   "category_name": "竞聘述职与答辩",
+   "style": "nordic",
+   "style_label": "北欧灰蓝",
+   "type": "Nordic",
+   "purpose": "竞聘述职与答辩",
+   "file": "13-job-competition-job-competition/13__nordic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-066",
+   "category": "14-contest-defense",
+   "category_name": "比赛答辩与路演",
+   "style": "brockmann",
+   "style_label": "数学网格功能主义",
+   "type": "Swiss Grid",
+   "purpose": "比赛答辩与路演",
+   "file": "14-contest-defense-contest-defense/14__brockmann.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-067",
+   "category": "14-contest-defense",
+   "category_name": "比赛答辩与路演",
+   "style": "gradient",
+   "style_label": "渐变流体",
+   "type": "Gradient Flow",
+   "purpose": "比赛答辩与路演",
+   "file": "14-contest-defense-contest-defense/14__gradient.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-068",
+   "category": "14-contest-defense",
+   "category_name": "比赛答辩与路演",
+   "style": "corporate",
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "比赛答辩与路演",
+   "file": "14-contest-defense-contest-defense/14__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-069",
+   "category": "14-contest-defense",
+   "category_name": "比赛答辩与路演",
+   "style": "darkneon",
+   "style_label": "暗黑霓虹",
+   "type": "Dark Neon",
+   "purpose": "比赛答辩与路演",
+   "file": "14-contest-defense-contest-defense/14__darkneon.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-070",
+   "category": "14-contest-defense",
+   "category_name": "比赛答辩与路演",
+   "style": "blueprint",
+   "style_label": "工程蓝图",
+   "type": "Blueprint",
+   "purpose": "比赛答辩与路演",
+   "file": "14-contest-defense-contest-defense/14__blueprint.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-071",
+   "category": "15-course-syllabus",
+   "category_name": "课程大纲与教学计划",
+   "style": "academic",
+   "style_label": "学术严谨",
+   "type": "Academic",
+   "purpose": "课程大纲与教学计划",
+   "file": "15-course-syllabus-course-syllabus/15__academic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-072",
+   "category": "15-course-syllabus",
+   "category_name": "课程大纲与教学计划",
+   "style": "takram",
+   "style_label": "柔和科技图表",
+   "type": "Soft Tech",
+   "purpose": "课程大纲与教学计划",
+   "file": "15-course-syllabus-course-syllabus/15__takram.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-073",
+   "category": "15-course-syllabus",
+   "category_name": "课程大纲与教学计划",
+   "style": "nordic",
+   "style_label": "北欧灰蓝",
+   "type": "Nordic",
+   "purpose": "课程大纲与教学计划",
+   "file": "15-course-syllabus-course-syllabus/15__nordic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-074",
+   "category": "15-course-syllabus",
+   "category_name": "课程大纲与教学计划",
+   "style": "chalk",
+   "style_label": "黑板粉笔",
+   "type": "Chalkboard",
+   "purpose": "课程大纲与教学计划",
+   "file": "15-course-syllabus-course-syllabus/15__chalk.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-075",
+   "category": "15-course-syllabus",
+   "category_name": "课程大纲与教学计划",
+   "style": "isometric",
+   "style_label": "等距信息图",
+   "type": "Isometric",
+   "purpose": "课程大纲与教学计划",
+   "file": "15-course-syllabus-course-syllabus/15__isometric.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-076",
+   "category": "16-recruitment",
+   "category_name": "招新宣讲与纳新",
+   "style": "memphis",
+   "style_label": "孟菲斯活力",
+   "type": "Memphis Pop",
+   "purpose": "招新宣讲与纳新",
+   "file": "16-recruitment-recruitment/16__memphis.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-077",
+   "category": "16-recruitment",
+   "category_name": "招新宣讲与纳新",
+   "style": "pastel",
+   "style_label": "马卡龙柔彩",
+   "type": "Pastel",
+   "purpose": "招新宣讲与纳新",
+   "file": "16-recruitment-recruitment/16__pastel.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-078",
+   "category": "16-recruitment",
+   "category_name": "招新宣讲与纳新",
+   "style": "bauhaus",
+   "style_label": "包豪斯三原色",
+   "type": "Bauhaus",
+   "purpose": "招新宣讲与纳新",
+   "file": "16-recruitment-recruitment/16__bauhaus.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-079",
+   "category": "16-recruitment",
+   "category_name": "招新宣讲与纳新",
+   "style": "glass",
+   "style_label": "玻璃拟态",
+   "type": "Glassmorphism",
+   "purpose": "招新宣讲与纳新",
+   "file": "16-recruitment-recruitment/16__glass.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-080",
+   "category": "16-recruitment",
+   "category_name": "招新宣讲与纳新",
+   "style": "vaporwave",
+   "style_label": "蒸汽波",
+   "type": "Vaporwave",
+   "purpose": "招新宣讲与纳新",
+   "file": "16-recruitment-recruitment/16__vaporwave.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-081",
+   "category": "17-annual-review",
+   "category_name": "年度总结与规划",
+   "style": "newspaper",
+   "style_label": "报纸排版",
+   "type": "Newspaper",
+   "purpose": "年度总结与规划",
+   "file": "17-annual-review-annual-review/17__newspaper.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-082",
+   "category": "17-annual-review",
+   "category_name": "年度总结与规划",
+   "style": "editorial",
+   "style_label": "杂志编辑",
+   "type": "Editorial",
+   "purpose": "年度总结与规划",
+   "file": "17-annual-review-annual-review/17__editorial.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-083",
+   "category": "17-annual-review",
+   "category_name": "年度总结与规划",
+   "style": "corporate",
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "年度总结与规划",
+   "file": "17-annual-review-annual-review/17__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-084",
+   "category": "17-annual-review",
+   "category_name": "年度总结与规划",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "年度总结与规划",
+   "file": "17-annual-review-annual-review/17__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-085",
+   "category": "17-annual-review",
+   "category_name": "年度总结与规划",
+   "style": "gradient",
+   "style_label": "渐变流体",
+   "type": "Gradient Flow",
+   "purpose": "年度总结与规划",
+   "file": "17-annual-review-annual-review/17__gradient.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-086",
+   "category": "18-training-manual",
+   "category_name": "培训手册与 SOP",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "培训手册与 SOP",
+   "file": "18-training-manual-training-manual/18__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-087",
+   "category": "18-training-manual",
+   "category_name": "培训手册与 SOP",
+   "style": "nordic",
+   "style_label": "北欧灰蓝",
+   "type": "Nordic",
+   "purpose": "培训手册与 SOP",
+   "file": "18-training-manual-training-manual/18__nordic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-088",
+   "category": "18-training-manual",
+   "category_name": "培训手册与 SOP",
+   "style": "academic",
+   "style_label": "学术严谨",
+   "type": "Academic",
+   "purpose": "培训手册与 SOP",
+   "file": "18-training-manual-training-manual/18__academic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-089",
+   "category": "18-training-manual",
+   "category_name": "培训手册与 SOP",
+   "style": "isometric",
+   "style_label": "等距信息图",
+   "type": "Isometric",
+   "purpose": "培训手册与 SOP",
+   "file": "18-training-manual-training-manual/18__isometric.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-090",
+   "category": "18-training-manual",
+   "category_name": "培训手册与 SOP",
+   "style": "chalk",
+   "style_label": "黑板粉笔",
+   "type": "Chalkboard",
+   "purpose": "培训手册与 SOP",
+   "file": "18-training-manual-training-manual/18__chalk.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-091",
+   "category": "19-user-research",
+   "category_name": "用户调研与访谈",
+   "style": "takram",
+   "style_label": "柔和科技图表",
+   "type": "Soft Tech",
+   "purpose": "用户调研与访谈",
+   "file": "19-user-research-user-research/19__takram.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-092",
+   "category": "19-user-research",
+   "category_name": "用户调研与访谈",
+   "style": "nordic",
+   "style_label": "北欧灰蓝",
+   "type": "Nordic",
+   "purpose": "用户调研与访谈",
+   "file": "19-user-research-user-research/19__nordic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-093",
+   "category": "19-user-research",
+   "category_name": "用户调研与访谈",
+   "style": "academic",
+   "style_label": "学术严谨",
+   "type": "Academic",
+   "purpose": "用户调研与访谈",
+   "file": "19-user-research-user-research/19__academic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-094",
+   "category": "19-user-research",
+   "category_name": "用户调研与访谈",
+   "style": "organic",
+   "style_label": "自然有机",
+   "type": "Organic",
+   "purpose": "用户调研与访谈",
+   "file": "19-user-research-user-research/19__organic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-095",
+   "category": "19-user-research",
+   "category_name": "用户调研与访谈",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "用户调研与访谈",
+   "file": "19-user-research-user-research/19__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-096",
+   "category": "20-market-analysis",
+   "category_name": "市场与竞品分析",
+   "style": "corporate",
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "市场与竞品分析",
+   "file": "20-market-analysis-market-analysis/20__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-097",
+   "category": "20-market-analysis",
+   "category_name": "市场与竞品分析",
+   "style": "brockmann",
+   "style_label": "数学网格功能主义",
+   "type": "Swiss Grid",
+   "purpose": "市场与竞品分析",
+   "file": "20-market-analysis-market-analysis/20__brockmann.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-098",
+   "category": "20-market-analysis",
+   "category_name": "市场与竞品分析",
+   "style": "gradient",
+   "style_label": "渐变流体",
+   "type": "Gradient Flow",
+   "purpose": "市场与竞品分析",
+   "file": "20-market-analysis-market-analysis/20__gradient.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-099",
+   "category": "20-market-analysis",
+   "category_name": "市场与竞品分析",
+   "style": "newspaper",
+   "style_label": "报纸排版",
+   "type": "Newspaper",
+   "purpose": "市场与竞品分析",
+   "file": "20-market-analysis-market-analysis/20__newspaper.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-100",
+   "category": "20-market-analysis",
+   "category_name": "市场与竞品分析",
+   "style": "glass",
+   "style_label": "玻璃拟态",
+   "type": "Glassmorphism",
+   "purpose": "市场与竞品分析",
+   "file": "20-market-analysis-market-analysis/20__glass.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-101",
+   "category": "21-budget-plan",
+   "category_name": "预算与财务计划",
+   "style": "brockmann",
+   "style_label": "数学网格功能主义",
+   "type": "Swiss Grid",
+   "purpose": "预算与财务计划",
+   "file": "21-budget-plan-budget-finance/21__brockmann.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-102",
+   "category": "21-budget-plan",
+   "category_name": "预算与财务计划",
+   "style": "corporate",
+   "style_label": "商务蓝调",
+   "type": "Corporate Blue",
+   "purpose": "预算与财务计划",
+   "file": "21-budget-plan-budget-finance/21__corporate.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-103",
+   "category": "21-budget-plan",
+   "category_name": "预算与财务计划",
+   "style": "isometric",
+   "style_label": "等距信息图",
+   "type": "Isometric",
+   "purpose": "预算与财务计划",
+   "file": "21-budget-plan-budget-finance/21__isometric.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-104",
+   "category": "21-budget-plan",
+   "category_name": "预算与财务计划",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "预算与财务计划",
+   "file": "21-budget-plan-budget-finance/21__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-105",
+   "category": "21-budget-plan",
+   "category_name": "预算与财务计划",
+   "style": "nordic",
+   "style_label": "北欧灰蓝",
+   "type": "Nordic",
+   "purpose": "预算与财务计划",
+   "file": "21-budget-plan-budget-finance/21__nordic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-106",
+   "category": "22-travel-plan",
+   "category_name": "旅行与行程计划",
+   "style": "organic",
+   "style_label": "自然有机",
+   "type": "Organic",
+   "purpose": "旅行与行程计划",
+   "file": "22-travel-plan-travel-plan/22__organic.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-107",
+   "category": "22-travel-plan",
+   "category_name": "旅行与行程计划",
+   "style": "pastel",
+   "style_label": "马卡龙柔彩",
+   "type": "Pastel",
+   "purpose": "旅行与行程计划",
+   "file": "22-travel-plan-travel-plan/22__pastel.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-108",
+   "category": "22-travel-plan",
+   "category_name": "旅行与行程计划",
+   "style": "editorial",
+   "style_label": "杂志编辑",
+   "type": "Editorial",
+   "purpose": "旅行与行程计划",
+   "file": "22-travel-plan-travel-plan/22__editorial.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-109",
+   "category": "22-travel-plan",
+   "category_name": "旅行与行程计划",
+   "style": "risograph",
+   "style_label": "孔版双色",
+   "type": "Risograph",
+   "purpose": "旅行与行程计划",
+   "file": "22-travel-plan-travel-plan/22__risograph.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-110",
+   "category": "22-travel-plan",
+   "category_name": "旅行与行程计划",
+   "style": "vaporwave",
+   "style_label": "蒸汽波",
+   "type": "Vaporwave",
+   "purpose": "旅行与行程计划",
+   "file": "22-travel-plan-travel-plan/22__vaporwave.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-111",
+   "category": "23-open-source-release",
+   "category_name": "开源项目发布",
+   "style": "terminal",
+   "style_label": "赛博终端",
+   "type": "Cyber Terminal",
+   "purpose": "开源项目发布",
+   "file": "23-open-source-release-open-source-release/23__terminal.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-112",
+   "category": "23-open-source-release",
+   "category_name": "开源项目发布",
+   "style": "blueprint",
+   "style_label": "工程蓝图",
+   "type": "Blueprint",
+   "purpose": "开源项目发布",
+   "file": "23-open-source-release-open-source-release/23__blueprint.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-113",
+   "category": "23-open-source-release",
+   "category_name": "开源项目发布",
+   "style": "darkneon",
+   "style_label": "暗黑霓虹",
+   "type": "Dark Neon",
+   "purpose": "开源项目发布",
+   "file": "23-open-source-release-open-source-release/23__darkneon.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-114",
+   "category": "23-open-source-release",
+   "category_name": "开源项目发布",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "开源项目发布",
+   "file": "23-open-source-release-open-source-release/23__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-115",
+   "category": "23-open-source-release",
+   "category_name": "开源项目发布",
+   "style": "gradient",
+   "style_label": "渐变流体",
+   "type": "Gradient Flow",
+   "purpose": "开源项目发布",
+   "file": "23-open-source-release-open-source-release/23__gradient.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-116",
+   "category": "24-tech-review",
+   "category_name": "技术架构评审",
+   "style": "blueprint",
+   "style_label": "工程蓝图",
+   "type": "Blueprint",
+   "purpose": "技术架构评审",
+   "file": "24-tech-review-tech-architecture-review/24__blueprint.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-117",
+   "category": "24-tech-review",
+   "category_name": "技术架构评审",
+   "style": "isometric",
+   "style_label": "等距信息图",
+   "type": "Isometric",
+   "purpose": "技术架构评审",
+   "file": "24-tech-review-tech-architecture-review/24__isometric.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-118",
+   "category": "24-tech-review",
+   "category_name": "技术架构评审",
+   "style": "brockmann",
+   "style_label": "数学网格功能主义",
+   "type": "Swiss Grid",
+   "purpose": "技术架构评审",
+   "file": "24-tech-review-tech-architecture-review/24__brockmann.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-119",
+   "category": "24-tech-review",
+   "category_name": "技术架构评审",
+   "style": "terminal",
+   "style_label": "赛博终端",
+   "type": "Cyber Terminal",
+   "purpose": "技术架构评审",
+   "file": "24-tech-review-tech-architecture-review/24__terminal.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "SF-120",
+   "category": "24-tech-review",
+   "category_name": "技术架构评审",
+   "style": "monochrome",
+   "style_label": "单色印刷极简",
+   "type": "Monochrome",
+   "purpose": "技术架构评审",
+   "file": "24-tech-review-tech-architecture-review/24__monochrome.pptx",
+   "slides": 18,
+   "status": "active",
+   "version": "2.0",
+   "source": "SlideForge generator",
+   "updated": "2026-09-14"
   }
  ],
  "potx": [
   {
+   "id": "POTX-01",
    "style": "build",
    "file": "_potx/slideforge-build.potx"
   },
   {
+   "id": "POTX-02",
    "style": "brockmann",
    "file": "_potx/slideforge-brockmann.potx"
   },
   {
+   "id": "POTX-03",
    "style": "takram",
    "file": "_potx/slideforge-takram.potx"
   },
   {
+   "id": "POTX-04",
    "style": "corporate",
    "file": "_potx/slideforge-corporate.potx"
   },
   {
+   "id": "POTX-05",
    "style": "darkneon",
    "file": "_potx/slideforge-darkneon.potx"
   },
   {
+   "id": "POTX-06",
    "style": "retropixel",
    "file": "_potx/slideforge-retropixel.potx"
   },
   {
+   "id": "POTX-07",
    "style": "editorial",
    "file": "_potx/slideforge-editorial.potx"
   },
   {
+   "id": "POTX-08",
    "style": "memphis",
    "file": "_potx/slideforge-memphis.potx"
   },
   {
+   "id": "POTX-09",
    "style": "glass",
    "file": "_potx/slideforge-glass.potx"
   },
   {
+   "id": "POTX-10",
    "style": "terminal",
    "file": "_potx/slideforge-terminal.potx"
   },
   {
+   "id": "POTX-11",
    "style": "organic",
    "file": "_potx/slideforge-organic.potx"
   },
   {
+   "id": "POTX-12",
    "style": "academic",
    "file": "_potx/slideforge-academic.potx"
+  },
+  {
+   "id": "POTX-13",
+   "style": "monochrome",
+   "file": "_potx/slideforge-monochrome.potx"
+  },
+  {
+   "id": "POTX-14",
+   "style": "blueprint",
+   "file": "_potx/slideforge-blueprint.potx"
+  },
+  {
+   "id": "POTX-15",
+   "style": "pastel",
+   "file": "_potx/slideforge-pastel.potx"
+  },
+  {
+   "id": "POTX-16",
+   "style": "luxury",
+   "file": "_potx/slideforge-luxury.potx"
+  },
+  {
+   "id": "POTX-17",
+   "style": "vaporwave",
+   "file": "_potx/slideforge-vaporwave.potx"
+  },
+  {
+   "id": "POTX-18",
+   "style": "risograph",
+   "file": "_potx/slideforge-risograph.potx"
+  },
+  {
+   "id": "POTX-19",
+   "style": "bauhaus",
+   "file": "_potx/slideforge-bauhaus.potx"
+  },
+  {
+   "id": "POTX-20",
+   "style": "nordic",
+   "file": "_potx/slideforge-nordic.potx"
+  },
+  {
+   "id": "POTX-21",
+   "style": "isometric",
+   "file": "_potx/slideforge-isometric.potx"
+  },
+  {
+   "id": "POTX-22",
+   "style": "gradient",
+   "file": "_potx/slideforge-gradient.potx"
+  },
+  {
+   "id": "POTX-23",
+   "style": "newspaper",
+   "file": "_potx/slideforge-newspaper.potx"
+  },
+  {
+   "id": "POTX-24",
+   "style": "chalk",
+   "file": "_potx/slideforge-chalk.potx"
   }
  ],
  "stats": {
-  "decks": 30,
-  "slides_total": 450,
-  "categories": 10,
-  "themes": 12,
-  "potx": 12
+  "decks": 120,
+  "slides_total": 2160,
+  "categories": 24,
+  "themes": 24,
+  "potx": 24,
+  "style_distribution": {
+   "build": 7,
+   "terminal": 3,
+   "takram": 5,
+   "chalk": 3,
+   "academic": 7,
+   "darkneon": 6,
+   "retropixel": 2,
+   "corporate": 8,
+   "isometric": 6,
+   "vaporwave": 4,
+   "editorial": 7,
+   "risograph": 2,
+   "luxury": 3,
+   "memphis": 3,
+   "organic": 6,
+   "pastel": 5,
+   "bauhaus": 3,
+   "brockmann": 6,
+   "nordic": 7,
+   "monochrome": 9,
+   "glass": 5,
+   "gradient": 6,
+   "newspaper": 4,
+   "blueprint": 3
+  }
  }
 }
