@@ -52,6 +52,7 @@ def build_deck(cat, style, outdir):
     sub = "%s · 在此输入副标题 / 项目名称" % cat["name"]
     meta = "团队 / 姓名  ·  YYYY-MM-DD"
     d = Deck(t)
+    d._seed = sd
     # 1 封面
     d.cover(title, sub, meta, variant=["left", "center", "split"][sd % 3])
     # 2 目录

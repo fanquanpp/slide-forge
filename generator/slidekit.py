@@ -11,7 +11,8 @@ from pptx.enum.shapes import MSO_SHAPE, MSO_CONNECTOR
 from pptx.oxml.ns import qn
 
 SW, SH = 13.333, 7.5
-_VALID_TRANS = {"fade", "push", "wipe", "cut", "dissolve", "zoom", "cover", "pull"}
+import anim as _anim
+_VALID_TRANS = set()
 
 
 def C(h):
@@ -41,21 +42,9 @@ def set_alpha(shape, alpha):
         pass
 
 
-def set_transition(slide, kind):
-    """给单页注入切换动效（<p:transition>）。"""
-    sld = slide._element
-    for t in sld.findall(qn("p:transition")):
-        sld.remove(t)
-    if kind not in _VALID_TRANS:
-        kind = "fade"
-    trans = sld.makeelement(qn("p:transition"), {"spd": "med"})
-    trans.append(sld.makeelement(qn("p:%s" % kind), {}))
-    anchor = sld.find(qn("p:clrMapOvr"))
-    if anchor is not None:
-        anchor.addnext(trans)
-    else:
-        cSld = sld.find(qn("p:cSld"))
-        (cSld.addnext(trans) if cSld is not None else sld.insert(0, trans))
+def set_transition(slide, spec):
+    """给单页注入切换特效（由 anim 引擎提供多样化类型）。"""
+    _anim.set_transition(slide, spec)
 
 
 class Deck:
@@ -70,9 +59,7 @@ class Deck:
 
     # ---------- 基础 ----------
     def slide(self):
-        s = self.prs.slides.add_slide(self.blank)
-        set_transition(s, self._trans)
-        return s
+        return self.prs.slides.add_slide(self.blank)
 
     def bg(self, s, color=None):
         self.rect(s, 0, 0, SW, SH, color or self.t["bg"])
@@ -549,5 +536,9 @@ class Deck:
         return s
 
     def save(self, path):
+        base = getattr(self, "_seed", 0)
+        for i, s in enumerate(self.prs.slides):
+            spec = _anim.TRANSITIONS[(base + i) % len(_anim.TRANSITIONS)]
+            _anim.apply_to_slide(s, base + i, spec, SW, SH)
         self.prs.save(path)
         return path
