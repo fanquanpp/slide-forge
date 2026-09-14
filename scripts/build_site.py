@@ -124,6 +124,15 @@ footer a{color:var(--accent)}
 .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:11.5px;color:var(--ink2);margin:0 6px 6px 0}
 @media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr}.themegrid{grid-template-columns:1fr 1fr}.usegrid{grid-template-columns:1fr}.hero h1{font-size:30px}}
 @media(max-width:600px){.grid,.themegrid{grid-template-columns:1fr}}
+@media(prefers-color-scheme:dark){
+:root{--ink:#e8ecf3;--ink2:#9aa7cc;--line:#2a3556;--bg:#10141d;--card:#171d2a;--accent:#7cc4ff;color-scheme:dark}
+body{background:var(--bg);color:var(--ink)}
+header.top{background:rgba(16,20,29,.88);border-bottom-color:var(--line)}
+.card,.tcard,.metric,.ubox,.btn,.searchbar input[type=search]{background:var(--card);color:var(--ink)}
+.chip{background:var(--card);color:var(--ink2)}
+.chip.on{background:var(--accent);color:#0b1220;border-color:var(--accent)}
+pre{background:#0b0f17;color:#dbe6f5}
+}
 .skip-link{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:8px 14px;border-radius:0 0 8px 0;z-index:99}
 .skip-link:focus{left:0}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
@@ -133,6 +142,7 @@ footer a{color:var(--accent)}
 .count{color:var(--ink2);font-size:13px}
 .empty-state{display:none;background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:26px;text-align:center;color:var(--ink2);margin-top:14px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media print{header.top,.filters,.searchbar,.chip,.btn{display:none!important}.grid{grid-template-columns:1fr 1fr}.card{break-inside:avoid}body{background:#fff;color:#000}a{color:#000;text-decoration:none}}
 """
 
 JS = """
@@ -189,7 +199,7 @@ def build_html(m):
                 links.insert(1, '<a class="btn" href="templates/%s" download>.potx 母版</a>' % potx)
             cards.append(
                 '<article class="card" data-cat="%s">'
-                '<img loading="lazy" src="assets/previews/%s-cover.svg" alt="%s %s 预览">'
+                '<img loading="lazy" width="640" height="360" src="assets/previews/%s-cover.svg" alt="%s %s 预览">'
                 '<div class="body"><div class="cat">%s</div><div class="name">%s</div>'
                 '<div class="meta">%s · %d 个版面</div>'
                 '<div class="links">%s</div></div></article>' % (
@@ -300,7 +310,7 @@ def main():
                      '<a class="btn" href="%s" target="_blank" rel="noopener">GitHub 源码</a>' % (REPO_BLOB + "templates/" + f)]
             if potx:
                 links.insert(1, '<a class="btn" href="templates/%s" download>.potx 母版</a>' % potx)
-            cards.append('<article class="card" data-cat="%s"><img loading="lazy" src="assets/previews/%s-cover.svg" alt="%s · %s 预览"><div class="body"><div class="cat">%s</div><div class="name">%s</div><div class="meta">%s · %d 个版面</div><div class="links">%s</div></div></article>'
+            cards.append('<article class="card" data-cat="%s"><img loading="lazy" width="640" height="360" src="assets/previews/%s-cover.svg" alt="%s · %s 预览"><div class="body"><div class="cat">%s</div><div class="name">%s</div><div class="meta">%s · %d 个版面</div><div class="links">%s</div></div></article>'
                 % (html.escape(cat["id"]), style, html.escape(cat["name"]), html.escape(themes[style]["label"]),
                    html.escape(cat["name"]), html.escape(themes[style]["label"]), html.escape(cat["en"]),
                    dk["slides"], "".join(links)))
