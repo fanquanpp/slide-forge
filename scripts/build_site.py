@@ -215,7 +215,7 @@ JS = """
   var title=document.getElementById('pv-title');
   var dl=document.getElementById('pv-dl');
   var fallback=document.getElementById('pv-fallback');
-  var cur=0, items=[], lastFocus=null;
+  var cur=0, items=[], lastFocus=null, curMeta={};
   var VARIANTS=['cover','content','data'];
   function labelOf(i){var v=VARIANTS[i%3];return v==='cover'?'封面':(v==='content'?'内容页':'数据页');}
   function render(i){
@@ -231,8 +231,8 @@ JS = """
     stage.appendChild(img);
     if(it.file){dl.setAttribute('href','templates/'+it.file);}
     title.textContent=it.name;
-    meta.innerHTML='<span>用途：'+it.catName+'</span><span>版面：'+it.slides+' 页</span>'
-      +'<span>风格：'+it.styleLabel+'</span><span>当前：'+labelOf(cur)+'</span>';
+    meta.innerHTML='<span>用途：'+(curMeta.cat||'—')+'</span><span>版面：'+(curMeta.slides||'—')+' 页</span>'
+      +'<span>风格：'+(curMeta.style||'—')+'</span><span>当前：'+labelOf(cur)+'</span>';
     [].slice.call(thumbs.children).forEach(function(b,k){
       b.setAttribute('aria-current', k===cur?'true':'false');
       b.setAttribute('aria-selected', k===cur?'true':'false');
@@ -241,13 +241,12 @@ JS = """
   function open(card){
     lastFocus=document.activeElement;
     var f=card.getAttribute('data-file');
-    var name=(card.querySelector('.name')||{}).textContent||'模板预览';
-    var catName=(card.querySelector('.cat')||{}).textContent||'';
-    var sl=(card.getAttribute('data-style-label')||'');
+    var name=(card.querySelector('.name')||{textContent:'模板预览'}).textContent;
+    var catName=(card.querySelector('.cat')||{textContent:''}).textContent;
+    var styleKey=card.getAttribute('data-style')||'build';
     var slides=card.getAttribute('data-slides')||'';
-    var pre=(f.split('__')[0]||'');
-    var cat=card.getAttribute('data-cat');
-    items=VARIANTS.map(function(v,i){return {src:'assets/previews/'+pre+'-'+v+'.svg',name:name,file:f};});
+    items=VARIANTS.map(function(v){return {src:'assets/previews/'+styleKey+'-'+v+'.svg',name:name,file:f};});
+    curMeta={cat:catName,slides:slides,style:name};
     thumbs.innerHTML='';
     items.forEach(function(it,i){
       var b=document.createElement('button');
@@ -269,7 +268,6 @@ JS = """
     if(!card)return;
     card.setAttribute('data-style-label', (card.querySelector('.meta')||{}).textContent||'');
     var mm=(card.querySelector('.meta').textContent.split(' 个版面')[0]||'');
-    card.setAttribute('data-slides', mm.split('· ').pop().trim());
     open(card);
   });
   document.getElementById('pv-close').addEventListener('click',function(){try{dlg.close?dlg.close():dlg.removeAttribute('open');}catch(err){dlg.removeAttribute('open');}});
@@ -443,8 +441,8 @@ def main():
                     '<div class="links">%s</div></div>'
                     % (html.escape(cat["name"]), html.escape(themes[style]["label"]),
                        meta, "".join(links)))
-            cards.append('<article class="card" data-cat="%s" data-file="%s" data-slides="%d">%s%s</article>'
-                         % (html.escape(cat["id"]), html.escape(f), dk["slides"], img_tag, hot + body))
+            cards.append('<article class="card" data-cat="%s" data-file="%s" data-slides="%d" data-style="%s">%s%s</article>'
+                         % (html.escape(cat["id"]), html.escape(f), dk["slides"], style, img_tag, hot + body))
     chips = ['<button class="chip on" data-cat="all">全部 %d 套</button>' % st["decks"]]
     for cat in m["categories"]:
         chips.append('<button class="chip" data-cat="%s" aria-pressed="false">%s</button>' % (html.escape(cat["id"]), html.escape(cat["name"])))
