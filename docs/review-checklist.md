@@ -32,3 +32,22 @@
 | 9 | 回滚可用 | 粒度细化到 `scripts/site` + 构建器；构建期 token 残留即报错退出 | ✅ |
 
 **结论**：9 项全部通过。
+
+---
+
+# 第三次迭代（全量 PPT 升级 v3.0）复核清单
+
+| # | 验收标准 | 证据 | 结论 |
+|---|---|---|---|
+| 1 | 使用 skills | ppt-master（完整性门禁通过 → Create Template 路由 → animations/pptx-transitions 契约落地到生成器） | ✅ |
+| 2 | 联网搜索全网学习 | Microsoft/Envato/Slidesgo/Beautiful.ai 2026 趋势 + Datypic/Learn OOXML 事实核验（台账含全部链接） | ✅ |
+| 3 | 主题/配色升级 | 126 套 theme1.xml 注入 SlideForge clrScheme + 主题命名；「设计→变体→颜色」可用 | ✅ |
+| 4 | 动画升级 | 入场只动内容（chrome 静态）；hero 大数字 grow 强调 ×96；oracle 结构无死路径 | ✅ |
+| 5 | 特效升级 | 角色化切换 7 族；真 Morph ×95（!!key 配对 + byObject）；p14 现代键 ×741；MCE fade 降级；useTimings=1 | ✅ |
+| 6 | 功能升级 | 图表页全原生可编辑（柱/折线/环形 ×126）；版式池 10→16（KPI 看板/SWOT/漏斗/风险矩阵/维恩/金字塔） | ✅ |
+| 7 | 场景升级 | 24 分类各 1 页场景专属版式，每套 18→19 页（全库 2394 页）；EXTRA 与场景页去重 | ✅ |
+| 8 | 全量可打开 | validate.py：126 套 2394 页 0 损坏；potx 25/25 | ✅ |
+| 9 | 抽样质检 | qa_check.py 26 套 0 问题（新增主题色/计时器/原生图表/命名 4 维度） | ✅ |
+| 10 | 下游一致 | manifest v3.0 + README/CATALOG/站点重建；站点「预览 19 页」×126；round7 html_valid=True | ✅ |
+
+**结论**：10 项全部通过，判定任务完成。

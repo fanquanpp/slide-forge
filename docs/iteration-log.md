@@ -218,3 +218,48 @@
 
 - Round 4-6 三轮闭环完成，每轮均有搜索依据、改动、构建验证与量化前后对比，且完成结构性重构（前端源码/构建器分离 + 指标工具固化）→ **收尾**。
 - 遗留建议（不阻塞）：GH Pages 无法自定义响应头，CSP/brotli 依赖平台；若后续引入构建链（如 Vite），可再做资源分包与压缩。
+
+---
+
+# 第三次迭代：全量 PPT 升级 v3.0（2026-09-19，ppt-master 技能驱动 + 全网调研）
+
+> 迭代对象：`generator/`（生成器）→ 126 套 .pptx + 25 套 .potx + manifest（版本 2.0 → **3.0**，2268 页 → **2394 页**）。
+> 方法：调用本地 `ppt-master` 技能（路由 Create Template；动效遵循其 `references/animations.md` 与 `scripts/docs/pptx-transitions.md` 契约）+ 联网调研 2026 高级模板趋势 → 洞察 → 生成器改造 → 全量重建 → 分层验证。
+
+## 搜索与技能依据（可点击查证）
+
+- ppt-master 技能（本地 skill）：切换按关系选择（"relationship, not gallery coverage"）、Chrome stays static、Morph 确定性配对（`!!key` 命名约定 + `p159:morph byObject`）、MCE 降级与 Choice/Fallback 属性同步、写 advTm 必须显式 `presProps useTimings=1`、48 键原生切换注册表
+- [Microsoft — PowerPoint design ideas 2026（一页一洞察、用色引导）](https://powerpoint.cloud.microsoft)
+- [Envato — Presentation design trends 2026（purpose-driven motion）](https://elements.envato.com) · [Slidesgo — Design Trends 2026](https://slidesgo.com) · [Beautiful.ai — Data Viz Trends 2026（clarity-first）](https://www.beautiful.ai)
+- [Datypic — CT_ShowProperties（useTimings 默认 true）](https://www.datypic.com) · [Microsoft Learn — PresentationML 结构](https://learn.microsoft.com)
+
+## 改动点（generator/）
+
+1. **角色化切换**（anim.py 重写）：机械轮换 → 按 7 类页面角色选族（cover=reveal/split/circle、section=flash/reveal、flow=push/wipe、data=ripple/circle/wheel、collect=pan/gallery/conveyor、content/closing=fade）；现代主题 data/collect 族升级 glitter/vortex/switch/flip；p14/p159 一律 AlternateContent + fade Fallback（属性同步）。
+2. **真 Morph**：themes 里 6 个主题的 `transition:"morph"` 原是**死字段**（v2 从未实现）——现在 `!!brand-band`/`!!footer-rule` 跨页配对 + `p159:morph byObject`，全库 95 处；边界页不 morph。
+3. **chrome 静态化**：`chrome:*`/`!!*` 形状不进时间树，动画只讲内容；`motion:hero` 大数字追加 grow 强调（emph×96）。
+4. **驻留分级 + useTimings**：6s/8s/10s 按角色；`presProps.xml` 显式 `useTimings="1"`。
+5. **原生图表全量化**：chart 页 line/donut 原为形状假图 → 全部改为原生可编辑图表（LINE_MARKERS / DOUGHNUT，系列色随主题），每套 1 个 chart part。
+6. **版式池 10 → 16**：新增 kpi_dashboard / swot / funnel / risk_matrix / venn / pyramid 六原型。
+7. **场景专属页**：24 分类各配 1 页贴身版式（教学=金字塔、提案=维恩、简历/看板/发布/年度/旅行=KPI 看板、汇报/竞聘/市场=SWOT、答辩/培训/评审=风险矩阵、活动/招新/作品集/预算=漏斗），每套 18 → **19 页**；EXTRA 随机抽取与场景页去重。
+8. **OOXML 主题色注入**：每套 theme1.xml 写入 `SlideForge <风格>` clrScheme（dk1/lt1/dk2/lt2/accent1-6/hlink）——「设计→变体→颜色」一键换肤从"不可用"变为"开箱即用"。
+9. **形状语义命名**：chrome:/!!/motion:/content: 前缀体系（无障碍、动画过滤、Morph 配对的共同基础）。
+
+## 验证结果
+
+| 检查 | 结果 |
+|---|---|
+| `generator/validate.py` 全量 | 126 套 / 2394 页 / **0 损坏**；potx 内容类型 25/25 OK |
+| `scripts/qa_check.py` 抽检（≥20% = 26 套，含 4 项新维度） | **0 问题**（主题色方案/useTimings/原生图表/命名规范全部 ✓） |
+| 冒烟结构断言（3 套逐页） | glass：4 morph + 22 MCE 载体 + 配对名在位；build/takram：标准族 + emph 在位 |
+| 全库动效统计 | morph×95、p14 载体特效×741、emph×96、原生 chart×126 |
+| 下游产物 | manifest v3.0、README/CATALOG/站点全部重建；站点卡片 126×「预览 19 页」；check_site round7 html_valid=True |
+
+## 回滚
+
+- `git checkout <v3 提交> -- templates` 回到本版；`v2-animated` tag 仍可回到经典轮换版本（2268 页）；生成器回滚 `git checkout <v3 提交>^ -- generator` 后重建即可。
+
+## 收尾判定（第三次迭代）
+
+- 9 项升级全部落地并经全量 + 抽样验证；生成器为唯一事实源，站点/README/台账一致重建 → **收尾**。
+- 遗留建议（不阻塞）：p15 纸张类切换按用途匹配度暂缓；模板级"真母版占位符"重构（大纲视图语义化）可作为 v4 方向。

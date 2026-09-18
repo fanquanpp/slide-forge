@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-14",
- "version": "2.0",
+ "generated_at": "2026-09-19",
+ "version": "3.0",
  "themes": {
   "build": {
    "label": "呼吸留白极简",
@@ -165,35 +165,35 @@
      "style": "build",
      "label": "呼吸留白极简",
      "file": "01-teaching-programming-courseware/01__build.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-002",
      "style": "terminal",
      "label": "赛博终端",
      "file": "01-teaching-programming-courseware/01__terminal.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-003",
      "style": "takram",
      "label": "柔和科技图表",
      "file": "01-teaching-programming-courseware/01__takram.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-004",
      "style": "chalk",
      "label": "黑板粉笔",
      "file": "01-teaching-programming-courseware/01__chalk.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-005",
      "style": "academic",
      "label": "学术严谨",
      "file": "01-teaching-programming-courseware/01__academic.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -208,35 +208,35 @@
      "style": "darkneon",
      "label": "暗黑霓虹",
      "file": "02-game-gdd-game-design-proposal/02__darkneon.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-007",
      "style": "retropixel",
      "label": "复古像素",
      "file": "02-game-gdd-game-design-proposal/02__retropixel.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-008",
      "style": "corporate",
      "label": "商务蓝调",
      "file": "02-game-gdd-game-design-proposal/02__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-009",
      "style": "isometric",
      "label": "等距信息图",
      "file": "02-game-gdd-game-design-proposal/02__isometric.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-010",
      "style": "vaporwave",
      "label": "蒸汽波",
      "file": "02-game-gdd-game-design-proposal/02__vaporwave.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -251,35 +251,35 @@
      "style": "editorial",
      "label": "杂志编辑",
      "file": "03-portfolio-pixel-art-portfolio/03__editorial.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-012",
      "style": "retropixel",
      "label": "复古像素",
      "file": "03-portfolio-pixel-art-portfolio/03__retropixel.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-013",
      "style": "build",
      "label": "呼吸留白极简",
      "file": "03-portfolio-pixel-art-portfolio/03__build.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-014",
      "style": "risograph",
      "label": "孔版双色",
      "file": "03-portfolio-pixel-art-portfolio/03__risograph.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-015",
      "style": "luxury",
      "label": "轻奢金黑",
      "file": "03-portfolio-pixel-art-portfolio/03__luxury.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -294,42 +294,42 @@
      "style": "memphis",
      "label": "孟菲斯活力",
      "file": "04-club-event-club-event-planning/04__memphis.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-017",
      "style": "organic",
      "label": "自然有机",
      "file": "04-club-event-club-event-planning/04__organic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-018",
      "style": "build",
      "label": "呼吸留白极简",
      "file": "04-club-event-club-event-planning/04__build.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-019",
      "style": "pastel",
      "label": "马卡龙柔彩",
      "file": "04-club-event-club-event-planning/04__pastel.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-020",
      "style": "bauhaus",
      "label": "包豪斯三原色",
      "file": "04-club-event-club-event-planning/04__bauhaus.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-021",
      "style": "bubble",
      "label": "泡泡堂风",
      "file": "04-club-event-club-event-planning/04__bubble.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -344,35 +344,35 @@
      "style": "brockmann",
      "label": "数学网格功能主义",
      "file": "05-project-report-project-report-retrospective/05__brockmann.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-023",
      "style": "corporate",
      "label": "商务蓝调",
      "file": "05-project-report-project-report-retrospective/05__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-024",
      "style": "build",
      "label": "呼吸留白极简",
      "file": "05-project-report-project-report-retrospective/05__build.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-025",
      "style": "nordic",
      "label": "北欧灰蓝",
      "file": "05-project-report-project-report-retrospective/05__nordic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-026",
      "style": "academic",
      "label": "学术严谨",
      "file": "05-project-report-project-report-retrospective/05__academic.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -387,35 +387,35 @@
      "style": "takram",
      "label": "柔和科技图表",
      "file": "06-study-notes-study-notes-sharing/06__takram.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-028",
      "style": "organic",
      "label": "自然有机",
      "file": "06-study-notes-study-notes-sharing/06__organic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-029",
      "style": "editorial",
      "label": "杂志编辑",
      "file": "06-study-notes-study-notes-sharing/06__editorial.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-030",
      "style": "academic",
      "label": "学术严谨",
      "file": "06-study-notes-study-notes-sharing/06__academic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-031",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "06-study-notes-study-notes-sharing/06__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -430,35 +430,35 @@
      "style": "build",
      "label": "呼吸留白极简",
      "file": "07-resume-resume-self-intro/07__build.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-033",
      "style": "editorial",
      "label": "杂志编辑",
      "file": "07-resume-resume-self-intro/07__editorial.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-034",
      "style": "nordic",
      "label": "北欧灰蓝",
      "file": "07-resume-resume-self-intro/07__nordic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-035",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "07-resume-resume-self-intro/07__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-036",
      "style": "luxury",
      "label": "轻奢金黑",
      "file": "07-resume-resume-self-intro/07__luxury.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -473,42 +473,42 @@
      "style": "memphis",
      "label": "孟菲斯活力",
      "file": "08-promo-event-promo/08__memphis.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-038",
      "style": "glass",
      "label": "玻璃拟态",
      "file": "08-promo-event-promo/08__glass.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-039",
      "style": "darkneon",
      "label": "暗黑霓虹",
      "file": "08-promo-event-promo/08__darkneon.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-040",
      "style": "bauhaus",
      "label": "包豪斯三原色",
      "file": "08-promo-event-promo/08__bauhaus.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-041",
      "style": "pastel",
      "label": "马卡龙柔彩",
      "file": "08-promo-event-promo/08__pastel.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-042",
      "style": "bubble",
      "label": "泡泡堂风",
      "file": "08-promo-event-promo/08__bubble.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -523,35 +523,35 @@
      "style": "corporate",
      "label": "商务蓝调",
      "file": "09-dashboard-data-dashboard/09__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-044",
      "style": "glass",
      "label": "玻璃拟态",
      "file": "09-dashboard-data-dashboard/09__glass.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-045",
      "style": "takram",
      "label": "柔和科技图表",
      "file": "09-dashboard-data-dashboard/09__takram.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-046",
      "style": "gradient",
      "label": "渐变流体",
      "file": "09-dashboard-data-dashboard/09__gradient.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-047",
      "style": "isometric",
      "label": "等距信息图",
      "file": "09-dashboard-data-dashboard/09__isometric.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -566,35 +566,35 @@
      "style": "editorial",
      "label": "杂志编辑",
      "file": "10-creative-pitch-creative-pitch/10__editorial.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-049",
      "style": "darkneon",
      "label": "暗黑霓虹",
      "file": "10-creative-pitch-creative-pitch/10__darkneon.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-050",
      "style": "organic",
      "label": "自然有机",
      "file": "10-creative-pitch-creative-pitch/10__organic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-051",
      "style": "newspaper",
      "label": "报纸排版",
      "file": "10-creative-pitch-creative-pitch/10__newspaper.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-052",
      "style": "vaporwave",
      "label": "蒸汽波",
      "file": "10-creative-pitch-creative-pitch/10__vaporwave.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -609,42 +609,42 @@
      "style": "gradient",
      "label": "渐变流体",
      "file": "11-product-launch-product-launch/11__gradient.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-054",
      "style": "glass",
      "label": "玻璃拟态",
      "file": "11-product-launch-product-launch/11__glass.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-055",
      "style": "luxury",
      "label": "轻奢金黑",
      "file": "11-product-launch-product-launch/11__luxury.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-056",
      "style": "build",
      "label": "呼吸留白极简",
      "file": "11-product-launch-product-launch/11__build.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-057",
      "style": "darkneon",
      "label": "暗黑霓虹",
      "file": "11-product-launch-product-launch/11__darkneon.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-058",
      "style": "bubble",
      "label": "泡泡堂风",
      "file": "11-product-launch-product-launch/11__bubble.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -659,42 +659,42 @@
      "style": "editorial",
      "label": "杂志编辑",
      "file": "12-reading-club-reading-club/12__editorial.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-060",
      "style": "organic",
      "label": "自然有机",
      "file": "12-reading-club-reading-club/12__organic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-061",
      "style": "newspaper",
      "label": "报纸排版",
      "file": "12-reading-club-reading-club/12__newspaper.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-062",
      "style": "pastel",
      "label": "马卡龙柔彩",
      "file": "12-reading-club-reading-club/12__pastel.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-063",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "12-reading-club-reading-club/12__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-064",
      "style": "bubble",
      "label": "泡泡堂风",
      "file": "12-reading-club-reading-club/12__bubble.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -709,35 +709,35 @@
      "style": "corporate",
      "label": "商务蓝调",
      "file": "13-job-competition-job-competition/13__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-066",
      "style": "build",
      "label": "呼吸留白极简",
      "file": "13-job-competition-job-competition/13__build.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-067",
      "style": "brockmann",
      "label": "数学网格功能主义",
      "file": "13-job-competition-job-competition/13__brockmann.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-068",
      "style": "academic",
      "label": "学术严谨",
      "file": "13-job-competition-job-competition/13__academic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-069",
      "style": "nordic",
      "label": "北欧灰蓝",
      "file": "13-job-competition-job-competition/13__nordic.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -752,35 +752,35 @@
      "style": "brockmann",
      "label": "数学网格功能主义",
      "file": "14-contest-defense-contest-defense/14__brockmann.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-071",
      "style": "gradient",
      "label": "渐变流体",
      "file": "14-contest-defense-contest-defense/14__gradient.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-072",
      "style": "corporate",
      "label": "商务蓝调",
      "file": "14-contest-defense-contest-defense/14__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-073",
      "style": "darkneon",
      "label": "暗黑霓虹",
      "file": "14-contest-defense-contest-defense/14__darkneon.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-074",
      "style": "blueprint",
      "label": "工程蓝图",
      "file": "14-contest-defense-contest-defense/14__blueprint.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -795,35 +795,35 @@
      "style": "academic",
      "label": "学术严谨",
      "file": "15-course-syllabus-course-syllabus/15__academic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-076",
      "style": "takram",
      "label": "柔和科技图表",
      "file": "15-course-syllabus-course-syllabus/15__takram.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-077",
      "style": "nordic",
      "label": "北欧灰蓝",
      "file": "15-course-syllabus-course-syllabus/15__nordic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-078",
      "style": "chalk",
      "label": "黑板粉笔",
      "file": "15-course-syllabus-course-syllabus/15__chalk.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-079",
      "style": "isometric",
      "label": "等距信息图",
      "file": "15-course-syllabus-course-syllabus/15__isometric.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -838,42 +838,42 @@
      "style": "memphis",
      "label": "孟菲斯活力",
      "file": "16-recruitment-recruitment/16__memphis.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-081",
      "style": "pastel",
      "label": "马卡龙柔彩",
      "file": "16-recruitment-recruitment/16__pastel.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-082",
      "style": "bauhaus",
      "label": "包豪斯三原色",
      "file": "16-recruitment-recruitment/16__bauhaus.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-083",
      "style": "glass",
      "label": "玻璃拟态",
      "file": "16-recruitment-recruitment/16__glass.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-084",
      "style": "vaporwave",
      "label": "蒸汽波",
      "file": "16-recruitment-recruitment/16__vaporwave.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-085",
      "style": "bubble",
      "label": "泡泡堂风",
      "file": "16-recruitment-recruitment/16__bubble.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -888,35 +888,35 @@
      "style": "newspaper",
      "label": "报纸排版",
      "file": "17-annual-review-annual-review/17__newspaper.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-087",
      "style": "editorial",
      "label": "杂志编辑",
      "file": "17-annual-review-annual-review/17__editorial.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-088",
      "style": "corporate",
      "label": "商务蓝调",
      "file": "17-annual-review-annual-review/17__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-089",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "17-annual-review-annual-review/17__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-090",
      "style": "gradient",
      "label": "渐变流体",
      "file": "17-annual-review-annual-review/17__gradient.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -931,35 +931,35 @@
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "18-training-manual-training-manual/18__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-092",
      "style": "nordic",
      "label": "北欧灰蓝",
      "file": "18-training-manual-training-manual/18__nordic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-093",
      "style": "academic",
      "label": "学术严谨",
      "file": "18-training-manual-training-manual/18__academic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-094",
      "style": "isometric",
      "label": "等距信息图",
      "file": "18-training-manual-training-manual/18__isometric.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-095",
      "style": "chalk",
      "label": "黑板粉笔",
      "file": "18-training-manual-training-manual/18__chalk.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -974,35 +974,35 @@
      "style": "takram",
      "label": "柔和科技图表",
      "file": "19-user-research-user-research/19__takram.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-097",
      "style": "nordic",
      "label": "北欧灰蓝",
      "file": "19-user-research-user-research/19__nordic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-098",
      "style": "academic",
      "label": "学术严谨",
      "file": "19-user-research-user-research/19__academic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-099",
      "style": "organic",
      "label": "自然有机",
      "file": "19-user-research-user-research/19__organic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-100",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "19-user-research-user-research/19__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -1017,35 +1017,35 @@
      "style": "corporate",
      "label": "商务蓝调",
      "file": "20-market-analysis-market-analysis/20__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-102",
      "style": "brockmann",
      "label": "数学网格功能主义",
      "file": "20-market-analysis-market-analysis/20__brockmann.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-103",
      "style": "gradient",
      "label": "渐变流体",
      "file": "20-market-analysis-market-analysis/20__gradient.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-104",
      "style": "newspaper",
      "label": "报纸排版",
      "file": "20-market-analysis-market-analysis/20__newspaper.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-105",
      "style": "glass",
      "label": "玻璃拟态",
      "file": "20-market-analysis-market-analysis/20__glass.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -1060,35 +1060,35 @@
      "style": "brockmann",
      "label": "数学网格功能主义",
      "file": "21-budget-plan-budget-finance/21__brockmann.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-107",
      "style": "corporate",
      "label": "商务蓝调",
      "file": "21-budget-plan-budget-finance/21__corporate.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-108",
      "style": "isometric",
      "label": "等距信息图",
      "file": "21-budget-plan-budget-finance/21__isometric.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-109",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "21-budget-plan-budget-finance/21__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-110",
      "style": "nordic",
      "label": "北欧灰蓝",
      "file": "21-budget-plan-budget-finance/21__nordic.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -1103,42 +1103,42 @@
      "style": "organic",
      "label": "自然有机",
      "file": "22-travel-plan-travel-plan/22__organic.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-112",
      "style": "pastel",
      "label": "马卡龙柔彩",
      "file": "22-travel-plan-travel-plan/22__pastel.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-113",
      "style": "editorial",
      "label": "杂志编辑",
      "file": "22-travel-plan-travel-plan/22__editorial.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-114",
      "style": "risograph",
      "label": "孔版双色",
      "file": "22-travel-plan-travel-plan/22__risograph.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-115",
      "style": "vaporwave",
      "label": "蒸汽波",
      "file": "22-travel-plan-travel-plan/22__vaporwave.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-116",
      "style": "bubble",
      "label": "泡泡堂风",
      "file": "22-travel-plan-travel-plan/22__bubble.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -1153,35 +1153,35 @@
      "style": "terminal",
      "label": "赛博终端",
      "file": "23-open-source-release-open-source-release/23__terminal.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-118",
      "style": "blueprint",
      "label": "工程蓝图",
      "file": "23-open-source-release-open-source-release/23__blueprint.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-119",
      "style": "darkneon",
      "label": "暗黑霓虹",
      "file": "23-open-source-release-open-source-release/23__darkneon.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-120",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "23-open-source-release-open-source-release/23__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-121",
      "style": "gradient",
      "label": "渐变流体",
      "file": "23-open-source-release-open-source-release/23__gradient.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   },
@@ -1196,35 +1196,35 @@
      "style": "blueprint",
      "label": "工程蓝图",
      "file": "24-tech-review-tech-architecture-review/24__blueprint.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-123",
      "style": "isometric",
      "label": "等距信息图",
      "file": "24-tech-review-tech-architecture-review/24__isometric.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-124",
      "style": "brockmann",
      "label": "数学网格功能主义",
      "file": "24-tech-review-tech-architecture-review/24__brockmann.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-125",
      "style": "terminal",
      "label": "赛博终端",
      "file": "24-tech-review-tech-architecture-review/24__terminal.pptx",
-     "slides": 18
+     "slides": 19
     },
     {
      "id": "SF-126",
      "style": "monochrome",
      "label": "单色印刷极简",
      "file": "24-tech-review-tech-architecture-review/24__monochrome.pptx",
-     "slides": 18
+     "slides": 19
     }
    ]
   }
@@ -1239,11 +1239,11 @@
    "type": "Breathing Whitespace",
    "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__build.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-002",
@@ -1254,11 +1254,11 @@
    "type": "Cyber Terminal",
    "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__terminal.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-003",
@@ -1269,11 +1269,11 @@
    "type": "Soft Tech",
    "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__takram.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-004",
@@ -1284,11 +1284,11 @@
    "type": "Chalkboard",
    "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__chalk.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-005",
@@ -1299,11 +1299,11 @@
    "type": "Academic",
    "purpose": "编程教学课件",
    "file": "01-teaching-programming-courseware/01__academic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-006",
@@ -1314,11 +1314,11 @@
    "type": "Dark Neon",
    "purpose": "游戏设计提案",
    "file": "02-game-gdd-game-design-proposal/02__darkneon.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-007",
@@ -1329,11 +1329,11 @@
    "type": "Retro Pixel",
    "purpose": "游戏设计提案",
    "file": "02-game-gdd-game-design-proposal/02__retropixel.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-008",
@@ -1344,11 +1344,11 @@
    "type": "Corporate Blue",
    "purpose": "游戏设计提案",
    "file": "02-game-gdd-game-design-proposal/02__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-009",
@@ -1359,11 +1359,11 @@
    "type": "Isometric",
    "purpose": "游戏设计提案",
    "file": "02-game-gdd-game-design-proposal/02__isometric.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-010",
@@ -1374,11 +1374,11 @@
    "type": "Vaporwave",
    "purpose": "游戏设计提案",
    "file": "02-game-gdd-game-design-proposal/02__vaporwave.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-011",
@@ -1389,11 +1389,11 @@
    "type": "Editorial",
    "purpose": "像素与美术作品集",
    "file": "03-portfolio-pixel-art-portfolio/03__editorial.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-012",
@@ -1404,11 +1404,11 @@
    "type": "Retro Pixel",
    "purpose": "像素与美术作品集",
    "file": "03-portfolio-pixel-art-portfolio/03__retropixel.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-013",
@@ -1419,11 +1419,11 @@
    "type": "Breathing Whitespace",
    "purpose": "像素与美术作品集",
    "file": "03-portfolio-pixel-art-portfolio/03__build.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-014",
@@ -1434,11 +1434,11 @@
    "type": "Risograph",
    "purpose": "像素与美术作品集",
    "file": "03-portfolio-pixel-art-portfolio/03__risograph.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-015",
@@ -1449,11 +1449,11 @@
    "type": "Luxury Noir",
    "purpose": "像素与美术作品集",
    "file": "03-portfolio-pixel-art-portfolio/03__luxury.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-016",
@@ -1464,11 +1464,11 @@
    "type": "Memphis Pop",
    "purpose": "社团活动策划",
    "file": "04-club-event-club-event-planning/04__memphis.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-017",
@@ -1479,11 +1479,11 @@
    "type": "Organic",
    "purpose": "社团活动策划",
    "file": "04-club-event-club-event-planning/04__organic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-018",
@@ -1494,11 +1494,11 @@
    "type": "Breathing Whitespace",
    "purpose": "社团活动策划",
    "file": "04-club-event-club-event-planning/04__build.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-019",
@@ -1509,11 +1509,11 @@
    "type": "Pastel",
    "purpose": "社团活动策划",
    "file": "04-club-event-club-event-planning/04__pastel.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-020",
@@ -1524,11 +1524,11 @@
    "type": "Bauhaus",
    "purpose": "社团活动策划",
    "file": "04-club-event-club-event-planning/04__bauhaus.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-021",
@@ -1539,11 +1539,11 @@
    "type": "Bubble Pop",
    "purpose": "社团活动策划",
    "file": "04-club-event-club-event-planning/04__bubble.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-022",
@@ -1554,11 +1554,11 @@
    "type": "Swiss Grid",
    "purpose": "项目汇报与复盘",
    "file": "05-project-report-project-report-retrospective/05__brockmann.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-023",
@@ -1569,11 +1569,11 @@
    "type": "Corporate Blue",
    "purpose": "项目汇报与复盘",
    "file": "05-project-report-project-report-retrospective/05__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-024",
@@ -1584,11 +1584,11 @@
    "type": "Breathing Whitespace",
    "purpose": "项目汇报与复盘",
    "file": "05-project-report-project-report-retrospective/05__build.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-025",
@@ -1599,11 +1599,11 @@
    "type": "Nordic",
    "purpose": "项目汇报与复盘",
    "file": "05-project-report-project-report-retrospective/05__nordic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-026",
@@ -1614,11 +1614,11 @@
    "type": "Academic",
    "purpose": "项目汇报与复盘",
    "file": "05-project-report-project-report-retrospective/05__academic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-027",
@@ -1629,11 +1629,11 @@
    "type": "Soft Tech",
    "purpose": "学习笔记分享",
    "file": "06-study-notes-study-notes-sharing/06__takram.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-028",
@@ -1644,11 +1644,11 @@
    "type": "Organic",
    "purpose": "学习笔记分享",
    "file": "06-study-notes-study-notes-sharing/06__organic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-029",
@@ -1659,11 +1659,11 @@
    "type": "Editorial",
    "purpose": "学习笔记分享",
    "file": "06-study-notes-study-notes-sharing/06__editorial.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-030",
@@ -1674,11 +1674,11 @@
    "type": "Academic",
    "purpose": "学习笔记分享",
    "file": "06-study-notes-study-notes-sharing/06__academic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-031",
@@ -1689,11 +1689,11 @@
    "type": "Monochrome",
    "purpose": "学习笔记分享",
    "file": "06-study-notes-study-notes-sharing/06__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-032",
@@ -1704,11 +1704,11 @@
    "type": "Breathing Whitespace",
    "purpose": "求职简历与自我介绍",
    "file": "07-resume-resume-self-intro/07__build.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-033",
@@ -1719,11 +1719,11 @@
    "type": "Editorial",
    "purpose": "求职简历与自我介绍",
    "file": "07-resume-resume-self-intro/07__editorial.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-034",
@@ -1734,11 +1734,11 @@
    "type": "Nordic",
    "purpose": "求职简历与自我介绍",
    "file": "07-resume-resume-self-intro/07__nordic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-035",
@@ -1749,11 +1749,11 @@
    "type": "Monochrome",
    "purpose": "求职简历与自我介绍",
    "file": "07-resume-resume-self-intro/07__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-036",
@@ -1764,11 +1764,11 @@
    "type": "Luxury Noir",
    "purpose": "求职简历与自我介绍",
    "file": "07-resume-resume-self-intro/07__luxury.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-037",
@@ -1779,11 +1779,11 @@
    "type": "Memphis Pop",
    "purpose": "活动宣传与推广",
    "file": "08-promo-event-promo/08__memphis.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-038",
@@ -1794,11 +1794,11 @@
    "type": "Glassmorphism",
    "purpose": "活动宣传与推广",
    "file": "08-promo-event-promo/08__glass.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-039",
@@ -1809,11 +1809,11 @@
    "type": "Dark Neon",
    "purpose": "活动宣传与推广",
    "file": "08-promo-event-promo/08__darkneon.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-040",
@@ -1824,11 +1824,11 @@
    "type": "Bauhaus",
    "purpose": "活动宣传与推广",
    "file": "08-promo-event-promo/08__bauhaus.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-041",
@@ -1839,11 +1839,11 @@
    "type": "Pastel",
    "purpose": "活动宣传与推广",
    "file": "08-promo-event-promo/08__pastel.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-042",
@@ -1854,11 +1854,11 @@
    "type": "Bubble Pop",
    "purpose": "活动宣传与推广",
    "file": "08-promo-event-promo/08__bubble.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-043",
@@ -1869,11 +1869,11 @@
    "type": "Corporate Blue",
    "purpose": "数据看板与指标",
    "file": "09-dashboard-data-dashboard/09__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-044",
@@ -1884,11 +1884,11 @@
    "type": "Glassmorphism",
    "purpose": "数据看板与指标",
    "file": "09-dashboard-data-dashboard/09__glass.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-045",
@@ -1899,11 +1899,11 @@
    "type": "Soft Tech",
    "purpose": "数据看板与指标",
    "file": "09-dashboard-data-dashboard/09__takram.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-046",
@@ -1914,11 +1914,11 @@
    "type": "Gradient Flow",
    "purpose": "数据看板与指标",
    "file": "09-dashboard-data-dashboard/09__gradient.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-047",
@@ -1929,11 +1929,11 @@
    "type": "Isometric",
    "purpose": "数据看板与指标",
    "file": "09-dashboard-data-dashboard/09__isometric.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-048",
@@ -1944,11 +1944,11 @@
    "type": "Editorial",
    "purpose": "内容创作提案",
    "file": "10-creative-pitch-creative-pitch/10__editorial.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-049",
@@ -1959,11 +1959,11 @@
    "type": "Dark Neon",
    "purpose": "内容创作提案",
    "file": "10-creative-pitch-creative-pitch/10__darkneon.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-050",
@@ -1974,11 +1974,11 @@
    "type": "Organic",
    "purpose": "内容创作提案",
    "file": "10-creative-pitch-creative-pitch/10__organic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-051",
@@ -1989,11 +1989,11 @@
    "type": "Newspaper",
    "purpose": "内容创作提案",
    "file": "10-creative-pitch-creative-pitch/10__newspaper.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-052",
@@ -2004,11 +2004,11 @@
    "type": "Vaporwave",
    "purpose": "内容创作提案",
    "file": "10-creative-pitch-creative-pitch/10__vaporwave.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-053",
@@ -2019,11 +2019,11 @@
    "type": "Gradient Flow",
    "purpose": "产品发布与介绍",
    "file": "11-product-launch-product-launch/11__gradient.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-054",
@@ -2034,11 +2034,11 @@
    "type": "Glassmorphism",
    "purpose": "产品发布与介绍",
    "file": "11-product-launch-product-launch/11__glass.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-055",
@@ -2049,11 +2049,11 @@
    "type": "Luxury Noir",
    "purpose": "产品发布与介绍",
    "file": "11-product-launch-product-launch/11__luxury.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-056",
@@ -2064,11 +2064,11 @@
    "type": "Breathing Whitespace",
    "purpose": "产品发布与介绍",
    "file": "11-product-launch-product-launch/11__build.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-057",
@@ -2079,11 +2079,11 @@
    "type": "Dark Neon",
    "purpose": "产品发布与介绍",
    "file": "11-product-launch-product-launch/11__darkneon.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-058",
@@ -2094,11 +2094,11 @@
    "type": "Bubble Pop",
    "purpose": "产品发布与介绍",
    "file": "11-product-launch-product-launch/11__bubble.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-059",
@@ -2109,11 +2109,11 @@
    "type": "Editorial",
    "purpose": "读书会与共读分享",
    "file": "12-reading-club-reading-club/12__editorial.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-060",
@@ -2124,11 +2124,11 @@
    "type": "Organic",
    "purpose": "读书会与共读分享",
    "file": "12-reading-club-reading-club/12__organic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-061",
@@ -2139,11 +2139,11 @@
    "type": "Newspaper",
    "purpose": "读书会与共读分享",
    "file": "12-reading-club-reading-club/12__newspaper.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-062",
@@ -2154,11 +2154,11 @@
    "type": "Pastel",
    "purpose": "读书会与共读分享",
    "file": "12-reading-club-reading-club/12__pastel.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-063",
@@ -2169,11 +2169,11 @@
    "type": "Monochrome",
    "purpose": "读书会与共读分享",
    "file": "12-reading-club-reading-club/12__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-064",
@@ -2184,11 +2184,11 @@
    "type": "Bubble Pop",
    "purpose": "读书会与共读分享",
    "file": "12-reading-club-reading-club/12__bubble.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-065",
@@ -2199,11 +2199,11 @@
    "type": "Corporate Blue",
    "purpose": "竞聘述职与答辩",
    "file": "13-job-competition-job-competition/13__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-066",
@@ -2214,11 +2214,11 @@
    "type": "Breathing Whitespace",
    "purpose": "竞聘述职与答辩",
    "file": "13-job-competition-job-competition/13__build.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-067",
@@ -2229,11 +2229,11 @@
    "type": "Swiss Grid",
    "purpose": "竞聘述职与答辩",
    "file": "13-job-competition-job-competition/13__brockmann.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-068",
@@ -2244,11 +2244,11 @@
    "type": "Academic",
    "purpose": "竞聘述职与答辩",
    "file": "13-job-competition-job-competition/13__academic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-069",
@@ -2259,11 +2259,11 @@
    "type": "Nordic",
    "purpose": "竞聘述职与答辩",
    "file": "13-job-competition-job-competition/13__nordic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-070",
@@ -2274,11 +2274,11 @@
    "type": "Swiss Grid",
    "purpose": "比赛答辩与路演",
    "file": "14-contest-defense-contest-defense/14__brockmann.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-071",
@@ -2289,11 +2289,11 @@
    "type": "Gradient Flow",
    "purpose": "比赛答辩与路演",
    "file": "14-contest-defense-contest-defense/14__gradient.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-072",
@@ -2304,11 +2304,11 @@
    "type": "Corporate Blue",
    "purpose": "比赛答辩与路演",
    "file": "14-contest-defense-contest-defense/14__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-073",
@@ -2319,11 +2319,11 @@
    "type": "Dark Neon",
    "purpose": "比赛答辩与路演",
    "file": "14-contest-defense-contest-defense/14__darkneon.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-074",
@@ -2334,11 +2334,11 @@
    "type": "Blueprint",
    "purpose": "比赛答辩与路演",
    "file": "14-contest-defense-contest-defense/14__blueprint.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-075",
@@ -2349,11 +2349,11 @@
    "type": "Academic",
    "purpose": "课程大纲与教学计划",
    "file": "15-course-syllabus-course-syllabus/15__academic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-076",
@@ -2364,11 +2364,11 @@
    "type": "Soft Tech",
    "purpose": "课程大纲与教学计划",
    "file": "15-course-syllabus-course-syllabus/15__takram.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-077",
@@ -2379,11 +2379,11 @@
    "type": "Nordic",
    "purpose": "课程大纲与教学计划",
    "file": "15-course-syllabus-course-syllabus/15__nordic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-078",
@@ -2394,11 +2394,11 @@
    "type": "Chalkboard",
    "purpose": "课程大纲与教学计划",
    "file": "15-course-syllabus-course-syllabus/15__chalk.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-079",
@@ -2409,11 +2409,11 @@
    "type": "Isometric",
    "purpose": "课程大纲与教学计划",
    "file": "15-course-syllabus-course-syllabus/15__isometric.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-080",
@@ -2424,11 +2424,11 @@
    "type": "Memphis Pop",
    "purpose": "招新宣讲与纳新",
    "file": "16-recruitment-recruitment/16__memphis.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-081",
@@ -2439,11 +2439,11 @@
    "type": "Pastel",
    "purpose": "招新宣讲与纳新",
    "file": "16-recruitment-recruitment/16__pastel.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-082",
@@ -2454,11 +2454,11 @@
    "type": "Bauhaus",
    "purpose": "招新宣讲与纳新",
    "file": "16-recruitment-recruitment/16__bauhaus.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-083",
@@ -2469,11 +2469,11 @@
    "type": "Glassmorphism",
    "purpose": "招新宣讲与纳新",
    "file": "16-recruitment-recruitment/16__glass.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-084",
@@ -2484,11 +2484,11 @@
    "type": "Vaporwave",
    "purpose": "招新宣讲与纳新",
    "file": "16-recruitment-recruitment/16__vaporwave.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-085",
@@ -2499,11 +2499,11 @@
    "type": "Bubble Pop",
    "purpose": "招新宣讲与纳新",
    "file": "16-recruitment-recruitment/16__bubble.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-086",
@@ -2514,11 +2514,11 @@
    "type": "Newspaper",
    "purpose": "年度总结与规划",
    "file": "17-annual-review-annual-review/17__newspaper.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-087",
@@ -2529,11 +2529,11 @@
    "type": "Editorial",
    "purpose": "年度总结与规划",
    "file": "17-annual-review-annual-review/17__editorial.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-088",
@@ -2544,11 +2544,11 @@
    "type": "Corporate Blue",
    "purpose": "年度总结与规划",
    "file": "17-annual-review-annual-review/17__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-089",
@@ -2559,11 +2559,11 @@
    "type": "Monochrome",
    "purpose": "年度总结与规划",
    "file": "17-annual-review-annual-review/17__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-090",
@@ -2574,11 +2574,11 @@
    "type": "Gradient Flow",
    "purpose": "年度总结与规划",
    "file": "17-annual-review-annual-review/17__gradient.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-091",
@@ -2589,11 +2589,11 @@
    "type": "Monochrome",
    "purpose": "培训手册与 SOP",
    "file": "18-training-manual-training-manual/18__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-092",
@@ -2604,11 +2604,11 @@
    "type": "Nordic",
    "purpose": "培训手册与 SOP",
    "file": "18-training-manual-training-manual/18__nordic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-093",
@@ -2619,11 +2619,11 @@
    "type": "Academic",
    "purpose": "培训手册与 SOP",
    "file": "18-training-manual-training-manual/18__academic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-094",
@@ -2634,11 +2634,11 @@
    "type": "Isometric",
    "purpose": "培训手册与 SOP",
    "file": "18-training-manual-training-manual/18__isometric.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-095",
@@ -2649,11 +2649,11 @@
    "type": "Chalkboard",
    "purpose": "培训手册与 SOP",
    "file": "18-training-manual-training-manual/18__chalk.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-096",
@@ -2664,11 +2664,11 @@
    "type": "Soft Tech",
    "purpose": "用户调研与访谈",
    "file": "19-user-research-user-research/19__takram.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-097",
@@ -2679,11 +2679,11 @@
    "type": "Nordic",
    "purpose": "用户调研与访谈",
    "file": "19-user-research-user-research/19__nordic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-098",
@@ -2694,11 +2694,11 @@
    "type": "Academic",
    "purpose": "用户调研与访谈",
    "file": "19-user-research-user-research/19__academic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-099",
@@ -2709,11 +2709,11 @@
    "type": "Organic",
    "purpose": "用户调研与访谈",
    "file": "19-user-research-user-research/19__organic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-100",
@@ -2724,11 +2724,11 @@
    "type": "Monochrome",
    "purpose": "用户调研与访谈",
    "file": "19-user-research-user-research/19__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-101",
@@ -2739,11 +2739,11 @@
    "type": "Corporate Blue",
    "purpose": "市场与竞品分析",
    "file": "20-market-analysis-market-analysis/20__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-102",
@@ -2754,11 +2754,11 @@
    "type": "Swiss Grid",
    "purpose": "市场与竞品分析",
    "file": "20-market-analysis-market-analysis/20__brockmann.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-103",
@@ -2769,11 +2769,11 @@
    "type": "Gradient Flow",
    "purpose": "市场与竞品分析",
    "file": "20-market-analysis-market-analysis/20__gradient.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-104",
@@ -2784,11 +2784,11 @@
    "type": "Newspaper",
    "purpose": "市场与竞品分析",
    "file": "20-market-analysis-market-analysis/20__newspaper.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-105",
@@ -2799,11 +2799,11 @@
    "type": "Glassmorphism",
    "purpose": "市场与竞品分析",
    "file": "20-market-analysis-market-analysis/20__glass.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-106",
@@ -2814,11 +2814,11 @@
    "type": "Swiss Grid",
    "purpose": "预算与财务计划",
    "file": "21-budget-plan-budget-finance/21__brockmann.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-107",
@@ -2829,11 +2829,11 @@
    "type": "Corporate Blue",
    "purpose": "预算与财务计划",
    "file": "21-budget-plan-budget-finance/21__corporate.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-108",
@@ -2844,11 +2844,11 @@
    "type": "Isometric",
    "purpose": "预算与财务计划",
    "file": "21-budget-plan-budget-finance/21__isometric.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-109",
@@ -2859,11 +2859,11 @@
    "type": "Monochrome",
    "purpose": "预算与财务计划",
    "file": "21-budget-plan-budget-finance/21__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-110",
@@ -2874,11 +2874,11 @@
    "type": "Nordic",
    "purpose": "预算与财务计划",
    "file": "21-budget-plan-budget-finance/21__nordic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-111",
@@ -2889,11 +2889,11 @@
    "type": "Organic",
    "purpose": "旅行与行程计划",
    "file": "22-travel-plan-travel-plan/22__organic.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-112",
@@ -2904,11 +2904,11 @@
    "type": "Pastel",
    "purpose": "旅行与行程计划",
    "file": "22-travel-plan-travel-plan/22__pastel.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-113",
@@ -2919,11 +2919,11 @@
    "type": "Editorial",
    "purpose": "旅行与行程计划",
    "file": "22-travel-plan-travel-plan/22__editorial.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-114",
@@ -2934,11 +2934,11 @@
    "type": "Risograph",
    "purpose": "旅行与行程计划",
    "file": "22-travel-plan-travel-plan/22__risograph.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-115",
@@ -2949,11 +2949,11 @@
    "type": "Vaporwave",
    "purpose": "旅行与行程计划",
    "file": "22-travel-plan-travel-plan/22__vaporwave.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-116",
@@ -2964,11 +2964,11 @@
    "type": "Bubble Pop",
    "purpose": "旅行与行程计划",
    "file": "22-travel-plan-travel-plan/22__bubble.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-117",
@@ -2979,11 +2979,11 @@
    "type": "Cyber Terminal",
    "purpose": "开源项目发布",
    "file": "23-open-source-release-open-source-release/23__terminal.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-118",
@@ -2994,11 +2994,11 @@
    "type": "Blueprint",
    "purpose": "开源项目发布",
    "file": "23-open-source-release-open-source-release/23__blueprint.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-119",
@@ -3009,11 +3009,11 @@
    "type": "Dark Neon",
    "purpose": "开源项目发布",
    "file": "23-open-source-release-open-source-release/23__darkneon.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-120",
@@ -3024,11 +3024,11 @@
    "type": "Monochrome",
    "purpose": "开源项目发布",
    "file": "23-open-source-release-open-source-release/23__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-121",
@@ -3039,11 +3039,11 @@
    "type": "Gradient Flow",
    "purpose": "开源项目发布",
    "file": "23-open-source-release-open-source-release/23__gradient.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-122",
@@ -3054,11 +3054,11 @@
    "type": "Blueprint",
    "purpose": "技术架构评审",
    "file": "24-tech-review-tech-architecture-review/24__blueprint.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-123",
@@ -3069,11 +3069,11 @@
    "type": "Isometric",
    "purpose": "技术架构评审",
    "file": "24-tech-review-tech-architecture-review/24__isometric.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-124",
@@ -3084,11 +3084,11 @@
    "type": "Swiss Grid",
    "purpose": "技术架构评审",
    "file": "24-tech-review-tech-architecture-review/24__brockmann.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-125",
@@ -3099,11 +3099,11 @@
    "type": "Cyber Terminal",
    "purpose": "技术架构评审",
    "file": "24-tech-review-tech-architecture-review/24__terminal.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   },
   {
    "id": "SF-126",
@@ -3114,11 +3114,11 @@
    "type": "Monochrome",
    "purpose": "技术架构评审",
    "file": "24-tech-review-tech-architecture-review/24__monochrome.pptx",
-   "slides": 18,
+   "slides": 19,
    "status": "active",
-   "version": "2.0",
+   "version": "3.0",
    "source": "SlideForge generator",
-   "updated": "2026-09-14"
+   "updated": "2026-09-19"
   }
  ],
  "potx": [
@@ -3250,7 +3250,7 @@
  ],
  "stats": {
   "decks": 126,
-  "slides_total": 2268,
+  "slides_total": 2394,
   "categories": 24,
   "themes": 25,
   "potx": 25,

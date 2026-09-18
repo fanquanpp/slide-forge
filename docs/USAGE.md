@@ -9,7 +9,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`01-teaching-programming-courseware/01__build.pptx`（18 页）
+- **文件**：`01-teaching-programming-courseware/01__build.pptx`（19 页）
 
 ## SF-002 — 编程教学课件 · 赛博终端
 
@@ -18,7 +18,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`01-teaching-programming-courseware/01__terminal.pptx`（18 页）
+- **文件**：`01-teaching-programming-courseware/01__terminal.pptx`（19 页）
 
 ## SF-003 — 编程教学课件 · 柔和科技图表
 
@@ -27,7 +27,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`01-teaching-programming-courseware/01__takram.pptx`（18 页）
+- **文件**：`01-teaching-programming-courseware/01__takram.pptx`（19 页）
 
 ## SF-004 — 编程教学课件 · 黑板粉笔
 
@@ -36,7 +36,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`01-teaching-programming-courseware/01__chalk.pptx`（18 页）
+- **文件**：`01-teaching-programming-courseware/01__chalk.pptx`（19 页）
 
 ## SF-005 — 编程教学课件 · 学术严谨
 
@@ -45,7 +45,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`01-teaching-programming-courseware/01__academic.pptx`（18 页）
+- **文件**：`01-teaching-programming-courseware/01__academic.pptx`（19 页）
 
 ## SF-006 — 游戏设计提案 · 暗黑霓虹
 
@@ -54,7 +54,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`02-game-gdd-game-design-proposal/02__darkneon.pptx`（18 页）
+- **文件**：`02-game-gdd-game-design-proposal/02__darkneon.pptx`（19 页）
 
 ## SF-007 — 游戏设计提案 · 复古像素
 
@@ -63,7 +63,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`02-game-gdd-game-design-proposal/02__retropixel.pptx`（18 页）
+- **文件**：`02-game-gdd-game-design-proposal/02__retropixel.pptx`（19 页）
 
 ## SF-008 — 游戏设计提案 · 商务蓝调
 
@@ -72,7 +72,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`02-game-gdd-game-design-proposal/02__corporate.pptx`（18 页）
+- **文件**：`02-game-gdd-game-design-proposal/02__corporate.pptx`（19 页）
 
 ## SF-009 — 游戏设计提案 · 等距信息图
 
@@ -81,7 +81,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`02-game-gdd-game-design-proposal/02__isometric.pptx`（18 页）
+- **文件**：`02-game-gdd-game-design-proposal/02__isometric.pptx`（19 页）
 
 ## SF-010 — 游戏设计提案 · 蒸汽波
 
@@ -90,7 +90,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`02-game-gdd-game-design-proposal/02__vaporwave.pptx`（18 页）
+- **文件**：`02-game-gdd-game-design-proposal/02__vaporwave.pptx`（19 页）
 
 ## SF-011 — 像素与美术作品集 · 杂志编辑
 
@@ -99,7 +99,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`03-portfolio-pixel-art-portfolio/03__editorial.pptx`（18 页）
+- **文件**：`03-portfolio-pixel-art-portfolio/03__editorial.pptx`（19 页）
 
 ## SF-012 — 像素与美术作品集 · 复古像素
 
@@ -108,7 +108,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`03-portfolio-pixel-art-portfolio/03__retropixel.pptx`（18 页）
+- **文件**：`03-portfolio-pixel-art-portfolio/03__retropixel.pptx`（19 页）
 
 ## SF-013 — 像素与美术作品集 · 呼吸留白极简
 
@@ -117,7 +117,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`03-portfolio-pixel-art-portfolio/03__build.pptx`（18 页）
+- **文件**：`03-portfolio-pixel-art-portfolio/03__build.pptx`（19 页）
 
 ## SF-014 — 像素与美术作品集 · 孔版双色
 
@@ -126,7 +126,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`03-portfolio-pixel-art-portfolio/03__risograph.pptx`（18 页）
+- **文件**：`03-portfolio-pixel-art-portfolio/03__risograph.pptx`（19 页）
 
 ## SF-015 — 像素与美术作品集 · 轻奢金黑
 
@@ -135,7 +135,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`03-portfolio-pixel-art-portfolio/03__luxury.pptx`（18 页）
+- **文件**：`03-portfolio-pixel-art-portfolio/03__luxury.pptx`（19 页）
 
 ## SF-016 — 社团活动策划 · 孟菲斯活力
 
@@ -144,7 +144,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`04-club-event-club-event-planning/04__memphis.pptx`（18 页）
+- **文件**：`04-club-event-club-event-planning/04__memphis.pptx`（19 页）
 
 ## SF-017 — 社团活动策划 · 自然有机
 
@@ -153,7 +153,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`04-club-event-club-event-planning/04__organic.pptx`（18 页）
+- **文件**：`04-club-event-club-event-planning/04__organic.pptx`（19 页）
 
 ## SF-018 — 社团活动策划 · 呼吸留白极简
 
@@ -162,7 +162,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`04-club-event-club-event-planning/04__build.pptx`（18 页）
+- **文件**：`04-club-event-club-event-planning/04__build.pptx`（19 页）
 
 ## SF-019 — 社团活动策划 · 马卡龙柔彩
 
@@ -171,7 +171,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`04-club-event-club-event-planning/04__pastel.pptx`（18 页）
+- **文件**：`04-club-event-club-event-planning/04__pastel.pptx`（19 页）
 
 ## SF-020 — 社团活动策划 · 包豪斯三原色
 
@@ -180,7 +180,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`04-club-event-club-event-planning/04__bauhaus.pptx`（18 页）
+- **文件**：`04-club-event-club-event-planning/04__bauhaus.pptx`（19 页）
 
 ## SF-021 — 社团活动策划 · 泡泡堂风
 
@@ -189,7 +189,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`04-club-event-club-event-planning/04__bubble.pptx`（18 页）
+- **文件**：`04-club-event-club-event-planning/04__bubble.pptx`（19 页）
 
 ## SF-022 — 项目汇报与复盘 · 数学网格功能主义
 
@@ -198,7 +198,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`05-project-report-project-report-retrospective/05__brockmann.pptx`（18 页）
+- **文件**：`05-project-report-project-report-retrospective/05__brockmann.pptx`（19 页）
 
 ## SF-023 — 项目汇报与复盘 · 商务蓝调
 
@@ -207,7 +207,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`05-project-report-project-report-retrospective/05__corporate.pptx`（18 页）
+- **文件**：`05-project-report-project-report-retrospective/05__corporate.pptx`（19 页）
 
 ## SF-024 — 项目汇报与复盘 · 呼吸留白极简
 
@@ -216,7 +216,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`05-project-report-project-report-retrospective/05__build.pptx`（18 页）
+- **文件**：`05-project-report-project-report-retrospective/05__build.pptx`（19 页）
 
 ## SF-025 — 项目汇报与复盘 · 北欧灰蓝
 
@@ -225,7 +225,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`05-project-report-project-report-retrospective/05__nordic.pptx`（18 页）
+- **文件**：`05-project-report-project-report-retrospective/05__nordic.pptx`（19 页）
 
 ## SF-026 — 项目汇报与复盘 · 学术严谨
 
@@ -234,7 +234,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`05-project-report-project-report-retrospective/05__academic.pptx`（18 页）
+- **文件**：`05-project-report-project-report-retrospective/05__academic.pptx`（19 页）
 
 ## SF-027 — 学习笔记分享 · 柔和科技图表
 
@@ -243,7 +243,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`06-study-notes-study-notes-sharing/06__takram.pptx`（18 页）
+- **文件**：`06-study-notes-study-notes-sharing/06__takram.pptx`（19 页）
 
 ## SF-028 — 学习笔记分享 · 自然有机
 
@@ -252,7 +252,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`06-study-notes-study-notes-sharing/06__organic.pptx`（18 页）
+- **文件**：`06-study-notes-study-notes-sharing/06__organic.pptx`（19 页）
 
 ## SF-029 — 学习笔记分享 · 杂志编辑
 
@@ -261,7 +261,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`06-study-notes-study-notes-sharing/06__editorial.pptx`（18 页）
+- **文件**：`06-study-notes-study-notes-sharing/06__editorial.pptx`（19 页）
 
 ## SF-030 — 学习笔记分享 · 学术严谨
 
@@ -270,7 +270,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`06-study-notes-study-notes-sharing/06__academic.pptx`（18 页）
+- **文件**：`06-study-notes-study-notes-sharing/06__academic.pptx`（19 页）
 
 ## SF-031 — 学习笔记分享 · 单色印刷极简
 
@@ -279,7 +279,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`06-study-notes-study-notes-sharing/06__monochrome.pptx`（18 页）
+- **文件**：`06-study-notes-study-notes-sharing/06__monochrome.pptx`（19 页）
 
 ## SF-032 — 求职简历与自我介绍 · 呼吸留白极简
 
@@ -288,7 +288,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`07-resume-resume-self-intro/07__build.pptx`（18 页）
+- **文件**：`07-resume-resume-self-intro/07__build.pptx`（19 页）
 
 ## SF-033 — 求职简历与自我介绍 · 杂志编辑
 
@@ -297,7 +297,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`07-resume-resume-self-intro/07__editorial.pptx`（18 页）
+- **文件**：`07-resume-resume-self-intro/07__editorial.pptx`（19 页）
 
 ## SF-034 — 求职简历与自我介绍 · 北欧灰蓝
 
@@ -306,7 +306,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`07-resume-resume-self-intro/07__nordic.pptx`（18 页）
+- **文件**：`07-resume-resume-self-intro/07__nordic.pptx`（19 页）
 
 ## SF-035 — 求职简历与自我介绍 · 单色印刷极简
 
@@ -315,7 +315,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`07-resume-resume-self-intro/07__monochrome.pptx`（18 页）
+- **文件**：`07-resume-resume-self-intro/07__monochrome.pptx`（19 页）
 
 ## SF-036 — 求职简历与自我介绍 · 轻奢金黑
 
@@ -324,7 +324,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`07-resume-resume-self-intro/07__luxury.pptx`（18 页）
+- **文件**：`07-resume-resume-self-intro/07__luxury.pptx`（19 页）
 
 ## SF-037 — 活动宣传与推广 · 孟菲斯活力
 
@@ -333,7 +333,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`08-promo-event-promo/08__memphis.pptx`（18 页）
+- **文件**：`08-promo-event-promo/08__memphis.pptx`（19 页）
 
 ## SF-038 — 活动宣传与推广 · 玻璃拟态
 
@@ -342,7 +342,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`08-promo-event-promo/08__glass.pptx`（18 页）
+- **文件**：`08-promo-event-promo/08__glass.pptx`（19 页）
 
 ## SF-039 — 活动宣传与推广 · 暗黑霓虹
 
@@ -351,7 +351,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`08-promo-event-promo/08__darkneon.pptx`（18 页）
+- **文件**：`08-promo-event-promo/08__darkneon.pptx`（19 页）
 
 ## SF-040 — 活动宣传与推广 · 包豪斯三原色
 
@@ -360,7 +360,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`08-promo-event-promo/08__bauhaus.pptx`（18 页）
+- **文件**：`08-promo-event-promo/08__bauhaus.pptx`（19 页）
 
 ## SF-041 — 活动宣传与推广 · 马卡龙柔彩
 
@@ -369,7 +369,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`08-promo-event-promo/08__pastel.pptx`（18 页）
+- **文件**：`08-promo-event-promo/08__pastel.pptx`（19 页）
 
 ## SF-042 — 活动宣传与推广 · 泡泡堂风
 
@@ -378,7 +378,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`08-promo-event-promo/08__bubble.pptx`（18 页）
+- **文件**：`08-promo-event-promo/08__bubble.pptx`（19 页）
 
 ## SF-043 — 数据看板与指标 · 商务蓝调
 
@@ -387,7 +387,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`09-dashboard-data-dashboard/09__corporate.pptx`（18 页）
+- **文件**：`09-dashboard-data-dashboard/09__corporate.pptx`（19 页）
 
 ## SF-044 — 数据看板与指标 · 玻璃拟态
 
@@ -396,7 +396,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`09-dashboard-data-dashboard/09__glass.pptx`（18 页）
+- **文件**：`09-dashboard-data-dashboard/09__glass.pptx`（19 页）
 
 ## SF-045 — 数据看板与指标 · 柔和科技图表
 
@@ -405,7 +405,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`09-dashboard-data-dashboard/09__takram.pptx`（18 页）
+- **文件**：`09-dashboard-data-dashboard/09__takram.pptx`（19 页）
 
 ## SF-046 — 数据看板与指标 · 渐变流体
 
@@ -414,7 +414,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`09-dashboard-data-dashboard/09__gradient.pptx`（18 页）
+- **文件**：`09-dashboard-data-dashboard/09__gradient.pptx`（19 页）
 
 ## SF-047 — 数据看板与指标 · 等距信息图
 
@@ -423,7 +423,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`09-dashboard-data-dashboard/09__isometric.pptx`（18 页）
+- **文件**：`09-dashboard-data-dashboard/09__isometric.pptx`（19 页）
 
 ## SF-048 — 内容创作提案 · 杂志编辑
 
@@ -432,7 +432,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`10-creative-pitch-creative-pitch/10__editorial.pptx`（18 页）
+- **文件**：`10-creative-pitch-creative-pitch/10__editorial.pptx`（19 页）
 
 ## SF-049 — 内容创作提案 · 暗黑霓虹
 
@@ -441,7 +441,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`10-creative-pitch-creative-pitch/10__darkneon.pptx`（18 页）
+- **文件**：`10-creative-pitch-creative-pitch/10__darkneon.pptx`（19 页）
 
 ## SF-050 — 内容创作提案 · 自然有机
 
@@ -450,7 +450,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`10-creative-pitch-creative-pitch/10__organic.pptx`（18 页）
+- **文件**：`10-creative-pitch-creative-pitch/10__organic.pptx`（19 页）
 
 ## SF-051 — 内容创作提案 · 报纸排版
 
@@ -459,7 +459,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`10-creative-pitch-creative-pitch/10__newspaper.pptx`（18 页）
+- **文件**：`10-creative-pitch-creative-pitch/10__newspaper.pptx`（19 页）
 
 ## SF-052 — 内容创作提案 · 蒸汽波
 
@@ -468,7 +468,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`10-creative-pitch-creative-pitch/10__vaporwave.pptx`（18 页）
+- **文件**：`10-creative-pitch-creative-pitch/10__vaporwave.pptx`（19 页）
 
 ## SF-053 — 产品发布与介绍 · 渐变流体
 
@@ -477,7 +477,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`11-product-launch-product-launch/11__gradient.pptx`（18 页）
+- **文件**：`11-product-launch-product-launch/11__gradient.pptx`（19 页）
 
 ## SF-054 — 产品发布与介绍 · 玻璃拟态
 
@@ -486,7 +486,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`11-product-launch-product-launch/11__glass.pptx`（18 页）
+- **文件**：`11-product-launch-product-launch/11__glass.pptx`（19 页）
 
 ## SF-055 — 产品发布与介绍 · 轻奢金黑
 
@@ -495,7 +495,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`11-product-launch-product-launch/11__luxury.pptx`（18 页）
+- **文件**：`11-product-launch-product-launch/11__luxury.pptx`（19 页）
 
 ## SF-056 — 产品发布与介绍 · 呼吸留白极简
 
@@ -504,7 +504,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`11-product-launch-product-launch/11__build.pptx`（18 页）
+- **文件**：`11-product-launch-product-launch/11__build.pptx`（19 页）
 
 ## SF-057 — 产品发布与介绍 · 暗黑霓虹
 
@@ -513,7 +513,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`11-product-launch-product-launch/11__darkneon.pptx`（18 页）
+- **文件**：`11-product-launch-product-launch/11__darkneon.pptx`（19 页）
 
 ## SF-058 — 产品发布与介绍 · 泡泡堂风
 
@@ -522,7 +522,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`11-product-launch-product-launch/11__bubble.pptx`（18 页）
+- **文件**：`11-product-launch-product-launch/11__bubble.pptx`（19 页）
 
 ## SF-059 — 读书会与共读分享 · 杂志编辑
 
@@ -531,7 +531,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`12-reading-club-reading-club/12__editorial.pptx`（18 页）
+- **文件**：`12-reading-club-reading-club/12__editorial.pptx`（19 页）
 
 ## SF-060 — 读书会与共读分享 · 自然有机
 
@@ -540,7 +540,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`12-reading-club-reading-club/12__organic.pptx`（18 页）
+- **文件**：`12-reading-club-reading-club/12__organic.pptx`（19 页）
 
 ## SF-061 — 读书会与共读分享 · 报纸排版
 
@@ -549,7 +549,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`12-reading-club-reading-club/12__newspaper.pptx`（18 页）
+- **文件**：`12-reading-club-reading-club/12__newspaper.pptx`（19 页）
 
 ## SF-062 — 读书会与共读分享 · 马卡龙柔彩
 
@@ -558,7 +558,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`12-reading-club-reading-club/12__pastel.pptx`（18 页）
+- **文件**：`12-reading-club-reading-club/12__pastel.pptx`（19 页）
 
 ## SF-063 — 读书会与共读分享 · 单色印刷极简
 
@@ -567,7 +567,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`12-reading-club-reading-club/12__monochrome.pptx`（18 页）
+- **文件**：`12-reading-club-reading-club/12__monochrome.pptx`（19 页）
 
 ## SF-064 — 读书会与共读分享 · 泡泡堂风
 
@@ -576,7 +576,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`12-reading-club-reading-club/12__bubble.pptx`（18 页）
+- **文件**：`12-reading-club-reading-club/12__bubble.pptx`（19 页）
 
 ## SF-065 — 竞聘述职与答辩 · 商务蓝调
 
@@ -585,7 +585,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`13-job-competition-job-competition/13__corporate.pptx`（18 页）
+- **文件**：`13-job-competition-job-competition/13__corporate.pptx`（19 页）
 
 ## SF-066 — 竞聘述职与答辩 · 呼吸留白极简
 
@@ -594,7 +594,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`13-job-competition-job-competition/13__build.pptx`（18 页）
+- **文件**：`13-job-competition-job-competition/13__build.pptx`（19 页）
 
 ## SF-067 — 竞聘述职与答辩 · 数学网格功能主义
 
@@ -603,7 +603,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`13-job-competition-job-competition/13__brockmann.pptx`（18 页）
+- **文件**：`13-job-competition-job-competition/13__brockmann.pptx`（19 页）
 
 ## SF-068 — 竞聘述职与答辩 · 学术严谨
 
@@ -612,7 +612,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`13-job-competition-job-competition/13__academic.pptx`（18 页）
+- **文件**：`13-job-competition-job-competition/13__academic.pptx`（19 页）
 
 ## SF-069 — 竞聘述职与答辩 · 北欧灰蓝
 
@@ -621,7 +621,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`13-job-competition-job-competition/13__nordic.pptx`（18 页）
+- **文件**：`13-job-competition-job-competition/13__nordic.pptx`（19 页）
 
 ## SF-070 — 比赛答辩与路演 · 数学网格功能主义
 
@@ -630,7 +630,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`14-contest-defense-contest-defense/14__brockmann.pptx`（18 页）
+- **文件**：`14-contest-defense-contest-defense/14__brockmann.pptx`（19 页）
 
 ## SF-071 — 比赛答辩与路演 · 渐变流体
 
@@ -639,7 +639,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`14-contest-defense-contest-defense/14__gradient.pptx`（18 页）
+- **文件**：`14-contest-defense-contest-defense/14__gradient.pptx`（19 页）
 
 ## SF-072 — 比赛答辩与路演 · 商务蓝调
 
@@ -648,7 +648,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`14-contest-defense-contest-defense/14__corporate.pptx`（18 页）
+- **文件**：`14-contest-defense-contest-defense/14__corporate.pptx`（19 页）
 
 ## SF-073 — 比赛答辩与路演 · 暗黑霓虹
 
@@ -657,7 +657,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`14-contest-defense-contest-defense/14__darkneon.pptx`（18 页）
+- **文件**：`14-contest-defense-contest-defense/14__darkneon.pptx`（19 页）
 
 ## SF-074 — 比赛答辩与路演 · 工程蓝图
 
@@ -666,7 +666,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`14-contest-defense-contest-defense/14__blueprint.pptx`（18 页）
+- **文件**：`14-contest-defense-contest-defense/14__blueprint.pptx`（19 页）
 
 ## SF-075 — 课程大纲与教学计划 · 学术严谨
 
@@ -675,7 +675,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`15-course-syllabus-course-syllabus/15__academic.pptx`（18 页）
+- **文件**：`15-course-syllabus-course-syllabus/15__academic.pptx`（19 页）
 
 ## SF-076 — 课程大纲与教学计划 · 柔和科技图表
 
@@ -684,7 +684,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`15-course-syllabus-course-syllabus/15__takram.pptx`（18 页）
+- **文件**：`15-course-syllabus-course-syllabus/15__takram.pptx`（19 页）
 
 ## SF-077 — 课程大纲与教学计划 · 北欧灰蓝
 
@@ -693,7 +693,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`15-course-syllabus-course-syllabus/15__nordic.pptx`（18 页）
+- **文件**：`15-course-syllabus-course-syllabus/15__nordic.pptx`（19 页）
 
 ## SF-078 — 课程大纲与教学计划 · 黑板粉笔
 
@@ -702,7 +702,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`15-course-syllabus-course-syllabus/15__chalk.pptx`（18 页）
+- **文件**：`15-course-syllabus-course-syllabus/15__chalk.pptx`（19 页）
 
 ## SF-079 — 课程大纲与教学计划 · 等距信息图
 
@@ -711,7 +711,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`15-course-syllabus-course-syllabus/15__isometric.pptx`（18 页）
+- **文件**：`15-course-syllabus-course-syllabus/15__isometric.pptx`（19 页）
 
 ## SF-080 — 招新宣讲与纳新 · 孟菲斯活力
 
@@ -720,7 +720,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`16-recruitment-recruitment/16__memphis.pptx`（18 页）
+- **文件**：`16-recruitment-recruitment/16__memphis.pptx`（19 页）
 
 ## SF-081 — 招新宣讲与纳新 · 马卡龙柔彩
 
@@ -729,7 +729,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`16-recruitment-recruitment/16__pastel.pptx`（18 页）
+- **文件**：`16-recruitment-recruitment/16__pastel.pptx`（19 页）
 
 ## SF-082 — 招新宣讲与纳新 · 包豪斯三原色
 
@@ -738,7 +738,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`16-recruitment-recruitment/16__bauhaus.pptx`（18 页）
+- **文件**：`16-recruitment-recruitment/16__bauhaus.pptx`（19 页）
 
 ## SF-083 — 招新宣讲与纳新 · 玻璃拟态
 
@@ -747,7 +747,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`16-recruitment-recruitment/16__glass.pptx`（18 页）
+- **文件**：`16-recruitment-recruitment/16__glass.pptx`（19 页）
 
 ## SF-084 — 招新宣讲与纳新 · 蒸汽波
 
@@ -756,7 +756,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`16-recruitment-recruitment/16__vaporwave.pptx`（18 页）
+- **文件**：`16-recruitment-recruitment/16__vaporwave.pptx`（19 页）
 
 ## SF-085 — 招新宣讲与纳新 · 泡泡堂风
 
@@ -765,7 +765,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`16-recruitment-recruitment/16__bubble.pptx`（18 页）
+- **文件**：`16-recruitment-recruitment/16__bubble.pptx`（19 页）
 
 ## SF-086 — 年度总结与规划 · 报纸排版
 
@@ -774,7 +774,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`17-annual-review-annual-review/17__newspaper.pptx`（18 页）
+- **文件**：`17-annual-review-annual-review/17__newspaper.pptx`（19 页）
 
 ## SF-087 — 年度总结与规划 · 杂志编辑
 
@@ -783,7 +783,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`17-annual-review-annual-review/17__editorial.pptx`（18 页）
+- **文件**：`17-annual-review-annual-review/17__editorial.pptx`（19 页）
 
 ## SF-088 — 年度总结与规划 · 商务蓝调
 
@@ -792,7 +792,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`17-annual-review-annual-review/17__corporate.pptx`（18 页）
+- **文件**：`17-annual-review-annual-review/17__corporate.pptx`（19 页）
 
 ## SF-089 — 年度总结与规划 · 单色印刷极简
 
@@ -801,7 +801,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`17-annual-review-annual-review/17__monochrome.pptx`（18 页）
+- **文件**：`17-annual-review-annual-review/17__monochrome.pptx`（19 页）
 
 ## SF-090 — 年度总结与规划 · 渐变流体
 
@@ -810,7 +810,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`17-annual-review-annual-review/17__gradient.pptx`（18 页）
+- **文件**：`17-annual-review-annual-review/17__gradient.pptx`（19 页）
 
 ## SF-091 — 培训手册与 SOP · 单色印刷极简
 
@@ -819,7 +819,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`18-training-manual-training-manual/18__monochrome.pptx`（18 页）
+- **文件**：`18-training-manual-training-manual/18__monochrome.pptx`（19 页）
 
 ## SF-092 — 培训手册与 SOP · 北欧灰蓝
 
@@ -828,7 +828,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`18-training-manual-training-manual/18__nordic.pptx`（18 页）
+- **文件**：`18-training-manual-training-manual/18__nordic.pptx`（19 页）
 
 ## SF-093 — 培训手册与 SOP · 学术严谨
 
@@ -837,7 +837,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`18-training-manual-training-manual/18__academic.pptx`（18 页）
+- **文件**：`18-training-manual-training-manual/18__academic.pptx`（19 页）
 
 ## SF-094 — 培训手册与 SOP · 等距信息图
 
@@ -846,7 +846,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`18-training-manual-training-manual/18__isometric.pptx`（18 页）
+- **文件**：`18-training-manual-training-manual/18__isometric.pptx`（19 页）
 
 ## SF-095 — 培训手册与 SOP · 黑板粉笔
 
@@ -855,7 +855,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`18-training-manual-training-manual/18__chalk.pptx`（18 页）
+- **文件**：`18-training-manual-training-manual/18__chalk.pptx`（19 页）
 
 ## SF-096 — 用户调研与访谈 · 柔和科技图表
 
@@ -864,7 +864,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`19-user-research-user-research/19__takram.pptx`（18 页）
+- **文件**：`19-user-research-user-research/19__takram.pptx`（19 页）
 
 ## SF-097 — 用户调研与访谈 · 北欧灰蓝
 
@@ -873,7 +873,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`19-user-research-user-research/19__nordic.pptx`（18 页）
+- **文件**：`19-user-research-user-research/19__nordic.pptx`（19 页）
 
 ## SF-098 — 用户调研与访谈 · 学术严谨
 
@@ -882,7 +882,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`19-user-research-user-research/19__academic.pptx`（18 页）
+- **文件**：`19-user-research-user-research/19__academic.pptx`（19 页）
 
 ## SF-099 — 用户调研与访谈 · 自然有机
 
@@ -891,7 +891,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`19-user-research-user-research/19__organic.pptx`（18 页）
+- **文件**：`19-user-research-user-research/19__organic.pptx`（19 页）
 
 ## SF-100 — 用户调研与访谈 · 单色印刷极简
 
@@ -900,7 +900,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`19-user-research-user-research/19__monochrome.pptx`（18 页）
+- **文件**：`19-user-research-user-research/19__monochrome.pptx`（19 页）
 
 ## SF-101 — 市场与竞品分析 · 商务蓝调
 
@@ -909,7 +909,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`20-market-analysis-market-analysis/20__corporate.pptx`（18 页）
+- **文件**：`20-market-analysis-market-analysis/20__corporate.pptx`（19 页）
 
 ## SF-102 — 市场与竞品分析 · 数学网格功能主义
 
@@ -918,7 +918,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`20-market-analysis-market-analysis/20__brockmann.pptx`（18 页）
+- **文件**：`20-market-analysis-market-analysis/20__brockmann.pptx`（19 页）
 
 ## SF-103 — 市场与竞品分析 · 渐变流体
 
@@ -927,7 +927,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`20-market-analysis-market-analysis/20__gradient.pptx`（18 页）
+- **文件**：`20-market-analysis-market-analysis/20__gradient.pptx`（19 页）
 
 ## SF-104 — 市场与竞品分析 · 报纸排版
 
@@ -936,7 +936,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`20-market-analysis-market-analysis/20__newspaper.pptx`（18 页）
+- **文件**：`20-market-analysis-market-analysis/20__newspaper.pptx`（19 页）
 
 ## SF-105 — 市场与竞品分析 · 玻璃拟态
 
@@ -945,7 +945,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`20-market-analysis-market-analysis/20__glass.pptx`（18 页）
+- **文件**：`20-market-analysis-market-analysis/20__glass.pptx`（19 页）
 
 ## SF-106 — 预算与财务计划 · 数学网格功能主义
 
@@ -954,7 +954,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`21-budget-plan-budget-finance/21__brockmann.pptx`（18 页）
+- **文件**：`21-budget-plan-budget-finance/21__brockmann.pptx`（19 页）
 
 ## SF-107 — 预算与财务计划 · 商务蓝调
 
@@ -963,7 +963,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`21-budget-plan-budget-finance/21__corporate.pptx`（18 页）
+- **文件**：`21-budget-plan-budget-finance/21__corporate.pptx`（19 页）
 
 ## SF-108 — 预算与财务计划 · 等距信息图
 
@@ -972,7 +972,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`21-budget-plan-budget-finance/21__isometric.pptx`（18 页）
+- **文件**：`21-budget-plan-budget-finance/21__isometric.pptx`（19 页）
 
 ## SF-109 — 预算与财务计划 · 单色印刷极简
 
@@ -981,7 +981,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`21-budget-plan-budget-finance/21__monochrome.pptx`（18 页）
+- **文件**：`21-budget-plan-budget-finance/21__monochrome.pptx`（19 页）
 
 ## SF-110 — 预算与财务计划 · 北欧灰蓝
 
@@ -990,7 +990,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`21-budget-plan-budget-finance/21__nordic.pptx`（18 页）
+- **文件**：`21-budget-plan-budget-finance/21__nordic.pptx`（19 页）
 
 ## SF-111 — 旅行与行程计划 · 自然有机
 
@@ -999,7 +999,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`22-travel-plan-travel-plan/22__organic.pptx`（18 页）
+- **文件**：`22-travel-plan-travel-plan/22__organic.pptx`（19 页）
 
 ## SF-112 — 旅行与行程计划 · 马卡龙柔彩
 
@@ -1008,7 +1008,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`22-travel-plan-travel-plan/22__pastel.pptx`（18 页）
+- **文件**：`22-travel-plan-travel-plan/22__pastel.pptx`（19 页）
 
 ## SF-113 — 旅行与行程计划 · 杂志编辑
 
@@ -1017,7 +1017,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`22-travel-plan-travel-plan/22__editorial.pptx`（18 页）
+- **文件**：`22-travel-plan-travel-plan/22__editorial.pptx`（19 页）
 
 ## SF-114 — 旅行与行程计划 · 孔版双色
 
@@ -1026,7 +1026,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`22-travel-plan-travel-plan/22__risograph.pptx`（18 页）
+- **文件**：`22-travel-plan-travel-plan/22__risograph.pptx`（19 页）
 
 ## SF-115 — 旅行与行程计划 · 蒸汽波
 
@@ -1035,7 +1035,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`22-travel-plan-travel-plan/22__vaporwave.pptx`（18 页）
+- **文件**：`22-travel-plan-travel-plan/22__vaporwave.pptx`（19 页）
 
 ## SF-116 — 旅行与行程计划 · 泡泡堂风
 
@@ -1044,7 +1044,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`22-travel-plan-travel-plan/22__bubble.pptx`（18 页）
+- **文件**：`22-travel-plan-travel-plan/22__bubble.pptx`（19 页）
 
 ## SF-117 — 开源项目发布 · 赛博终端
 
@@ -1053,7 +1053,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`23-open-source-release-open-source-release/23__terminal.pptx`（18 页）
+- **文件**：`23-open-source-release-open-source-release/23__terminal.pptx`（19 页）
 
 ## SF-118 — 开源项目发布 · 工程蓝图
 
@@ -1062,7 +1062,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`23-open-source-release-open-source-release/23__blueprint.pptx`（18 页）
+- **文件**：`23-open-source-release-open-source-release/23__blueprint.pptx`（19 页）
 
 ## SF-119 — 开源项目发布 · 暗黑霓虹
 
@@ -1071,7 +1071,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`23-open-source-release-open-source-release/23__darkneon.pptx`（18 页）
+- **文件**：`23-open-source-release-open-source-release/23__darkneon.pptx`（19 页）
 
 ## SF-120 — 开源项目发布 · 单色印刷极简
 
@@ -1080,7 +1080,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`23-open-source-release-open-source-release/23__monochrome.pptx`（18 页）
+- **文件**：`23-open-source-release-open-source-release/23__monochrome.pptx`（19 页）
 
 ## SF-121 — 开源项目发布 · 渐变流体
 
@@ -1089,7 +1089,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`23-open-source-release-open-source-release/23__gradient.pptx`（18 页）
+- **文件**：`23-open-source-release-open-source-release/23__gradient.pptx`（19 页）
 
 ## SF-122 — 技术架构评审 · 工程蓝图
 
@@ -1098,7 +1098,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`24-tech-review-tech-architecture-review/24__blueprint.pptx`（18 页）
+- **文件**：`24-tech-review-tech-architecture-review/24__blueprint.pptx`（19 页）
 
 ## SF-123 — 技术架构评审 · 等距信息图
 
@@ -1107,7 +1107,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`24-tech-review-tech-architecture-review/24__isometric.pptx`（18 页）
+- **文件**：`24-tech-review-tech-architecture-review/24__isometric.pptx`（19 页）
 
 ## SF-124 — 技术架构评审 · 数学网格功能主义
 
@@ -1116,7 +1116,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`24-tech-review-tech-architecture-review/24__brockmann.pptx`（18 页）
+- **文件**：`24-tech-review-tech-architecture-review/24__brockmann.pptx`（19 页）
 
 ## SF-125 — 技术架构评审 · 赛博终端
 
@@ -1125,7 +1125,7 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`24-tech-review-tech-architecture-review/24__terminal.pptx`（18 页）
+- **文件**：`24-tech-review-tech-architecture-review/24__terminal.pptx`（19 页）
 
 ## SF-126 — 技术架构评审 · 单色印刷极简
 
@@ -1134,5 +1134,5 @@
 - **输入前提**：无需外部素材；打开即可编辑（PowerPoint / WPS / Keynote / LibreOffice）。
 - **使用方法**：替换标题与正文占位文本 → 按需删除多余版面 → 批量替换主题色换成品牌色 → 用「插入-图片」替换图片占位框 → 需要时用「设计-幻灯片大小」保持 16:9。
 - **注意事项**：字体依赖系统字体（微软雅黑 / Segoe UI 等），如需商用字体请自行确认授权；模板不含正式内容。
-- **文件**：`24-tech-review-tech-architecture-review/24__monochrome.pptx`（18 页）
+- **文件**：`24-tech-review-tech-architecture-review/24__monochrome.pptx`（19 页）
 

@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-"""SlideForge 渲染引擎：形状/文本工具 + 24 种可复用版式原型 + 切换动效。
+"""SlideForge 渲染引擎：形状/文本工具 + 可复用版式原型 + 角色化切换动效。
 
 所有页面只含版式骨架与占位示例文本，可自由编辑，不含正式内容。
+v3：页面登记角色（切换族/驻留依据）；chrome 与 !! 前缀形状不参与入场动画
+（!! 名称同时是 PowerPoint Morph 的确定性配对载体）；折线/环形为原生可编辑图表。
 """
 from pptx import Presentation
 from pptx.util import Inches, Pt
@@ -14,7 +16,6 @@ from pptx.oxml.ns import qn
 
 SW, SH = 13.333, 7.5
 import anim as _anim
-_VALID_TRANS = set()
 
 
 def C(h):
@@ -45,26 +46,35 @@ def set_alpha(shape, alpha):
 
 
 def set_transition(slide, spec):
-    """给单页注入切换特效（由 anim 引擎提供多样化类型）。"""
+    """给单页注入切换特效（由 anim 引擎提供角色化类型与 MCE 载体）。"""
     _anim.set_transition(slide, spec)
 
 
 class Deck:
-    def __init__(self, theme):
+    def __init__(self, theme, style_key=""):
         self.t = theme
+        self._style_key = style_key
         self.prs = Presentation()
         self.prs.slide_width = Inches(SW)
         self.prs.slide_height = Inches(SH)
         self.blank = self.prs.slide_layouts[6]
         self._page = 0
-        self._trans = theme.get("transition", "fade")
+        self._roles = []  # 每页角色：anim.plan_transition / dwell_of 的依据
+
+    def _role(self, role):
+        self._roles.append(role)
+
+    @staticmethod
+    def _tag(shp, name):
+        shp.name = name
+        return shp
 
     # ---------- 基础 ----------
     def slide(self):
         return self.prs.slides.add_slide(self.blank)
 
     def bg(self, s, color=None):
-        self.rect(s, 0, 0, SW, SH, color or self.t["bg"])
+        self._tag(self.rect(s, 0, 0, SW, SH, color or self.t["bg"]), "chrome:bg")
 
     def rect(self, s, l, tp, w, h, fill=None, line=None, lw=0.75, radius=0.0, alpha=None, shape=MSO_SHAPE.RECTANGLE):
         shp = s.shapes.add_shape(shape, Inches(l), Inches(tp), Inches(w), Inches(h))
@@ -151,51 +161,60 @@ class Deck:
         self.text(s, kicker.upper(), 0.9, 0.62, 8.5, 0.3, size=11.5, color=accent, bold=True,
                   font=self.t["body_font"][0], ea=self.t["body_font"][1])
         self.text(s, title, 0.9, 0.95, 11.6, 0.6, size=28, color=self.t["ink"], bold=True)
-        self.rect(s, 0.9, 1.72, 0.62, 0.055, accent)
+        self._tag(self.rect(s, 0.9, 1.72, 0.62, 0.055, accent), "!!brand-band")
 
     def footer(self, s, idx=None):
-        self.rect(s, 0.9, SH - 0.62, SW - 1.8, 0.008, self.t["line"])
-        self.text(s, self.t["label"] + "  ·  " + self.t["en"], 0.9, SH - 0.55, 7.2, 0.3, size=9, color=self.t["ink2"],
-                  font=self.t["body_font"][0], ea=self.t["body_font"][1])
+        self._tag(self.rect(s, 0.9, SH - 0.62, SW - 1.8, 0.008, self.t["line"]), "!!footer-rule")
+        self._tag(self.text(s, self.t["label"] + "  ·  " + self.t["en"], 0.9, SH - 0.55, 7.2, 0.3, size=9,
+                            color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1]),
+                  "chrome:footer-l")
         if idx is not None:
-            self.text(s, "%02d" % idx, SW - 1.9, SH - 0.55, 1.0, 0.3, size=9, color=self.t["ink2"],
-                      align=PP_ALIGN.RIGHT, font=self.t["body_font"][0], ea=self.t["body_font"][1])
+            self._tag(self.text(s, "%02d" % idx, SW - 1.9, SH - 0.55, 1.0, 0.3, size=9, color=self.t["ink2"],
+                                align=PP_ALIGN.RIGHT, font=self.t["body_font"][0], ea=self.t["body_font"][1]),
+                      "chrome:footer-n")
         self._page = idx or self._page
 
     # ---------- 装饰 ----------
     def decor(self, s, variant="cover"):
         d = self.t.get("decor", "min"); a, a2 = self.t["accent"], self.t["accent2"]
+        n = [0]
+
+        def tag(shp):
+            n[0] += 1
+            return self._tag(shp, "chrome:decor-%d" % n[0])
+
         if d == "grid":
             for x in range(1, 13):
-                self.rect(s, x, 0, 0.006, SH, self.t["line"])
-            self.rect(s, 0.9, 0, 0.05, SH, a)
+                tag(self.rect(s, x, 0, 0.006, SH, self.t["line"]))
+            tag(self.rect(s, 0.9, 0, 0.05, SH, a))
         elif d == "band":
-            self.rect(s, 0, 0, SW, 0.16, a); self.rect(s, 0, 0.16, SW, 0.06, a2)
+            tag(self.rect(s, 0, 0, SW, 0.16, a)); tag(self.rect(s, 0, 0.16, SW, 0.06, a2))
         elif d == "glow":
-            self.oval(s, 9.6, -1.6, 6.2, 6.2, a, alpha=0.16); self.oval(s, -1.8, 4.6, 5.4, 5.4, a2, alpha=0.13)
+            tag(self.oval(s, 9.6, -1.6, 6.2, 6.2, a, alpha=0.16)); tag(self.oval(s, -1.8, 4.6, 5.4, 5.4, a2, alpha=0.13))
         elif d == "pixel":
             for i in range(6):
-                self.rect(s, 11.4 + (i % 3) * 0.42, 0.7 + (i // 3) * 0.42, 0.34, 0.34,
-                          a if i % 2 == 0 else a2, alpha=0.85 if i % 2 == 0 else 0.55)
+                tag(self.rect(s, 11.4 + (i % 3) * 0.42, 0.7 + (i // 3) * 0.42, 0.34, 0.34,
+                              a if i % 2 == 0 else a2, alpha=0.85 if i % 2 == 0 else 0.55))
         elif d == "pop":
-            self.oval(s, 10.4, -1.0, 3.2, 3.2, a, alpha=0.9)
-            self.oval(s, 11.9, 1.5, 2.1, 2.1, self.t.get("decor3", a2), alpha=0.9)
-            self.rect(s, 10.3, 3.2, 1.5, 1.5, a2, alpha=0.85)
+            tag(self.oval(s, 10.4, -1.0, 3.2, 3.2, a, alpha=0.9))
+            tag(self.oval(s, 11.9, 1.5, 2.1, 2.1, self.t.get("decor3", a2), alpha=0.9))
+            tag(self.rect(s, 10.3, 3.2, 1.5, 1.5, a2, alpha=0.85))
         elif d == "glass":
-            self.oval(s, 9.0, -1.4, 6.0, 6.0, a, alpha=0.20); self.oval(s, 8.2, 2.6, 7.2, 7.2, a2, alpha=0.14)
+            tag(self.oval(s, 9.0, -1.4, 6.0, 6.0, a, alpha=0.20)); tag(self.oval(s, 8.2, 2.6, 7.2, 7.2, a2, alpha=0.14))
         elif d == "term":
-            self.text(s, "$", 12.2, 0.6, 0.6, 0.5, size=18, color=a, font=self.t["body_font"][0])
-            self.rect(s, 12.75, 0.72, 0.14, 0.28, a)
+            tag(self.text(s, "$", 12.2, 0.6, 0.6, 0.5, size=18, color=a, font=self.t["body_font"][0]))
+            tag(self.rect(s, 12.75, 0.72, 0.14, 0.28, a))
         elif d == "organic":
-            self.oval(s, 10.6, -1.2, 3.6, 3.6, a, alpha=0.20); self.oval(s, 11.6, 2.2, 2.6, 2.6, a2, alpha=0.22)
+            tag(self.oval(s, 10.6, -1.2, 3.6, 3.6, a, alpha=0.20)); tag(self.oval(s, 11.6, 2.2, 2.6, 2.6, a2, alpha=0.22))
         elif d == "soft":
-            self.oval(s, 9.4, -1.6, 6.0, 6.0, a, alpha=0.14)
+            tag(self.oval(s, 9.4, -1.6, 6.0, 6.0, a, alpha=0.14))
         elif d == "rule":
-            self.rect(s, 0.9, 0.52, 2.4, 0.02, a)
+            tag(self.rect(s, 0.9, 0.52, 2.4, 0.02, a))
 
     # ================= 版式原型 =================
     def cover(self, title="在此输入演示标题", subtitle="在此输入副标题 · 团队 / 姓名",
               meta="YYYY-MM-DD  ·  部门 / 场景", variant="left"):
+        self._role("cover")
         s = self.slide(); self.bg(s); self.decor(s, "cover"); a = self.t["accent"]
         if variant == "center":
             self.text(s, title, 1.2, 2.6, 10.9, 1.6, size=46, bold=True, color=self.t["ink"], align=PP_ALIGN.CENTER, spacing=1.02)
@@ -215,6 +234,7 @@ class Deck:
         return s
 
     def agenda(self, items=None, title="目录  CONTENTS", variant="num"):
+        self._role("content")
         items = items or ["章节标题一", "章节标题二", "章节标题三", "章节标题四"]
         s = self.slide(); self.bg(s); self.header(s, "Overview", title)
         if variant == "card":
@@ -234,6 +254,7 @@ class Deck:
         return s
 
     def section(self, num="01", title="章节标题", desc="章节说明 · 一句话点题"):
+        self._role("section")
         s = self.slide(); self.bg(s); self.decor(s, "cover")
         self.text(s, num, 0.9, 2.1, 3.0, 1.6, size=96, bold=True, color=self.t["accent"], spacing=0.95)
         self.rect(s, 0.9, 3.85, 0.62, 0.06, self.t["ink"])
@@ -243,6 +264,7 @@ class Deck:
         return s
 
     def bullets_page(self, kicker, title, items, variant="dot"):
+        self._role("content")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         if variant == "card":
             for i, it in enumerate(items):
@@ -262,13 +284,14 @@ class Deck:
         return s
 
     def two_col(self, kicker, title, lt="左侧标题", rt="右侧标题", left=None, right=None, variant="compare"):
+        self._role("content")
         left = left or ["在此输入要点一", "在此输入要点二", "在此输入要点三"]
         right = right or ["在此输入要点一", "在此输入要点二", "在此输入要点三"]
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
-        for cx, ct, items, ac, tag in [(0.9, lt, left, self.t["accent"], "A"), (6.95, rt, right, self.t["accent2"], "B")]:
+        for cx, ct, items, ac, tag_ in [(0.9, lt, left, self.t["accent"], "A"), (6.95, rt, right, self.t["accent2"], "B")]:
             self.rrect(s, cx, 2.3, 5.5, 4.2, self.t["surface"], self.t["line"], radius=max(self.t["radius"], 0.05))
             self.rect(s, cx, 2.3, 5.5, 0.12, ac)
-            self.text(s, tag + " · " + ct, cx + 0.4, 2.6, 4.7, 0.5, size=18, bold=True, color=self.t["ink"])
+            self.text(s, tag_ + " · " + ct, cx + 0.4, 2.6, 4.7, 0.5, size=18, bold=True, color=self.t["ink"])
             self.bullets(s, items, cx + 0.4, 3.35, 4.7, 2.9, size=14.5, accent=ac, gap=11)
         if variant == "vs":
             self.oval(s, SW/2 - 0.42, 4.05, 0.84, 0.84, self.t["ink"])
@@ -277,6 +300,7 @@ class Deck:
         return s
 
     def cards(self, kicker, title, cards_data, cols=4):
+        self._role("data")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         n = len(cards_data); cols = min(cols, max(1, n)); rows = (n + cols - 1) // cols
         gap = 0.3; cw = (SW - 1.8 - (cols - 1) * gap) / cols; ch = (4.25 - (rows - 1) * 0.3) / rows
@@ -291,6 +315,7 @@ class Deck:
         return s
 
     def timeline(self, kicker, title, steps):
+        self._role("flow")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         steps = steps or [("阶段一", "说明"), ("阶段二", "说明"), ("阶段三", "说明"), ("阶段四", "说明")]
         n = len(steps); y = 3.35; x0, x1 = 1.35, SW - 1.35
@@ -307,6 +332,7 @@ class Deck:
         return s
 
     def process(self, kicker, title, nodes, style="chevron"):
+        self._role("flow")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         nodes = nodes or ["步骤一", "步骤二", "步骤三", "步骤四"]
         n = len(nodes); gap = 0.25; cw = (SW - 1.8 - (n - 1) * gap) / n
@@ -324,6 +350,7 @@ class Deck:
         return s
 
     def table_ph(self, kicker, title, headers, rows):
+        self._role("data")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         cols = len(headers); x0, y0 = 0.9, 2.35; tw = SW - 1.8
         rowh = min(0.7, 4.0 / (len(rows) + 1)); cw = tw / cols
@@ -341,12 +368,46 @@ class Deck:
         return s
 
     def chart_ph(self, kicker, title, variant="bar"):
+        """数据图表页：bar / line / donut 全部为原生可编辑图表（右键 → 编辑数据）。"""
+        self._role("data")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         self.rrect(s, 0.9, 2.3, 8.4, 4.25, self.t["surface"], self.t["line"], radius=max(self.t["radius"], 0.05))
-        if variant == "bar":
+        if variant == "line":
+            cd = CategoryChartData()
+            cd.categories = ["一月", "二月", "三月", "四月", "五月", "六月"]
+            cd.add_series("示例趋势（右键 → 编辑数据）", (35, 44, 40, 56, 50, 66))
+            gf = s.shapes.add_chart(XL_CHART_TYPE.LINE_MARKERS,
+                                    Inches(1.3), Inches(2.55), Inches(6.4), Inches(3.75), cd)
+            ch = gf.chart
+            ch.has_legend = False
+            try:
+                ser = ch.plots[0].series[0]
+                ser.smooth = False
+                ser.format.line.color.rgb = C(self.t["accent"])
+                ser.format.line.width = Pt(2.5)
+            except Exception:
+                pass
+        elif variant == "donut":
+            cd = CategoryChartData()
+            cd.categories = ["板块一", "板块二", "板块三", "板块四"]
+            cd.add_series("示例构成（右键 → 编辑数据）", (40, 25, 20, 15))
+            gf = s.shapes.add_chart(XL_CHART_TYPE.DOUGHNUT,
+                                    Inches(1.5), Inches(2.5), Inches(6.0), Inches(3.85), cd)
+            ch = gf.chart
+            try:
+                ch.has_legend = True
+                ch.legend.position = XL_LEGEND_POSITION.RIGHT
+                ch.legend.include_in_layout = False
+                ser = ch.plots[0].series[0]
+                for j, pt in enumerate(ser.points):
+                    pt.format.fill.solid()
+                    pt.format.fill.fore_color.rgb = C(self.t["accent"] if j % 2 == 0 else self.t["accent2"])
+            except Exception:
+                pass
+        else:
             cd = CategoryChartData()
             cd.categories = ["指标一", "指标二", "指标三", "指标四", "指标五", "指标六"]
-            cd.add_series("示例系列（右键→编辑数据）", (55, 80, 45, 95, 70, 60))
+            cd.add_series("示例系列（右键 → 编辑数据）", (55, 80, 45, 95, 70, 60))
             gf = s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED,
                                     Inches(1.3), Inches(2.55), Inches(6.4), Inches(3.75), cd)
             ch = gf.chart
@@ -357,16 +418,6 @@ class Deck:
                 ser.format.fill.fore_color.rgb = C(self.t["accent"])
             except Exception:
                 pass
-        elif variant == "line":
-            pts = [(1.6, 5.2), (3.0, 4.2), (4.4, 4.7), (5.8, 3.4), (7.2, 3.9), (8.6, 3.0)]
-            for i in range(len(pts) - 1):
-                self.line(s, pts[i][0], pts[i][1], pts[i + 1][0], pts[i + 1][1], self.t["accent"], 2.5)
-            for p in pts:
-                self.oval(s, p[0] - 0.07, p[1] - 0.07, 0.14, 0.14, self.t["accent"])
-        else:
-            self.oval(s, 3.6, 3.0, 2.8, 2.8, self.t["accent"], alpha=0.25)
-            self.oval(s, 4.5, 3.9, 1.0, 1.0, self.t["surface"])
-            self.text(s, "图", 4.5, 3.9, 1.0, 1.0, size=16, bold=True, color=self.t["accent"], align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE, font=self.t["body_font"][0], ea=self.t["body_font"][1])
         self.text(s, "原生可编辑图表 · 右键图表 → 编辑数据 即可替换数值", 1.4, 6.15, 6.4, 0.3, size=10.5, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
         self.text(s, "关键结论 / 解读", 9.7, 2.45, 2.9, 0.4, size=15, bold=True, color=self.t["ink"])
         self.bullets(s, ["在此输入要点一", "在此输入要点二", "在此输入要点三"], 9.7, 3.0, 2.9, 3.2, size=12.5, gap=10)
@@ -374,6 +425,7 @@ class Deck:
         return s
 
     def gallery(self, kicker, title, cols=3, rows=2):
+        self._role("collect")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         gap = 0.3; cw = (SW - 1.8 - (cols - 1) * gap) / cols; ch = (4.25 - (rows - 1) * gap) / rows
         for i in range(cols * rows):
@@ -383,6 +435,7 @@ class Deck:
         return s
 
     def quote(self, quote_text, author="— 署名 / 职位"):
+        self._role("content")
         s = self.slide(); self.bg(s); self.decor(s, "cover")
         self.text(s, "“", 1.0, 1.6, 2.0, 1.4, size=110, bold=True, color=self.t["accent"])
         self.text(s, quote_text, 1.4, 2.9, 10.5, 2.2, size=26, color=self.t["ink"], spacing=1.2)
@@ -392,6 +445,7 @@ class Deck:
         return s
 
     def team(self, kicker, title, members):
+        self._role("collect")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         members = members or [("姓名", "角色")] * 4
         n = len(members); gap = 0.35; cw = (SW - 1.8 - (n - 1) * gap) / n
@@ -406,6 +460,7 @@ class Deck:
         return s
 
     def closing(self, title="谢谢观看", sub="在此输入联系方式 / 二维码 / 致谢"):
+        self._role("closing")
         s = self.slide(); self.bg(s); self.decor(s, "cover")
         self.text(s, title, 1.2, 2.9, 10.9, 1.2, size=48, bold=True, color=self.t["ink"], align=PP_ALIGN.CENTER)
         self.rect(s, SW/2 - 0.45, 4.3, 0.9, 0.1, self.t["accent"])
@@ -413,9 +468,10 @@ class Deck:
         self.footer(s)
         return s
 
-    # ---------- 新增原型 ----------
+    # ---------- 附加原型 ----------
     def plans(self, kicker, title, cols_data):
         """方案 / 套餐对比列。"""
+        self._role("data")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         n = len(cols_data); gap = 0.3; cw = (SW - 1.8 - (n - 1) * gap) / n
         for i, (name, price, items) in enumerate(cols_data):
@@ -431,6 +487,7 @@ class Deck:
         return s
 
     def faq(self, kicker, title, pairs):
+        self._role("content")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         for i, (q, a) in enumerate(pairs[:4]):
             cy = 2.3 + i * 1.05
@@ -443,6 +500,7 @@ class Deck:
         return s
 
     def glossary(self, kicker, title, terms):
+        self._role("content")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         for i, (term, dfn) in enumerate(terms[:6]):
             cy = 2.3 + i * 0.72
@@ -454,6 +512,7 @@ class Deck:
 
     def compare_table(self, kicker, title, headers, rows, marks):
         """带标记的对比矩阵。"""
+        self._role("data")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         cols = len(headers); x0, y0 = 0.9, 2.35; tw = SW - 1.8
         rowh = min(0.72, 4.2 / (len(rows) + 1)); cw = tw / cols
@@ -477,6 +536,7 @@ class Deck:
 
     def roadmap(self, kicker, title, lanes):
         """多泳道路线图。"""
+        self._role("flow")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         n = len(lanes); lh = 3.6 / n
         for li, (lname, blocks) in enumerate(lanes):
@@ -491,9 +551,10 @@ class Deck:
         return s
 
     def stat_chart(self, kicker, title, big, cap):
-        """大指标 + 迷你图表组合。"""
+        """大指标 + 迷你图表组合（大数字带 grow 强调）。"""
+        self._role("data")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
-        self.text(s, big, 0.9, 2.4, 5.0, 1.6, size=72, bold=True, color=self.t["accent"])
+        self._tag(self.text(s, big, 0.9, 2.4, 5.0, 1.6, size=72, bold=True, color=self.t["accent"]), "motion:hero")
         self.text(s, cap, 0.95, 4.1, 5.0, 0.8, size=15, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1], spacing=1.15)
         self.rrect(s, 6.4, 2.4, 5.9, 3.9, self.t["surface"], self.t["line"], radius=max(self.t["radius"], 0.05))
         for i, v in enumerate([0.4, 0.65, 0.5, 0.85, 0.6, 0.95, 0.7]):
@@ -503,15 +564,17 @@ class Deck:
         return s
 
     def bignumber(self, kicker, number, caption, note="在此输入补充说明"):
+        self._role("content")
         s = self.slide(); self.bg(s); self.decor(s, "cover")
         self.text(s, kicker.upper(), 0.9, 0.9, 8.0, 0.35, size=12, color=self.t["accent"], bold=True, font=self.t["body_font"][0], ea=self.t["body_font"][1])
-        self.text(s, number, 0.9, 1.9, 11.0, 2.2, size=120, bold=True, color=self.t["ink"])
+        self._tag(self.text(s, number, 0.9, 1.9, 11.0, 2.2, size=120, bold=True, color=self.t["ink"]), "motion:hero")
         self.text(s, caption, 1.0, 4.35, 10.0, 0.7, size=22, color=self.t["accent"], bold=True)
         self.text(s, note, 1.0, 5.2, 9.0, 0.6, size=14, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
         self.footer(s)
         return s
 
     def checklist(self, kicker, title, items):
+        self._role("content")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         for i, it in enumerate(items[:6]):
             cy = 2.3 + i * 0.72
@@ -523,6 +586,7 @@ class Deck:
         return s
 
     def quote_wall(self, kicker, title, quotes):
+        self._role("collect")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         n = len(quotes); cols = 3; rows = (n + cols - 1) // cols
         gap = 0.28; cw = (SW - 1.8 - (cols - 1) * gap) / cols; ch = (4.25 - (rows - 1) * gap) / rows
@@ -535,6 +599,7 @@ class Deck:
         return s
 
     def steps_vertical(self, kicker, title, steps):
+        self._role("flow")
         s = self.slide(); self.bg(s); self.header(s, kicker, title)
         n = min(5, len(steps)); x = 1.5
         self.line(s, x, 2.5, x, 2.5 + (n - 1) * 0.85, self.t["line"], 1.6)
@@ -547,13 +612,134 @@ class Deck:
         self.footer(s)
         return s
 
+    # ---------- v3 新增原型 ----------
+    def kpi_dashboard(self, kicker, title, kpis):
+        """KPI 看板：4 个指标瓦片 + 每瓦片迷你条形。"""
+        self._role("data")
+        s = self.slide(); self.bg(s); self.header(s, kicker, title)
+        kpis = (kpis + [("00", "指标", "+0%")] * 4)[:4]
+        gap = 0.3; cw = (SW - 1.8 - 3 * gap) / 4
+        for i, (val, lab, delta) in enumerate(kpis):
+            cx = 0.9 + i * (cw + gap)
+            self.rrect(s, cx, 2.35, cw, 3.9, self.t["surface"], self.t["line"], radius=max(self.t["radius"], 0.06))
+            self.rect(s, cx + 0.3, 2.65, 0.42, 0.055, self.t["accent"] if i % 2 == 0 else self.t["accent2"])
+            self._tag(self.text(s, val, cx + 0.3, 2.85, cw - 0.6, 1.0, size=34, bold=True, color=self.t["accent"] if i % 2 == 0 else self.t["accent2"]),
+                      "motion:hero" if i == 0 else "content:kpi")
+            self.text(s, lab, cx + 0.3, 3.9, cw - 0.6, 0.4, size=13.5, bold=True, color=self.t["ink"])
+            self.text(s, delta, cx + 0.3, 4.32, cw - 0.6, 0.35, size=11.5, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
+            for b in range(5):
+                bh = 0.28 + ((b + i) % 4) * 0.14
+                self.rect(s, cx + 0.3 + b * 0.34, 5.85 - bh, 0.24, bh,
+                          self.t["accent"] if (b + i) % 2 == 0 else self.t["accent2"], alpha=0.55)
+        self.footer(s)
+        return s
+
+    def swot(self, kicker, title, quads):
+        """SWOT 四象限。quads: [(字母, 标题, [要点]), ×4]"""
+        self._role("content")
+        s = self.slide(); self.bg(s); self.header(s, kicker, title)
+        quads = (list(quads) + [("S", "优势", ["要点"]), ("W", "劣势", ["要点"]),
+                                ("O", "机会", ["要点"]), ("T", "挑战", ["要点"])])[:4]
+        pos = [(0.9, 2.3), (6.95, 2.3), (0.9, 4.45), (6.95, 4.45)]
+        for i, (letter, name, items) in enumerate(quads):
+            cx, cy = pos[i]
+            ac = self.t["accent"] if i % 3 == 0 else (self.t["accent2"] if i % 2 else self.t["ink2"])
+            self.rrect(s, cx, cy, 5.5, 2.0, self.t["surface"], self.t["line"], radius=max(self.t["radius"], 0.05))
+            self.rect(s, cx, cy, 0.12, 2.0, ac)
+            self.text(s, letter, cx + 0.3, cy + 0.16, 0.8, 0.6, size=26, bold=True, color=ac)
+            self.text(s, name, cx + 1.1, cy + 0.3, 3.8, 0.4, size=15, bold=True, color=self.t["ink"])
+            self.bullets(s, (items + ["要点"])[:2], cx + 0.35, cy + 0.85, 4.9, 1.0, size=11.5, accent=ac, gap=5)
+        self.footer(s)
+        return s
+
+    def funnel(self, kicker, title, stages):
+        """漏斗：4 级递减 + 转化标注。stages: [(名称, 百分比文本)]"""
+        self._role("data")
+        s = self.slide(); self.bg(s); self.header(s, kicker, title)
+        stages = (list(stages) + [("层级", "00%")] * 4)[:4]
+        widths = [9.6, 7.6, 5.6, 3.6]
+        for i, ((name, pct), w) in enumerate(zip(stages, widths)):
+            cy = 2.4 + i * 1.02
+            cx = SW / 2 - w / 2
+            self.rrect(s, cx, cy, w, 0.86, self.t["accent"] if i % 2 == 0 else self.t["accent2"],
+                       None, radius=0.18, alpha=0.92 - i * 0.08)
+            self.text(s, name, cx + 0.4, cy + 0.24, w - 2.2, 0.4, size=15, bold=True, color="FFFFFF")
+            self.text(s, pct, cx + w - 1.5, cy + 0.24, 1.1, 0.4, size=14, bold=True, color="FFFFFF", align=PP_ALIGN.RIGHT)
+        self.footer(s)
+        return s
+
+    def risk_matrix(self, kicker, title, cells):
+        """概率 × 影响矩阵。cells: [(标签, 行 0-3, 列 0-3)]"""
+        self._role("data")
+        s = self.slide(); self.bg(s); self.header(s, kicker, title)
+        x0, y0, cw, chh = 2.2, 2.35, 2.4, 0.98
+        for r in range(4):        # 行：影响（上高）
+            for c in range(4):    # 列：概率（右高）
+                level = (r + c) / 6.0
+                col = self.t["accent2"] if level < 0.34 else (self.t["accent"] if level < 0.67 else self.t["ink"])
+                self.rect(s, x0 + c * (cw + 0.06), y0 + r * (chh + 0.06), cw, chh, col, alpha=0.16 + level * 0.5)
+        self.text(s, "影响 ↑", 0.9, 3.3, 1.2, 0.4, size=12, bold=True, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
+        self.text(s, "概率 →", 5.0, 6.5, 3.0, 0.4, size=12, bold=True, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
+        for i, (lab, r, c) in enumerate(cells[:6]):
+            cx = x0 + min(max(c, 0), 3) * (cw + 0.06) + cw / 2
+            cy = y0 + min(max(r, 0), 3) * (chh + 0.06) + chh / 2
+            self.oval(s, cx - 0.17, cy - 0.17, 0.34, 0.34, self.t["accent"])
+            self.text(s, str(i + 1), cx - 0.17, cy - 0.17, 0.34, 0.34, size=11, bold=True, color="FFFFFF", align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE)
+            self.text(s, "%d · %s" % (i + 1, lab), 12.15 - 0.0, 2.4 + i * 0.62, 4.9, 0.4, size=11.5, color=self.t["ink"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
+        self.footer(s)
+        return s
+
+    def venn(self, kicker, title, parts):
+        """三圆交集。parts: [(名称, [要点×1])]"""
+        self._role("content")
+        s = self.slide(); self.bg(s); self.header(s, kicker, title)
+        parts = (list(parts) + [("主题一", ["要点"]), ("主题二", ["要点"]), ("主题三", ["要点"])])[:3]
+        geo = [(4.4, 2.5, self.t["accent"]), (6.6, 2.5, self.t["accent2"]), (5.5, 4.2, self.t["ink2"])]
+        for i, ((name, _), (cx, cy, col)) in enumerate(zip(parts, geo)):
+            self.oval(s, cx - 1.55, cy - 1.55, 3.1, 3.1, col, alpha=0.42)
+            self.text(s, name, cx - 1.1, cy - (2.35 if i < 2 else -0.9), 2.2, 0.4, size=14, bold=True, color=self.t["ink"], align=PP_ALIGN.CENTER)
+        self.text(s, "交集 / 协同点", 4.95, 3.7, 1.6, 0.4, size=11, color=self.t["ink"], align=PP_ALIGN.CENTER, font=self.t["body_font"][0], ea=self.t["body_font"][1])
+        self.bullets(s, ["%s：在此输入一句要点" % p[0] for p in parts], 9.6, 2.6, 2.9, 3.0, size=12, gap=12)
+        self.footer(s)
+        return s
+
+    def pyramid(self, kicker, title, levels):
+        """三层金字塔（顶三角 + 两层梯形）。levels: [(名称, 说明)] 自顶向下"""
+        self._role("flow")
+        s = self.slide(); self.bg(s); self.header(s, kicker, title)
+        levels = (list(levels) + [("层级", "说明")] * 3)[:3]
+        widths = [2.6, 5.0, 7.4]
+        for i, ((name, desc), w) in enumerate(zip(levels, widths)):
+            cy = 2.45 + i * 1.32
+            cx = SW / 2 - w / 2
+            shape = MSO_SHAPE.ISOSCELES_TRIANGLE if i == 0 else MSO_SHAPE.TRAPEZOID
+            shp = self.rect(s, cx, cy, w, 1.18,
+                            self.t["accent"] if i == 0 else (self.t["accent2"] if i == 1 else self.t["ink2"]),
+                            None, shape=shape)
+            if i == 0:
+                self.text(s, name, cx, cy + 0.42, w, 0.4, size=13, bold=True, color="FFFFFF", align=PP_ALIGN.CENTER)
+            else:
+                try:
+                    shp.adjustments[0] = 0.22
+                except Exception:
+                    pass
+                self.text(s, name, cx + 0.5, cy + 0.4, w - 1.0, 0.4, size=14, bold=True, color="FFFFFF", align=PP_ALIGN.CENTER)
+                self.text(s, desc, cx + w + 0.25, cy + 0.38, 4.6, 0.4, size=11.5, color=self.t["ink2"], font=self.t["body_font"][0], ea=self.t["body_font"][1])
+        self.footer(s)
+        return s
+
+    # ---------- 收尾 ----------
     def save(self, path):
         base = getattr(self, "_seed", 0)
-        slides = list(self.prs.slides)
-        for i, sl in enumerate(slides):
-            spec = _anim.TRANSITIONS[(base + i) % len(_anim.TRANSITIONS)]
-            _anim.apply_to_slide(sl, base + i, spec, SW, SH)
+        roles = self._roles
+        prev = None
+        for i, sl in enumerate(self.prs.slides):
+            role = roles[i] if i < len(roles) else "content"
+            spec = _anim.plan_transition(role, prev, self._style_key, base + i)
+            _anim.apply_to_slide(sl, base + i, spec, _anim.dwell_of(role), SW, SH)
             self._add_notes(sl, i)
+            prev = role
+        _anim.set_use_timings(self.prs)
         self.prs.save(path)
         return path
 
@@ -563,7 +749,7 @@ class Deck:
         for shp in sl.shapes:
             if shp.has_text_frame and shp.text_frame.text.strip():
                 t = shp.text_frame.text.strip().split("\n")[0]
-                if len(t) >= 2:
+                if len(t) >= 2 and not (shp.name or "").startswith(("chrome:", "!!")):
                     title = t[:40]
                     break
         n = idx % 5
@@ -575,9 +761,9 @@ class Deck:
             "收尾页：总结要点并给出行动号召或联系方式。",
         ][n]
         txt = ("【页面定位】%s —— %s\n"
-               "【放映】本页元素按“背景→主体→标注”顺序错峰入场（约 2 秒完成）；"
-               "开启“使用计时器”后本页停留 8 秒自动翻页。\n"
-               "【编辑】直接点击文本框替换占位文字；在“设计→变体”中一键换配色；"
+               "【放映】内容元素按层次错峰入场（装饰与页脚保持静态，不抢戏）；"
+               "开启“使用计时器”后按本页驻留时长（6/8/10 秒）自动翻页。\n"
+               "【编辑】直接点击文本框替换占位文字；「设计 → 变体 → 颜色」可一键换成本套内置主题色；"
                "图片占位框右键“更改图片”即可替换。\n"
                "【联动】图表为原生可编辑图表：右键“编辑数据”即可替换数值。") % (title or ("第 %d 页" % (idx + 1)), script)
         try:

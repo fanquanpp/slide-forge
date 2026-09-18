@@ -5,7 +5,7 @@
 产出:  templates/<分类目录>/<编号>__<风格>.pptx   templates/_potx/*.potx
        templates/index.manifest.json（含台账字段）
 """
-import os, sys, json, shutil, zipfile, hashlib
+import os, sys, json, shutil, zipfile, hashlib, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from slidekit import Deck
 from themes import THEMES, CATEGORIES
@@ -37,8 +37,106 @@ CAT_CONTENT = {
     "24-tech-review": dict(sec=["背景与目标", "架构方案", "取舍与风险", "评审结论"], nodes=["提案", "评审", "落地", "复盘"], quote="在此输入一条架构原则。"),
 }
 
-EXTRA = ["plans", "faq", "glossary", "compare_table", "roadmap", "stat_chart", "bignumber", "checklist", "quote_wall", "steps_vertical"]
+EXTRA = ["plans", "faq", "glossary", "compare_table", "roadmap", "stat_chart", "bignumber", "checklist", "quote_wall", "steps_vertical",
+         "kpi_dashboard", "swot", "funnel", "risk_matrix", "venn", "pyramid"]
 KICK = ["Overview", "Key Points", "Process", "Data", "Appendix"]
+
+# 每个用途分类的「场景专属页」（插在引用页之后、团队页之前；占位内容，不含正式信息）
+# 值：(原型方法名, 该原型名)——后者用于 EXTRA 随机抽取去重
+SCENE = {
+    "01-teaching": ("pyramid", "pyramid"),
+    "02-game-gdd": ("venn", "venn"),
+    "03-portfolio": ("funnel", "funnel"),
+    "04-club-event": ("funnel", "funnel"),
+    "05-project-report": ("swot", "swot"),
+    "06-study-notes": ("pyramid", "pyramid"),
+    "07-resume": ("kpi_dashboard", "kpi_dashboard"),
+    "08-promo": ("funnel", "funnel"),
+    "09-dashboard": ("kpi_dashboard", "kpi_dashboard"),
+    "10-creative-pitch": ("venn", "venn"),
+    "11-product-launch": ("kpi_dashboard", "kpi_dashboard"),
+    "12-reading-club": ("venn", "venn"),
+    "13-job-competition": ("swot", "swot"),
+    "14-contest-defense": ("risk_matrix", "risk_matrix"),
+    "15-course-syllabus": ("pyramid", "pyramid"),
+    "16-recruitment": ("funnel", "funnel"),
+    "17-annual-review": ("kpi_dashboard", "kpi_dashboard"),
+    "18-training-manual": ("risk_matrix", "risk_matrix"),
+    "19-user-research": ("venn", "venn"),
+    "20-market-analysis": ("swot", "swot"),
+    "21-budget-plan": ("funnel", "funnel"),
+    "22-travel-plan": ("kpi_dashboard", "kpi_dashboard"),
+    "23-open-source-release": ("pyramid", "pyramid"),
+    "24-tech-review": ("risk_matrix", "risk_matrix"),
+}
+
+
+def _scene_args(cat_id, sec):
+    """场景页调用参数（全部占位文本）。"""
+    q = "在此输入要点"
+    if cat_id in ("07-resume", "09-dashboard", "11-product-launch", "17-annual-review", "22-travel-plan"):
+        return ("Highlights", "关键数字 / 速览",
+                [("00", "维度一", "趋势 / 备注"), ("00", "维度二", "趋势 / 备注"),
+                 ("00", "维度三", "趋势 / 备注"), ("00", "维度四", "趋势 / 备注")])
+    if cat_id in ("05-project-report", "13-job-competition", "20-market-analysis"):
+        return ("SWOT", "态势分析",
+                [("S", "优势", [q, q]), ("W", "劣势", [q, q]), ("O", "机会", [q, q]), ("T", "挑战", [q, q])])
+    if cat_id in ("14-contest-defense", "18-training-manual", "24-tech-review"):
+        return ("Risk Matrix", "风险与应对",
+                [(q, 0, 1), (q, 1, 2), (q, 2, 3), (q, 1, 0)])
+    if cat_id in ("01-teaching", "06-study-notes", "15-course-syllabus", "23-open-source-release"):
+        return ("Levels", "分层结构",
+                [("层级一", q), ("层级二", q), ("层级三", q)])
+    if cat_id in ("02-game-gdd", "10-creative-pitch", "12-reading-club", "19-user-research"):
+        return ("Intersection", "三要素交集",
+                [("要素一", [q]), ("要素二", [q]), ("要素三", [q])])
+    return ("Conversion", "转化 / 分配",
+            [("阶段一", "100%"), ("阶段二", "00%"), ("阶段三", "00%"), ("阶段四", "00%")])
+
+
+def clr_scheme_xml(t):
+    """OOXML 主题色方案：让「设计 → 变体 → 颜色」一键换肤生效。"""
+    acc3 = t.get("decor3") or t["accent2"]
+    return (
+        '<a:clrScheme name="SlideForge %(label)s">'
+        '<a:dk1><a:srgbClr val="%(ink)s"/></a:dk1>'
+        '<a:lt1><a:srgbClr val="%(bg)s"/></a:lt1>'
+        '<a:dk2><a:srgbClr val="%(ink2)s"/></a:dk2>'
+        '<a:lt2><a:srgbClr val="%(surface)s"/></a:lt2>'
+        '<a:accent1><a:srgbClr val="%(accent)s"/></a:accent1>'
+        '<a:accent2><a:srgbClr val="%(accent2)s"/></a:accent2>'
+        '<a:accent3><a:srgbClr val="%(acc3)s"/></a:accent3>'
+        '<a:accent4><a:srgbClr val="%(line)s"/></a:accent4>'
+        '<a:accent5><a:srgbClr val="%(ink2)s"/></a:accent5>'
+        '<a:accent6><a:srgbClr val="%(surface)s"/></a:accent6>'
+        '<a:hlink><a:srgbClr val="%(accent)s"/></a:hlink>'
+        '<a:folHlink><a:srgbClr val="%(ink2)s"/></a:folHlink>'
+        '</a:clrScheme>'
+    ) % dict(label=t["label"], ink=t["ink"], bg=t["bg"], ink2=t["ink2"], surface=t["surface"],
+             accent=t["accent"], accent2=t["accent2"], acc3=acc3, line=t["line"])
+
+
+def brand_theme(pptx_path, style):
+    """把风格调色板写进 ppt/theme/theme1.xml（clrScheme + 主题名）。"""
+    t = THEMES[style]
+    scheme = clr_scheme_xml(t)
+    theme_name = "SlideForge %s" % t["label"]
+    tmp = pptx_path + ".tmp"
+    with zipfile.ZipFile(pptx_path, "r") as zin, zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zout:
+        for item in zin.infolist():
+            data = zin.read(item.filename)
+            if item.filename == "ppt/theme/theme1.xml":
+                txt = data.decode("utf-8")
+                txt, n1 = re.subn(r"<a:clrScheme.*?</a:clrScheme>", scheme, txt, count=1, flags=re.S)
+                if re.search(r"<a:theme[^>]*?name=\"", txt):
+                    txt = re.sub(r"(<a:theme[^>]*?name=\")[^\"]*(\")",
+                                 lambda m: m.group(1) + theme_name + m.group(2), txt, count=1)
+                else:
+                    txt = txt.replace("<a:theme ", '<a:theme name="%s" ' % theme_name, 1)
+                data = txt.encode("utf-8")
+            zout.writestr(item, data)
+    shutil.move(tmp, pptx_path)
+    return pptx_path
 
 
 def _seed(cat, style):
@@ -51,7 +149,7 @@ def build_deck(cat, style, outdir):
     title = cat["name"]
     sub = "%s · 在此输入副标题 / 项目名称" % cat["name"]
     meta = "团队 / 姓名  ·  YYYY-MM-DD"
-    d = Deck(t)
+    d = Deck(t, style)
     d._seed = sd
     # 1 封面
     d.cover(title, sub, meta, variant=["left", "center", "split"][sd % 3])
@@ -86,10 +184,20 @@ def build_deck(cat, style, outdir):
     d.section("02", sec[2], "在此输入本章导语 · 一句话点题")
     # 13 引用
     d.quote(c["quote"], "— 署名 / 出处")
-    # 14 团队
+    # 14 场景专属页（按分类定制的版式；与 EXTRA 去重）
+    scene_m, scene_name = SCENE[cat["id"]]
+    scene_args = _scene_args(cat["id"], sec)
+    getattr(d, scene_m)(scene_args[0], scene_args[1], scene_args[2])
+    # 15 团队
     d.team("Team", "团队 / 分工", [("姓名", "角色一"), ("姓名", "角色二"), ("姓名", "角色三")])
-    # 15-17 三个随机附加原型（让每套结构不同，避免千篇一律）
-    picks = [EXTRA[(sd + k * 3) % len(EXTRA)] for k in range(3)]
+    # 16-18 三个随机附加原型（让每套结构不同，避免千篇一律；与场景页原型去重）
+    picks = []
+    k = 0
+    while len(picks) < 3:
+        ext = EXTRA[(sd + k * 3) % len(EXTRA)]
+        if ext != scene_name:
+            picks.append(ext)
+        k += 1
     for ext in picks:
         if ext == "plans":
             d.plans("Options", "方案对比", [("方案一", "00", ["在此输入要点", "在此输入要点", "在此输入要点"]),
@@ -116,6 +224,20 @@ def build_deck(cat, style, outdir):
             d.checklist("Checklist", "清单", ["在此输入待办项一", "在此输入待办项二", "在此输入待办项三", "在此输入待办项四"])
         elif ext == "quote_wall":
             d.quote_wall("Quotes", "金句墙", ["在此输入短句一", "在此输入短句二", "在此输入短句三", "在此输入短句四", "在此输入短句五"])
+        elif ext == "kpi_dashboard":
+            d.kpi_dashboard("Dashboard", "指标看板", [("00", "指标一", "趋势 / 备注"), ("00", "指标二", "趋势 / 备注"),
+                                                     ("00", "指标三", "趋势 / 备注"), ("00", "指标四", "趋势 / 备注")])
+        elif ext == "swot":
+            d.swot("SWOT", "四象限分析", [("S", "优势", ["在此输入要点", "在此输入要点"]), ("W", "劣势", ["在此输入要点"]),
+                                         ("O", "机会", ["在此输入要点"]), ("T", "挑战", ["在此输入要点"])])
+        elif ext == "funnel":
+            d.funnel("Funnel", "转化漏斗", [("层级一", "100%"), ("层级二", "00%"), ("层级三", "00%"), ("层级四", "00%")])
+        elif ext == "risk_matrix":
+            d.risk_matrix("Risk Matrix", "概率 × 影响", [("风险一", 0, 1), ("风险二", 1, 2), ("风险三", 2, 3), ("风险四", 0, 0)])
+        elif ext == "venn":
+            d.venn("Venn", "三圆交集", [("主题一", ["在此输入要点"]), ("主题二", ["在此输入要点"]), ("主题三", ["在此输入要点"])])
+        elif ext == "pyramid":
+            d.pyramid("Pyramid", "金字塔结构", [("顶层", "在此输入说明（占位）"), ("中层", "在此输入说明（占位）"), ("基础层", "在此输入说明（占位）")])
         else:
             d.steps_vertical("Steps", "分步说明", [(sec[i], "在此输入步骤说明（占位）") for i in range(4)])
     # 结尾
@@ -129,6 +251,7 @@ def build_deck(cat, style, outdir):
     fname = "%s__%s.pptx" % (num, style)
     path = os.path.join(catdir, fname)
     d.save(path)
+    brand_theme(path, style)
     return path, len(d.prs.slides._sldIdLst)
 
 
@@ -150,8 +273,8 @@ def make_potx(pptx_path, potx_path):
 def main():
     outdir = sys.argv[1] if len(sys.argv) > 1 else "templates"
     os.makedirs(outdir, exist_ok=True)
-    date = "2026-09-14"
-    manifest = {"generated_at": date, "version": "2.0",
+    date = "2026-09-19"
+    manifest = {"generated_at": date, "version": "3.0",
                 "themes": {k: {"label": v["label"], "en": v["en"], "preset": v["preset"], "philosophy": v["philosophy"]} for k, v in THEMES.items()},
                 "categories": [], "decks": [], "potx": []}
     total_slides = 0; sf = 0; style_count = {}
@@ -164,7 +287,7 @@ def main():
             rel = os.path.relpath(path, outdir).replace("\\", "/")
             entry = {"id": "SF-%03d" % sf, "category": cat["id"], "category_name": cat["name"], "style": style,
                      "style_label": THEMES[style]["label"], "type": THEMES[style]["en"], "purpose": cat["name"],
-                     "file": rel, "slides": ns, "status": "active", "version": "2.0",
+                     "file": rel, "slides": ns, "status": "active", "version": "3.0",
                      "source": "SlideForge generator", "updated": date}
             manifest["decks"].append(entry)
             ce["decks"].append({"id": entry["id"], "style": style, "label": THEMES[style]["label"], "file": rel, "slides": ns})
