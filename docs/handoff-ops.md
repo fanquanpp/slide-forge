@@ -27,11 +27,19 @@ pip install -r generator/requirements.txt     # python-pptx / XlsxWriter / Pillo
 ```bash
 python generator/build.py templates     # 覆盖生成模板 + index.manifest.json + _potx
 python generator/validate.py templates  # 校验：可打开性 / 页数 / 形状数 / .potx 内容类型
-python scripts/build_site.py            # 重建 index.html 与 assets/previews/*.svg
+python scripts/build_site.py            # 重建 index.html 与 assets/previews/*.svg（含 og-cover.png）
+python scripts/check_site.py            # 交付指标：docs/iterations/roundN.json + 全页快照 + HTML 配平校验
 python scripts/build_readme.py          # 重建 README.md
 ```
 
 > 注意：`build.py` 是**覆盖写入**，不需要先删除 `templates/`。若需清理，请在确认无他人在用后手动删除。
+
+### 4.1 前端源码结构（改页面请改这里，不要手改 index.html）
+
+- `scripts/site/page.html` —— 页面骨架，`__TOKEN__` 占位符由构建器注入；残留 token 会使构建报错退出。
+- `scripts/site/style.css` / `scripts/site/app.js` —— 全部样式与脚本，构建期内联进 index.html（内联是刻意选择：静态单页省请求）。
+- `scripts/build_site.py` —— 数据装配器：读 manifest → 生成卡片/筛选/JSON-LD/OG 封面 → 写 index.html 与预览图。
+- `scripts/check_site.py` —— 站点指标（口径见 docs/iterations/roundN.json），迭代时每轮跑一次留档。
 
 ## 5. 发布到 GitHub Pages
 

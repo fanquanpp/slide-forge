@@ -14,3 +14,21 @@
 | 10 | 更新仓库文档信息 | README 链接迭代台账；docs/iteration-log.md、iterations/ 快照与指标入库 | ✅ |
 
 **结论**：10 项全部通过，判定任务完成。
+
+---
+
+# 第二次迭代（联网洞察 + 全面重构，Round 4-6）复核清单
+
+| # | 验收标准 | 证据 | 结论 |
+|---|---|---|---|
+| 1 | 每轮有联网搜索依据 | Round 4：web.dev content-visibility / Optimize LCP / MDN replaceState；Round 5：W3C APG Dialog + Listbox（原文引用）；Round 6：Google Carousel(ItemList) / MDN theme-color / ogp.me | ✅ |
+| 2 | 结构性全面重构完成 | 删除 117 行死代码 `build_html()` 与死选择器；前端源码拆分 `scripts/site/{page.html,style.css,app.js}`；`build_site.py` 只做装配，残留 token 自检 | ✅ |
+| 3 | 完整迭代闭环 | 3 轮「搜索→修改→构建验证」，每轮 `html_valid=True`（配平 0 错误） | ✅ |
+| 4 | 可复现量化验证 | `scripts/check_site.py` 自动产出 docs/iterations/round{4-6}.json + 全页快照，含与上轮 diff | ✅ |
+| 5 | 性能有前后对比 | 238,235B → 203,723B（-14.5%）；首屏 3 图 eager+fetchpriority；content-visibility；data-q 预算 + 防抖 | ✅ |
+| 6 | 无障碍对齐 APG | listbox 反模式 True→False；aria-modal/aria-live/Home+End/滑动/重置按钮六项指标翻转 | ✅ |
+| 7 | SEO/分享元数据补全 | ItemList JSON-LD（126 项，可解析）；OG PNG 1200×630；双 theme-color；og 标签 6→11；sitemap lastmod | ✅ |
+| 8 | 回归无破坏 | 75 张预览 SVG 重建零 diff；`data-file` 修复（防灯箱下载 404 复发）；`node --check` 通过 | ✅ |
+| 9 | 回滚可用 | 粒度细化到 `scripts/site` + 构建器；构建期 token 残留即报错退出 | ✅ |
+
+**结论**：9 项全部通过。

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__</title>
+<meta name="description" content="__DESC__">
+<link rel="canonical" href="__SITE__">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#2f6bff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#10141d">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:site_name" content="SlideForge">
+<meta property="og:type" content="website">
+<meta property="og:title" content="__TITLE__">
+<meta property="og:description" content="__OGDESC__">
+<meta property="og:url" content="__SITE__">
+<meta property="og:image" content="__SITE__assets/previews/og-cover.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SlideForge：__DECKS__ 套可编辑 PPT 模板库封面">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="__SITE__assets/previews/og-cover.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f6bff'/%3E%3Ctext x='16' y='21' font-family='Segoe UI,sans-serif' font-size='13' font-weight='700' fill='white' text-anchor='middle'%3ESF%3C/text%3E%3C/svg%3E">
+__JSONLD__
+<style>__CSS__</style>
+</head>
+<body>
+<a class="skip-link" href="#library">跳到模板列表</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><span class="mark">SF</span> SlideForge</a>
+  <nav aria-label="站点导航"><a href="#library">模板库</a><a href="#styles">设计风格</a><a href="#usage">使用指南</a><a href="__REPO__" target="_blank" rel="noopener">GitHub</a></nav>
+</div></header>
+<main id="main">
+<div id="top"></div>
+<div class="hero"><div class="wrap">
+  <h1>多用途 · 多风格 · 可编辑的 PPT 模板库</h1>
+  <p class="lead">SlideForge 由脚本生成：覆盖 __CATS__ 个用途分类、__THEMES__ 种设计风格，每套含 15 个可复用版面原型。全部页面只含版式骨架与占位文本，<b>不含任何正式内容</b>，可直接替换成你自己的文案、配色与图片。</p>
+  <div class="metrics">
+    <div class="metric"><b>__DECKS__</b><span>套演示模板 (.pptx)</span></div>
+    <div class="metric"><b>__SLIDES__</b><span>个版面页</span></div>
+    <div class="metric"><b>__THEMES__</b><span>种设计风格</span></div>
+    <div class="metric"><b>__CATS__</b><span>个用途分类</span></div>
+    <div class="metric"><b>__POTX__</b><span>套 .potx 母版</span></div>
+  </div>
+</div></div>
+<section id="library" aria-labelledby="lib-h"><div class="wrap">
+  <h2 class="sec" id="lib-h">模板库</h2>
+  <p class="sub">按用途分类浏览，每个分类包含多种不同设计风格；点击即可下载可编辑的 .pptx，或跳转仓库查看源码。</p>
+  <div class="searchbar">
+    <input type="search" id="q" placeholder="搜索模板名称 / 风格 / 用途…" aria-label="搜索模板" autocomplete="off">
+    <span class="count" id="count" role="status" aria-live="polite">__DECKS__ 套</span>
+  </div>
+  <div class="filters" role="group" aria-label="按用途筛选模板">__CHIPS__</div>
+  <div class="grid">__CARDS__</div>
+  <p class="empty-state" id="empty">没有匹配的模板 —— 换个关键词，或选择「全部」再试。<button type="button" class="btn" id="empty-reset">重置筛选</button></p>
+</div></section>
+<section id="styles"><div class="wrap">
+  <h2 class="sec">设计风格</h2>
+  <p class="sub">每种风格是一套独立的视觉系统（配色 / 字体 / 形状语言），来自 AutoClaw 审美预设库的跨流派锚定。</p>
+  <div class="themegrid">__TCARDS__</div>
+</div></section>
+<section id="usage"><div class="wrap">
+  <h2 class="sec">使用指南</h2>
+  <div class="usegrid">
+    <div class="ubox"><h3>1 · 直接编辑</h3><p>下载 .pptx 用 PowerPoint / WPS / Keynote / LibreOffice 打开，文本框、形状、配色、图片位均可直接改，不破坏版式。.potx 可放入模板目录后直接「新建」。</p></div>
+    <div class="ubox"><h3>2 · 换配色与字体</h3><p>页面颜色都写在各形状上，批量替换主题色即可全局换肤；标题 / 正文字体在 <code>generator/themes.py</code> 的 <code>title_font / body_font</code> 定义。</p></div>
+    <div class="ubox"><h3>3 · 重新生成</h3><ol><li><code>pip install -r generator/requirements.txt</code></li><li><code>python generator/build.py templates</code></li><li><code>python scripts/build_site.py</code></li></ol></div>
+  </div>
+  <pre>python generator/build.py templates     # 生成全部模版与 index.manifest.json
+python generator/validate.py templates  # 校验可打开性 / 版面数 / 内容类型
+python scripts/build_site.py            # 重建本站点与风格预览图</pre>
+</div></section>
+<section id="license"><div class="wrap">
+  <h2 class="sec">许可</h2>
+  <p class="sub">本项目以 <b>MIT License</b> 发布，可自由用于个人与商业用途。模板内不含任何真实业务数据、客户信息或受版权保护的第三方素材；字体依赖系统字体，替换商用字体时请自行确认授权。</p>
+  <p class="sub" style="margin-top:14px">分类：__CATTAGS__</p>
+</div></section>
+<dialog class="lightbox" id="pv" aria-labelledby="pv-title" aria-modal="true">
+  <div class="lb-head"><b id="pv-title">模板预览</b>
+    <div style="display:flex;gap:8px">
+      <a class="btn primary" id="pv-dl" href="#" download>下载 .pptx</a>
+      <button type="button" class="x" id="pv-close" autofocus>关闭 (Esc)</button>
+    </div>
+  </div>
+  <div class="lb-body">
+    <div class="lb-main"><div id="pv-stage"></div>
+      <noscript><p class="lb-fallback" style="display:block">浏览器禁用了脚本：请直接在卡片上点「下载 .pptx」，或到 GitHub 源码页查看。</p></noscript>
+      <div class="lb-fallback" id="pv-fallback">预览图暂时无法加载 —— 你仍可直接下载 .pptx，或打开 GitHub 源码页查看该模板。</div>
+    </div>
+    <div class="lb-thumb" id="pv-thumbs" role="group" aria-label="切换预览图"></div>
+  </div>
+  <div class="lb-meta" id="pv-meta"></div>
+  <span class="sr-only" id="pv-status" role="status" aria-live="polite"></span>
+  <div class="lb-nav">
+    <button type="button" id="pv-prev">‹ 上一张</button>
+    <button type="button" id="pv-next">下一张 ›</button>
+    <button type="button" id="pv-fs">全屏放映</button>
+  </div>
+</dialog>
+</main>
+<footer><div class="wrap">SlideForge · 由 python-pptx 脚本生成 · MIT License · <a href="__REPO__" target="_blank" rel="noopener">GitHub 仓库</a></div></footer>
+<script>__JS__</script>
+</body></html>
