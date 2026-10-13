@@ -1,3 +1,5 @@
+**简体中文** · [English](README.en.md)
+
 # SlideForge · 多用途可编辑 PPT 模板库
 
 > 脚本生成的多用途、多风格、**可编辑**且**不含正式内容**的 PowerPoint 模板库。
