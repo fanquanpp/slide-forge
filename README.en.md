@@ -1,14 +1,12 @@
 [中文](README.md) · **English**
 
 # SlideForge · A multi-purpose, editable PowerPoint template library
-
 > A script-generated, multi-purpose, multi-style library of PowerPoint templates that is **editable** and **contains no final content**.
 > MIT License · rebuildable in one command with `python-pptx`.
 
 ![Style preview](assets/previews/build-cover.svg)
 
 ## Overview
-
 | Metric | Value |
 |---|---|
 | Presentation templates (.pptx) | **126** |
@@ -21,7 +19,6 @@
 Browsing site (GitHub Pages): <https://fanquanpp.github.io/slide-forge/>
 
 ## Directory structure
-
 ```
 slide-forge/
 ├─ index.html                 # GitHub Pages browsing site: filter by category, preview styles, download directly
@@ -39,7 +36,6 @@ slide-forge/
 ```
 
 ## Template catalogue
-
 | Category | Use case | Design styles | Decks |
 |---|---|---:|---:|
 | 编程教学课件 | Programming Courseware | 5 | 5 |
@@ -68,7 +64,6 @@ slide-forge/
 | 技术架构评审 | Tech Architecture Review | 5 | 5 |
 
 ### Files by category and style
-
 - **Programming Courseware**
   - Breathing Whitespace (11 Build) · 19 slides — `01-teaching-programming-courseware/01__build.pptx` · master `_potx/slideforge-build.potx`
   - Cyber Terminal (08 Resn) · 19 slides — `01-teaching-programming-courseware/01__terminal.pptx` · master `_potx/slideforge-terminal.potx`
@@ -221,7 +216,6 @@ slide-forge/
   - Monochrome (03 Information Architects) · 19 slides — `24-tech-review-tech-architecture-review/24__monochrome.pptx` · master `_potx/slideforge-monochrome.potx`
 
 ## Design styles
-
 | Style | English | Aesthetic anchor | Description |
 |---|---|---|---|
 | 呼吸留白极简 | Breathing Whitespace | 11 Build | Generous whitespace + a single accent colour; restrained and neutral, easy to swap for any brand colour. |
@@ -251,7 +245,6 @@ slide-forge/
 | 泡泡堂风 | Bubble Pop | 12 Sagmeister & Walsh | A minimal ground + candy-coloured bubbles and springy motion; bright and rounded, with strong interactive playfulness. |
 
 ## Usage guide
-
 1. **Edit directly**: download a `.pptx` and open it in PowerPoint / WPS / Keynote / LibreOffice. Text, shapes,
    colours and picture placeholders can all be edited directly without breaking the layout. Drop a `.potx` into
    your template folder and it is available straight from "New".
@@ -269,7 +262,6 @@ python scripts/build_readme.py          # rebuild this README
 ```
 
 ## Documentation
-
 > Privacy note: this repository **contains no** local-machine or USB-drive directory listings, scan results or personal reports; the templates and documents are all generic artefacts.
 - [Requirements → template mapping](docs/need-template-mapping.md)
 - [Toolchain install log](docs/install-record.md)
@@ -281,7 +273,6 @@ python scripts/build_readme.py          # rebuild this README
 - [Advanced features](docs/export-notes.md) — native editable charts / 8s auto-advance / speaker notes / full-screen preview lightbox
 
 ## License
-
 This project is released under the **MIT License** and may be used freely for personal and commercial purposes; see [LICENSE](LICENSE).
 
 The templates contain **no** real business data, customer information or copyrighted third-party assets; fonts rely on system fonts, and if you replace them with commercial fonts, please confirm the licensing yourself.
