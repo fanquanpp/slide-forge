@@ -1,14 +1,12 @@
 **简体中文** · [English](README.en.md)
 
 # SlideForge · 多用途可编辑 PPT 模板库
-
 > 脚本生成的多用途、多风格、**可编辑**且**不含正式内容**的 PowerPoint 模板库。
 > MIT License · 可用 `python-pptx` 一键重建。
 
 ![风格预览](assets/previews/build-cover.svg)
 
 ## 总览
-
 | 指标 | 数值 |
 |---|---|
 | 演示模板 (.pptx) | **126** 套 |
@@ -21,7 +19,6 @@
 浏览站（GitHub Pages）：<https://fanquanpp.github.io/slide-forge/>
 
 ## 目录结构
-
 ```
 slide-forge/
 ├─ index.html                 # GitHub Pages 浏览站，可筛选分类、预览风格、直接下载
@@ -39,7 +36,6 @@ slide-forge/
 ```
 
 ## 模板目录
-
 | 分类 | 用途 | 设计风格数 | 套数 |
 |---|---|---:|---:|
 | 编程教学课件 | Programming Courseware | 5 | 5 |
@@ -68,7 +64,6 @@ slide-forge/
 | 技术架构评审 | Tech Architecture Review | 5 | 5 |
 
 ### 各分类 · 各风格文件
-
 - **编程教学课件**（Programming Courseware）
   - 呼吸留白极简（11 Build）· 19 页 —— `01-teaching-programming-courseware/01__build.pptx` · 母版 `_potx/slideforge-build.potx`
   - 赛博终端（08 Resn）· 19 页 —— `01-teaching-programming-courseware/01__terminal.pptx` · 母版 `_potx/slideforge-terminal.potx`
@@ -221,7 +216,6 @@ slide-forge/
   - 单色印刷极简（03 Information Architects）· 19 页 —— `24-tech-review-tech-architecture-review/24__monochrome.pptx` · 母版 `_potx/slideforge-monochrome.potx`
 
 ## 设计风格
-
 | 风格 | 英文 | 审美锚点 | 说明 |
 |---|---|---|---|
 | 呼吸留白极简 | Breathing Whitespace | 11 Build | 大量留白 + 单一强调色，克制中性，便于替换成任意品牌色。 |
@@ -251,7 +245,6 @@ slide-forge/
 | 泡泡堂风 | Bubble Pop | 12 Sagmeister & Walsh | 极简底色 + 糖果色气泡与弹性动效，明快圆润、强互动趣味。 |
 
 ## 使用指南
-
 1. **直接编辑**：下载 `.pptx`，用 PowerPoint / WPS / Keynote / LibreOffice 打开。文本、形状、
    配色、图片占位框均可直接修改，不破坏版式。`.potx` 放入模板目录后可直接「新建」。
 2. **换配色 / 字体**：页面颜色写在各形状上，批量替换主题色即可全局换肤；
@@ -267,7 +260,6 @@ python scripts/build_readme.py          # 重建本 README
 ```
 
 ## 文档
-
 > 隐私说明：本仓库**不包含**任何本机 / U 盘目录清单、扫描结果或个人报告；模板与文档均为通用产物。
 - [需求 → 模板映射表](docs/need-template-mapping.md)
 - [工具链安装记录](docs/install-record.md)
@@ -279,7 +271,6 @@ python scripts/build_readme.py          # 重建本 README
 - [高级功能说明](docs/export-notes.md)——原生可编辑图表 / 8s 自动放映 / 演讲者备注 / 全屏预览灯箱
 
 ## 许可
-
 本项目以 **MIT License** 发布，可自由用于个人与商业用途，详见 [LICENSE](LICENSE)。
 
 模板内**不含**任何真实业务数据、客户信息或受版权保护的第三方素材；字体依赖系统字体，
